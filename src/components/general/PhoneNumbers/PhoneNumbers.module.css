@@ -1,0 +1,54 @@
+.numbersList {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    width: 100%;
+    gap: 2px; /*отступ между элементами списка номеров в header*/
+}
+.header li a {
+    font-size: 16px;
+    line-height: 22px;
+}
+.contacts {
+    gap: 8px; /*отступ между элементами списка номеров в contacts*/
+}
+.contacts li a {
+    font-size: 24px;
+    line-height: 28px;
+}
+.footer {
+    gap: 4px; /*отступ между элементами списка номеров в contacts*/
+}
+.footer li a {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@media screen and (max-width: 1024px) {
+    .header {
+        flex-direction: row;
+        gap: 16px; /*отступ между элементами списка номеров в header*/
+    }
+}
+@media screen and (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        gap: 0;
+    }
+    .header li {
+        width: 100%;
+        text-align: center;
+        border-top: 2px solid gray;
+        padding-top: 8px;
+        margin-top: 8px;
+    }
+    .contacts {
+        gap: 0; /*отступ между элементами списка номеров в contacts*/
+    }
+    .contacts li a {
+        font-size: 16px;
+        line-height: 28px;
+    }
+}

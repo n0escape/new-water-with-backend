@@ -1,0 +1,39 @@
+h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 1.7em;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.generalOutput {
+    background-color: aliceblue;
+}
+
+.anchorAboutUs, .anchorServices, 
+.anchorContacts, .anchorContactUs,
+.anchorOurWorks {
+    display: block;
+    visibility: hidden;
+    height: 100px;
+    margin-top: 0;
+}
+.anchorAboutUs {
+    margin-top: -100px;
+}
+@media screen and (max-width: 600px) {
+    .anchorAboutUs, .anchorServices, 
+    .anchorContacts, .anchorContactUs,
+    .anchorOurWorks {
+        height: 60px;
+    }
+    .anchorAboutUs {
+        margin-top: -60px;
+    }
+}

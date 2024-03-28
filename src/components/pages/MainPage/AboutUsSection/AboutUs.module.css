@@ -1,0 +1,190 @@
+#aboutUs {
+    max-width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 84px 148px; /*внутренние отступы секции*/
+    gap: 20px; /*отступ между блоками внутри секции*/
+}
+#aboutUs > * {
+    flex: 1;
+}
+.details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 12px 36px 0 16px; /*внутренние отступы для блока описания компании*/
+    gap: 16px; /*отступ между заголовком и текстом*/
+}
+.details > * {
+    margin: 0; /*внешние отступы в заголовке и тексте блока описания*/
+}
+.details > h1{
+    text-wrap: nowrap;
+    font-weight: 700;
+    font-size: 57px;
+    line-height: 64px;
+}
+.details p {
+    font-size: 16px;
+    line-height: 22px;
+}
+.featuresBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 44px; /*внешний отступ перед блоком особенностей*/
+    gap: 40px; /*отступу между ососбеностями и кнопкой заказа*/
+}
+.featuresBlock > * {
+    margin: 0;
+    flex: 1;
+}
+.featuresSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 28px; /*отступ между заголовком и списком особенностей*/
+}
+.featuresSection h2 {
+    margin: 0; /*отступ заголовка в блоке особенностей*/
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 36px;
+}
+.featuresContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 28px 24px; /*отступ ТОЛЬКО между элементами особенностей (сверху/снизу/справа/слева)*/
+}
+.featureItem {
+    max-width: 224px; /*ширина элемента особенностей*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+}
+.featureItem > * {
+    flex: 1;
+    width: 100%;
+}
+.header,
+.info {
+    text-align: center;
+    text-wrap: wrap;
+    box-sizing: border-box; /*ограничение по border чтобы работали padding ниже*/
+}
+.header {
+    padding: 16px 6px; /*внетренние отступы загловка элемента особенностей*/
+}
+.info {
+    padding: 16px 8px; /*внутренние отступы описания элемента особенностей*/
+}
+.featureItem .header {
+    background-color: #D9D9D9;
+    border-radius: 15px 15px 0 0;
+    -webkit-border-radius: 15px 15px 0 0;
+    -moz-border-radius: 15px 15px 0 0;
+    -ms-border-radius: 15px 15px 0 0;
+    -o-border-radius: 15px 15px 0 0;
+}
+.featureItem .info {
+    background-color: #F5F5F5;
+    border-radius: 0 0 15px 15px;
+    -webkit-border-radius: 0 0 15px 15px;
+    -moz-border-radius: 0 0 15px 15px;
+    -ms-border-radius: 0 0 15px 15px;
+    -o-border-radius: 0 0 15px 15px;
+}
+.header h3,
+.info p {
+    margin: 0;
+    width: 100%;
+}
+.header h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
+.info p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #888888;
+}
+.contactUsBtn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.contactUsBtn a {
+    font-size: 20px;
+    line-height: 28px;
+    color: #FFFFFF;
+    background-color: #888888;
+
+    padding: 16px; /*внетренние отступы внутри кнопки*/
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+    #aboutUs {
+        padding: 48px 64px 32px 64px;
+        gap: 40px 48px;
+    }
+    .featuresBlock {
+        margin-top: 0; /*внешний отступ перед блоком особенностей*/
+    }
+    .featuresSection h2 {
+        text-wrap: nowrap;
+    }
+    .featuresBlock {
+        margin: 0;
+    }
+}
+@media screen and (max-width: 600px) {
+    #aboutUs {
+        flex-direction: column;
+        padding: 24px 16px 16px 16px;
+        gap: 36px;
+    }
+    #aboutUs > * {
+        flex: auto;
+        box-sizing: border-box;
+    }
+    .details {
+        padding: 0px 16px;
+    }
+    .details h1 {
+        font-size: 48px;
+        line-height: 64px;
+    }
+    .featuresSection h2 {
+        font-size: 24px;
+        line-height: 32px;
+        text-wrap: wrap;
+    }
+    .contactUsBtn a {
+        width: 80%;
+    }
+}

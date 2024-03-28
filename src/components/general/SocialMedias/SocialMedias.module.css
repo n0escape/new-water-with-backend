@@ -1,0 +1,48 @@
+.smList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 16px; /*отступ между элементами списка соц сетей*/
+}
+.smList img {
+    width: 40px;
+}
+
+.contacts {
+    justify-content: flex-end;
+}
+.contact,
+.contact a {
+    display: inline-block; /*устанавливает размер ссылки таке же как и изображение*/
+    line-height: 0;
+}
+.contact a img {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    justify-content: flex-start;
+}
+.footer img {
+    width: 32px;
+}
+
+@media screen and (max-width: 1024px) {
+    .smList {
+        justify-content: center;
+    }
+    .contacts img {
+        width: 40px;
+    }
+    .footer img {
+        width: 32px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .contacts img {
+        width: 28px;
+    }
+}

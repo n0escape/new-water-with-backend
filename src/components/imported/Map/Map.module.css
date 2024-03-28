@@ -1,0 +1,33 @@
+.containerMap {
+    display: flex;
+    justify-content: center;
+}
+.worksContext {
+    padding: 0 24px; /*внутренний отступ карты работ*/
+}
+.officeContext {
+    margin: 0;
+}
+
+.mapWorks {
+    height: 400px; 
+    width: 80vw;
+}
+.mapOffice {
+    height: 400px; 
+    width: 40vw;
+}
+
+@media screen and (max-width: 1024px) {
+    .mapOffice {
+        width: 60vw;
+    }
+}
+@media screen and (max-width: 600px) {
+    .officeContext {
+        width: 100%;
+    }
+    .mapOffice {
+        width: 80%;
+    }
+}

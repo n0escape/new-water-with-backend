@@ -1,0 +1,37 @@
+#ourWorks {
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 60px; /*внутренние отступы секции*/
+    gap: 40px; /*отступы между заголовком, картой и списком работ*/
+}
+#ourWorks h1{
+    display: flex;
+    justify-content: center;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+@media screen and (max-width: 1024px) {
+    #ourWorks {
+        gap: 32px; /*отступы между заголовком, картой и списком работ*/
+    }
+    #ourWorks h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
+@media screen and (max-width: 600px) {
+    #ourWorks {
+        padding: 12px 16px; /*внутренние отступы секции*/
+        gap: 20px; /*отступы между заголовком, картой и списком работ*/
+    }
+    #ourWorks h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
