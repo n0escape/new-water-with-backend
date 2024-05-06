@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/new-water-with-backend/static/css/main.aca84cdc.css",
-    "main.js": "/new-water-with-backend/static/js/main.ca363cba.js",
+    "main.js": "/new-water-with-backend/static/js/main.e67ee9ee.js",
     "static/js/453.c890ed4c.chunk.js": "/new-water-with-backend/static/js/453.c890ed4c.chunk.js",
     "index.html": "/new-water-with-backend/index.html",
     "main.aca84cdc.css.map": "/new-water-with-backend/static/css/main.aca84cdc.css.map",
-    "main.ca363cba.js.map": "/new-water-with-backend/static/js/main.ca363cba.js.map",
+    "main.e67ee9ee.js.map": "/new-water-with-backend/static/js/main.e67ee9ee.js.map",
     "453.c890ed4c.chunk.js.map": "/new-water-with-backend/static/js/453.c890ed4c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.aca84cdc.css",
-    "static/js/main.ca363cba.js"
+    "static/js/main.e67ee9ee.js"
   ]
 }
