@@ -84,7 +84,7 @@
     color: #888888;
 }
 .btnContainer {
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -93,7 +93,6 @@
 }
 .lessBtn,
 .moreBtn {
-    font-weight: 500;
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 0.1px;
@@ -178,5 +177,12 @@
         margin-top: -2px; /*отступ между элементами заголовка (костыль)*/
         font-size: 16px;
         line-height: 24px;
+    }
+    .btnContainer {
+        flex-direction: column;
+    }
+    .lessBtn,
+    .moreBtn {
+        width: 100%;
     }
 }

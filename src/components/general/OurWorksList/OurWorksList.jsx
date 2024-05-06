@@ -43,18 +43,14 @@ const OurWorksList = ({ ourWorks }) => {
             </div>
             <div className={s.btnContainer}>
                 {ourWorks.length > visibleWorks && (
-                    <div className={s.moreBtnContainer}>
-                        <button className={s.moreBtn} onClick={showMoreWorks}>
-                            Більше
-                        </button>
-                    </div>
+                    <button className={s.moreBtn} onClick={showMoreWorks}>
+                        Більше
+                    </button>
                 )}
                 {visibleWorks > 4 && (
-                    <div className={s.lessBtnContainer}>
-                        <button className={s.lessBtn} onClick={showLessWorks}>
-                            Згорнути
-                        </button>
-                    </div>
+                    <button className={s.lessBtn} onClick={showLessWorks}>
+                        Згорнути
+                    </button>
                 )}
             </div>
         </div>

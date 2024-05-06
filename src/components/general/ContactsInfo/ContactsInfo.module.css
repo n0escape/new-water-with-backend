@@ -44,7 +44,7 @@
         gap: 12px; /*отступ между ссылками списка в footer*/
     }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 600px) {
     .contactsContainer {
         gap: 8px; /*отступ между элементами списка контактов*/
     }

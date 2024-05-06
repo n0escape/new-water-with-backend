@@ -32,6 +32,7 @@
       "title": "Установка насосів 111",
       "minPrice": "3000грн",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla.",
+      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh.",
       "photos": [
         "/assets/srevices/pump-installation/Media1.png",
         "/assets/srevices/pump-installation/Media2.png",
@@ -52,9 +53,10 @@
     },
     {
       "id": "drilling-of-the-wells",
-      "title": "Буріння скважин",
+      "title": "Буріння свердловин",
       "minPrice": "2000грн",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla.",
+      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh.",
       "photos": [
         "/assets/srevices/drilling-of-the-wells/Media1.png",
         "/assets/srevices/drilling-of-the-wells/Media2.png",
@@ -77,6 +79,7 @@
       "title": "Установка насосів 1",
       "minPrice": "3000грн",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla.",
+      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh.",
       "photos": [
         "/assets/srevices/pump-installation/Media1.png",
         "/assets/srevices/pump-installation/Media2.png",
@@ -97,9 +100,10 @@
     },
     {
       "id": "drilling-of-the-wells-2",
-      "title": "Буріння скважин 2",
+      "title": "Буріння свердловин 2",
       "minPrice": "2000грн",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla.",
+      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh.",
       "photos": [
         "/assets/srevices/drilling-of-the-wells/Media1.png",
         "/assets/srevices/drilling-of-the-wells/Media2.png",
@@ -198,6 +202,11 @@
         "title": "Office name",
         "location": [50.45, 30.5233],
         "address": "м. Харків, вул. Полтавський шлях 142"
+      },
+      {
+        "title": "Office name2",
+        "location": [50.458, 30.5239],
+        "address": "м. Харків, вул. Полтавський шлях 12"
       }
     ],
     "phoneNumbers": [
@@ -212,12 +221,12 @@
     "socialMedias": [
       {
         "id": "telegram",
-        "url": "t.me/example",
+        "url": "https://t.me/example",
         "src": "/assets/socialMedias/telegram.png"
       },
       {
         "id": "facebook",
-        "url": "facebook.com/example",
+        "url": "https://facebook.com/example",
         "src": "/assets/socialMedias/facebook.png"
       }
     ]

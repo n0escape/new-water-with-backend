@@ -55,8 +55,15 @@
 .formGroup > select {
   padding: 12px 10px; /*внутренний отступ у select*/
 }
+.formGroup > textarea {
+  resize: none;
+  height: auto;
+  min-height: 50px; /* Минимальная высота textarea, чтобы избежать слишком маленького размера */
+  max-height: 400px; /* Максимальная высота textarea, чтобы избежать слишком большого размера */
+}
 
 .topicLabel,
+.messageLabel,
 .formGroup .textFieldLable {
   font-size: 16px;
   line-height: 24px;
@@ -77,20 +84,32 @@
 }
 
 .topicLabel,
+.messageLabel,
 .formGroup .filled ~ .textFieldLable,
 .formGroup .inputField:focus ~ .textFieldLable {
-  padding: 0 10px; /*внутренний отступ label (при активации поля)*/
-  letter-spacing: .2em;
-
+  padding: 0 10px;
+  /*внутреннийотступlabel(приактивацииполя)*/letter-spacing: .2em;
   color: white;
   background-color: #888888;
   border: 1px solid #888888;
-
   transform: translateX(10px) translateY(-25px);
   -webkit-transform: translateX(10px) translateY(-25px);
   -moz-transform: translateX(10px) translateY(-25px);
   -ms-transform: translateX(10px) translateY(-25px);
   -o-transform: translateX(10px) translateY(-25px);
+}
+.messageLabel {
+  position: relative;
+  transform: translateX(10px) translateY(10px);
+  -webkit-transform: translateX(10px) translateY(10px);
+  -moz-transform: translateX(10px) translateY(10px);
+  -ms-transform: translateX(10px) translateY(10px);
+  -o-transform: translateX(10px) translateY(10px);
+}
+.formGroup:has(.messageLabel) {
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: -23px;
 }
 
 .formGroup  > select:focus-within{

@@ -152,7 +152,7 @@
     }
     
     .nav, .contactsBlock {
-      display: none;
+        display: none;
     }
     .expanded {
         display: flex;

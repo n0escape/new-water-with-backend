@@ -7,11 +7,13 @@ import ServicePage from './components/pages/ServicePage/ServicePage.jsx';
 import OrderPage from './components/pages/OrderPage/OrderPage.jsx';
 import Header from './components/general/Header/Header.jsx';
 import Footer from './components/general/Footer/Footer.jsx';
-import './utils/pageUpTrick.js'
+import pageUpTrick from './utils/pageUpTrick.js';
 
 import ScrollToHash from './utils/scrollToHash.js';
 import ScrollToTop from './components/general/ScrollToTop/ScrollToTop.jsx';
 import { useEffect, useState } from 'react';
+import LoaderPage from './components/pages/LoaderPage/LoaderPage.jsx';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 export const basePath = process.env.NODE_ENV === 'development' ? '/' : '/new-water-test/';
 export const basePathData = process.env.NODE_ENV === 'development' ? process.env.PUBLIC_URL : '/new-water-test/';
@@ -23,7 +25,10 @@ const App = () => {
   const [servicesList, setServicesList] = useState([]);
 
   const getServicesList = (services) => {
-    let servicesList = [];
+    let servicesList = [
+      {serviceId: 'contactMe', serviceName: 'Зв\'яжіться зі мною'},
+      {serviceId: 'question', serviceName: 'Задати питання'}
+    ];
     services.map(service => (
       servicesList.push({serviceId: service.id, serviceName: service.title})
     ))
@@ -40,6 +45,7 @@ const App = () => {
         setServicesList(getServicesList(data.services))
       } finally {
         setLoading(false);
+        pageUpTrick();
       }
     };
 
@@ -47,10 +53,31 @@ const App = () => {
   }, []);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <LoaderPage />;
   }
 
   return (
+    <HelmetProvider>
+    <Helmet>
+      <meta property="og:locale" content="uk_UA"/>
+      <meta property="og:type" content="website"/>
+      <meta property="og:site_name" content="Вебсайт компанії New Water" />
+
+      <meta property="og:image" content="/assets/openGraph/mobile.png" />
+      <meta property="og:image:width" content="600" />
+      <meta property="og:image:height" content="315" />
+      <meta property="og:image" content="/assets/openGraph/tablet.png" />
+      <meta property="og:image:width" content="900" />
+      <meta property="og:image:height" content="473" />
+      <meta property="og:image" content="/assets/openGraph/laptop.png" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      {/* Атрибут sizes для указания размеров изображения */}
+      <meta property="og:image:sizes" content="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px" />
+      
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:image" content="/assets/openGraph/laptop.png" />
+    </Helmet>
     <div>
       <Router basename={basePath}>
         <ScrollToHash />
@@ -65,6 +92,48 @@ const App = () => {
         <Footer logo={data.generalIcons.logo} contacts={data.contacts}/>
       </Router>
     </div>
+    <script type="application/ld+json">
+      {`
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "${data.aboutUs.companyName}",
+          "description": "${data.aboutUs.companyDescription}",
+          "currenciesAccepted": "UAH",
+          "url": "https://www.example.com",
+          "logo": "https://www.example.com${data.generalIcons.logo}",
+          "sameAs": [${data.contacts.socialMedias.map(sb => JSON.stringify(sb.url))}],
+          "telephone": ${JSON.stringify(data.contacts.phoneNumbers)},
+          "location": [${data.contacts.offices.map(office => JSON.stringify({
+            "name": office.title,
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": office.address,
+              "addressLocality": "Харків",
+              "addressCountry": "Україна"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": office.location[0],
+              "longitude": office.location[1]
+            },
+            "openingHoursSpecification": {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+              ],
+              "opens": data.contacts.schedule.match(/\d{1,2}:\d{2}/g)[0],
+              "closes": data.contacts.schedule.match(/\d{1,2}:\d{2}/g)[1]
+            }
+          }))}]
+        }
+      `}
+    </script>
+    </HelmetProvider>
   );
 }
 

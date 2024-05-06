@@ -1,4 +1,5 @@
 import s from './ContactForm.module.css';
+import axios from 'axios';
 import React, { 
   //useEffect, 
   useState } from 'react';
@@ -17,26 +18,25 @@ const labelMap = {
   name: 'Ім\'я*',
   email: 'Пошта*',
   phone: 'Телефон*',
-  message: 'Коментар',
-  // Добавьте другие соответствия по мере необходимости
+  message: 'Коментар'
 };
 
 const ContactForm = ({ servicesList, selectedService = null }) => {
   const defaultSelectedValue = 'contactMe';
   const initialFields = {
-    name: { value: '', class: '' },
-    email: { value: '', class: '' },
-    phone: { value: '', class: '' },
-    topic: { value: selectedService || defaultSelectedValue, class: '' },
-    message: { value: '', class: '' }
+    name: { value: '', filled: false },
+    email: { value: '', filled: false },
+    phone: { value: '', filled: false },
+    topic: { value: selectedService || defaultSelectedValue, filled: false },
+    message: { value: '', filled: false }
   };
 
   const [errors, setErrors] = useState({});
   const [formData, setFormData] = useState(initialFields);
 
   const handleChange = (name, value) => {
-    // Очищаем ошибку для поля phone и email при их изменении
     if (name === 'phone' || name === 'email') {
+      // Очищаем ошибку для поля phone и email при их изменении
       setErrors(prevErrors => ({
         ...prevErrors,
         phone: '',
@@ -55,7 +55,7 @@ const ContactForm = ({ servicesList, selectedService = null }) => {
       [name]: {
         ...prevFields[name],
         value: value,
-        class: value.trim() === '' ? '' : s.filled
+        filled: value.trim() !== '' // Установите filled в true, если значение не пустое
       }
     }));
   };
@@ -68,9 +68,21 @@ const ContactForm = ({ servicesList, selectedService = null }) => {
     e.preventDefault();
 
     let formValid = true;
+    
+    // Новый объект для отправки на сервер
+    const formDataToSend = {};
+
+    // Деструктуризация объекта на основе формы
+    // и заполнения нового объекта для отправки на сервер
+    // также изменяем значение select на текст выбраного значения
+    Object.entries(formData).forEach(([fieldName, field]) => {
+      fieldName === 'topic'
+      ? formDataToSend[fieldName] = servicesList.find(service => service.serviceId === field.value)?.serviceName
+      : formDataToSend[fieldName] = field.value;
+    });
 
     if (!formData.name.value) {
-      setErrors(prevErrors => ({ ...prevErrors, name: 'Please provide your name' }));
+      setErrors(prevErrors => ({ ...prevErrors, name: 'Введіть будьласка ім\'я' }));
       formValid = false;
     } else {
       setErrors(prevErrors => (prevErrors.name !== '' ? ({ ...prevErrors }) : ({ ...prevErrors, name: '' })));
@@ -79,8 +91,8 @@ const ContactForm = ({ servicesList, selectedService = null }) => {
     if (!formData.email.value && !formData.phone.value) {
       setErrors(prevErrors => ({
         ...prevErrors,
-        email: 'Please provide either email or phone number',
-        phone: 'Please provide either email or phone number'
+        email: 'Будь ласка, введіть або пошту або номер телефону, для зворотнього контакту',
+        phone: 'Будь ласка, введіть або пошту або номер телефону, для зворотнього контакту'
       }));
       formValid = false;
     } else {
@@ -88,14 +100,14 @@ const ContactForm = ({ servicesList, selectedService = null }) => {
     }
 
     if (formData.email.value && !validateEmail(formData.email.value)) {
-      setErrors(prevErrors => ({ ...prevErrors, email: 'Please enter a valid email address' }));
+      setErrors(prevErrors => ({ ...prevErrors, email: 'Будь ласка, введіть валідну пошту, наприклад: example@gmail.com' }));
       formValid = false;
     } else {
       setErrors(prevErrors => (prevErrors.email !== '' ? ({ ...prevErrors }) : ({ ...prevErrors, email: '' })));
     }
 
     if (formData.phone.value && !validatePhone(formData.phone.value)) {
-      setErrors(prevErrors => ({ ...prevErrors, phone: 'Please enter a valid phone number starting with +380' }));
+      setErrors(prevErrors => ({ ...prevErrors, phone: 'Будь ласка, введіть валідний номер телефону, який починається з +380' }));
       formValid = false;
     } else {
       setErrors(prevErrors => (prevErrors.phone !== '' ? ({ ...prevErrors }) : ({ ...prevErrors, phone: '' })));
@@ -103,45 +115,38 @@ const ContactForm = ({ servicesList, selectedService = null }) => {
 
     if (formValid) {
       try {
-        const response = await fetch('API_CODE/API_LINK', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(formData)
-        });
-
-        if (response.ok) {
-          alert('Your message has been sent successfully!');
-          setFormData({
-            name: '',
-            email: '',
-            phone: '',
-            message: '',
-            topic: selectedService || defaultSelectedValue
-          });
+        const response = await axios.post('/api/send-message', formDataToSend);
+    
+        if (response.data.ok) {
+          alert('Ваш запит відправлено! Ми зв\'яжемось з вами якомога раніше.');
+          setFormData(initialFields);
           setErrors({});
-        } else {
-          alert('There was a problem sending your message. Please try again later.');
-        }
+        } 
       } catch (error) {
-        console.error('Error:', error);
-        alert('There was a problem sending your message. Please try again later.');
+        alert(error.response?.data?.error || 'Сервер повернув помилку. Спробуйте пізніше');
       }
     }
   };
+
+  // Изменеие высоты поля textarea на основе содержимого
+  // Отслеживание ивента, когда текст вылазит:
+  // textarea.scrollHeight > textarea.clientHeight
+  const handleChangeTextarea = (event) => {
+    if (event.target.scrollHeight > event.target.clientHeight) {
+      event.target.style.height = "1px";
+      event.target.style.height = (25+event.target.scrollHeight)+"px";
+    }
+  }
 
   return (
     <form onSubmit={handleSubmit} className={s.container}>
       <div className={s.fields}>
         {Object.entries(formData).map(([fieldName, field]) => (
           <div key={fieldName} className={`${s.formGroup}`}>
-            {fieldName === 'topic' ? (
+            {
+            fieldName === 'topic' ? (
               <>
-                <label 
-                  htmlFor={fieldName}
-                  className={`${s.topicLabel}`}
-                >
+                <label htmlFor={fieldName} className={`${s.topicLabel}`}>
                     Оберіть тему
                 </label>
                 <select
@@ -150,27 +155,41 @@ const ContactForm = ({ servicesList, selectedService = null }) => {
                   value={field.value}
                   onChange={(e) => handleChange(fieldName, e.target.value)}
                 >
-                  <option value="contactMe">Зв'яжіться зі мною</option>
-                  <option value="question">Задати питання</option>
                   {servicesList.map(service => ( 
                     <option key={service.serviceId} value={service.serviceId}>{service.serviceName}</option>
                   ))}
                 </select>
               </>
             ) : (
-              <>
-                <input
-                  type={'text'}
-                  id={fieldName}
-                  name={fieldName}
-                  value={field.value}
-                  onChange={(e) => handleChange(fieldName, e.target.value)}
-                  className={`${s.inputField} ${field.class}`}
-                />
-                <label className={s.textFieldLable} htmlFor={fieldName}>
-                {labelMap[fieldName] || (fieldName.charAt(0).toUpperCase() + fieldName.slice(1))}
-                </label>
-              </>
+              fieldName === 'message' ? (
+                <>
+                  <label htmlFor={fieldName} className={`${s.messageLabel}`}>
+                    Коментар
+                  </label>
+                  <textarea
+                    type={'text'}
+                    id={fieldName}
+                    name={fieldName}
+                    value={field.value}
+                    onChange={(e) => {handleChange(fieldName, e.target.value); handleChangeTextarea(e) }}
+                    className={`${field.filled ? s.filled : ''}`} // Применяем класс filled, если поле заполнено
+                  />
+                </>
+              ) : (
+                <>
+                  <input
+                    type={'text'}
+                    id={fieldName}
+                    name={fieldName}
+                    value={field.value}
+                    onChange={(e) => handleChange(fieldName, e.target.value)}
+                    className={`${s.inputField} ${field.filled ? s.filled : ''}`} // Применяем класс filled, если поле заполнено
+                  />
+                  <label htmlFor={fieldName} className={s.textFieldLable}>
+                    {labelMap[fieldName] || (fieldName.charAt(0).toUpperCase() + fieldName.slice(1))}
+                  </label>
+                </>
+              )
             )}
             {/* Отображение ошибок */}
             {errors[fieldName] !== '' && <span style={{ color: 'red' }}>{errors[fieldName]}</span>}
