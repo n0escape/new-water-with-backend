@@ -2,11 +2,12 @@ import { Link, useParams } from 'react-router-dom';
 import ContactForm from '../../imported/ContactForm/ContactForm';
 import s from './OrderPage.module.css'
 import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { baseUrl } from '../../../App';
 
 const OrderPage = ({servicesList}) => {
     const { idService } = useParams();
     const service = servicesList.find(service => service.serviceId === idService)?.serviceName.toLowerCase();
-    const canonicalUrl = `https://www.example.com/order/${idService}`;
+    const canonicalUrl = `${baseUrl}/order/${idService}`;
     
     return (
         

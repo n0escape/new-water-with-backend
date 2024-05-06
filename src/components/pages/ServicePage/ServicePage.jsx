@@ -3,6 +3,8 @@ import { useParams, Link } from 'react-router-dom';
 import s from './ServicePage.module.css'
 import Gallery from '../../general/Gallery/Gallery';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { baseUrl } from '../../../App';
+import Product from '../../microMarkups/Product';
 
 const ServicePage = ({services}) => {
 
@@ -11,7 +13,7 @@ const ServicePage = ({services}) => {
   useEffect(() => {
     setServiceData( services.find(item => item.id === idFromUrl) )
   }, [services, idFromUrl]);
-  const canonicalUrl = `https://www.example.com/service/${idFromUrl}`;
+  const canonicalUrl = `${baseUrl}/service/${idFromUrl}`;
 
   return (
     <HelmetProvider>
@@ -81,6 +83,7 @@ const ServicePage = ({services}) => {
               <Gallery photosList={serviceData.photos} />
             </div>
           </div>
+          <Product serviceData={serviceData} canonicalUrl={canonicalUrl}/>
         </>
       )}
     </HelmetProvider>
