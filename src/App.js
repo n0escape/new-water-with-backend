@@ -8,6 +8,7 @@ import OrderPage from './components/pages/OrderPage/OrderPage.jsx';
 import Header from './components/general/Header/Header.jsx';
 import Footer from './components/general/Footer/Footer.jsx';
 import BreadcrumbList from './components/microMarkups/BreadcrumbList.jsx';
+import LocalBusiness from './components/microMarkups/LocalBusiness.jsx';
 import pageUpTrick from './utils/pageUpTrick.js';
 
 import ScrollToHash from './utils/scrollToHash.js';
@@ -15,7 +16,6 @@ import ScrollToTop from './components/general/ScrollToTop/ScrollToTop.jsx';
 import { useEffect, useState } from 'react';
 import LoaderPage from './components/pages/LoaderPage/LoaderPage.jsx';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import LocalBusiness from './components/microMarkups/LocalBusiness.jsx';
 
 export const baseUrl = 'https://www.example.com';
 export const basePath = process.env.NODE_ENV === 'development' ? '/' : '/new-water-test/';
@@ -97,47 +97,6 @@ const App = () => {
           <LocalBusiness data={data}/>
         </Router>
       </div>
-      {/* <script type="application/ld+json">
-        {`
-          {
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            "name": "${data.aboutUs.companyName}",
-            "description": "${data.aboutUs.companyDescription}",
-            "currenciesAccepted": "UAH",
-            "url": "https://www.example.com",
-            "logo": "https://www.example.com${data.generalIcons.logo}",
-            "sameAs": [${data.contacts.socialMedias.map(sb => JSON.stringify(sb.url))}],
-            "telephone": ${JSON.stringify(data.contacts.phoneNumbers)},
-            "location": [${data.contacts.offices.map(office => JSON.stringify({
-              "name": office.title,
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": office.address,
-                "addressLocality": "Харків",
-                "addressCountry": "Україна"
-              },
-              "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": office.location[0],
-                "longitude": office.location[1]
-              },
-              "openingHoursSpecification": {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": [
-                  "Monday",
-                  "Tuesday",
-                  "Wednesday",
-                  "Thursday",
-                  "Friday"
-                ],
-                "opens": data.contacts.schedule.match(/\d{1,2}:\d{2}/g)[0],
-                "closes": data.contacts.schedule.match(/\d{1,2}:\d{2}/g)[1]
-              }
-            }))}]
-          }
-        `}
-      </script> */}
     </HelmetProvider>
   );
 }

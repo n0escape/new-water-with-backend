@@ -5,6 +5,7 @@ import Gallery from '../../general/Gallery/Gallery';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { baseUrl } from '../../../App';
 import Product from '../../microMarkups/Product';
+import ImageGallery from '../../microMarkups/ImageGallery';
 
 const ServicePage = ({services}) => {
 
@@ -84,6 +85,7 @@ const ServicePage = ({services}) => {
             </div>
           </div>
           <Product serviceData={serviceData} canonicalUrl={canonicalUrl}/>
+          <ImageGallery context={'service'} photoList={serviceData.photos}/>
         </>
       )}
     </HelmetProvider>

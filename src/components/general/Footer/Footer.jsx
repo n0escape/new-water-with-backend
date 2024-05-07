@@ -10,8 +10,10 @@ const Footer = ({logo, contacts}) => {
 
           <div className={s.logo}>
             <img className={s.logoIcon} 
-              src={process.env.PUBLIC_URL + logo} 
-              alt="Company logo" width="150px" />
+              src={process.env.PUBLIC_URL + logo}
+              alt="Логотип компанії"
+              title="Логотип компанії"
+            />
           </div>
 
           <div className={s.nav}>

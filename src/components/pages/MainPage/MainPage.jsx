@@ -7,6 +7,7 @@ import ContactUs from './ContactUsSection/ContactUs.jsx';
 import Contacts from './ContactsSection/Contacts';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { baseUrl } from '../../../App.js';
+import ImageGallery from '../../microMarkups/ImageGallery.jsx';
 
 const MainPage = ({ aboutUs, services, ourWorks, servicesList, contacts }) => {
   return (
@@ -42,6 +43,7 @@ const MainPage = ({ aboutUs, services, ourWorks, servicesList, contacts }) => {
         <div id="anchorContacts" className={s.anchorContacts}></div>
         <Contacts contacts={contacts} />
       </div>
+      <ImageGallery context={'works'} photoList={ourWorks}/>
     </HelmetProvider>
   );
 }

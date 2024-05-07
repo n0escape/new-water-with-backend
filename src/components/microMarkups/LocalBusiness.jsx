@@ -29,12 +29,11 @@ const LocalBusiness = ({data}) => {
             }
         }
     ))
-    // "description": `${data.aboutUs.companyDescription}`
     const localBusiness = {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": `${data.aboutUs.companyName}`,
-        "description": 'companyDescription',
+        "description": `${data.aboutUs.companyDescription}`,
         "currenciesAccepted": "UAH",
         "url": `${baseUrl}`,
         "logo": `${baseUrl}${data.generalIcons.logo}`,

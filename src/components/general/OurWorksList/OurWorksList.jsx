@@ -24,7 +24,11 @@ const OurWorksList = ({ ourWorks }) => {
                     <div key={work.title} className={`${s.workItem} ${index < 4 ? '' : (index >= 4 && fade ? s.fadeIn : s.fadeOut)}`}>
                         <div className={s.workItemContent}>
                             <div className={s.workImage}>
-                                <img src={process.env.PUBLIC_URL + work.imageSrc} alt={work.title} />
+                                <img
+                                    src={process.env.PUBLIC_URL + work.imageSrc}
+                                    alt={work.title}
+                                    title={work.title}
+                                />
                             </div>
                             <div className={s.itemDetails}>
                                 <div className={s.itemHeader}>

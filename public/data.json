@@ -29,14 +29,14 @@
   "services": [
     {
       "id": "pump-installation",
-      "title": "Установка насосів 111",
+      "title": "Установка насосів",
       "minPrice": "3000грн",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla.",
       "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh.",
       "photos": [
-        "/assets/srevices/pump-installation/Media1.png",
-        "/assets/srevices/pump-installation/Media2.png",
-        "/assets/srevices/pump-installation/Media3.png"
+        {"imageSrc":"/assets/srevices/pump-installation/Media1.png", "title":"Зображення до послуги установки насосів 11"},
+        {"imageSrc":"/assets/srevices/pump-installation/Media2.png", "title":"Зображення до послуги установки насосів 12"},
+        {"imageSrc":"/assets/srevices/pump-installation/Media3.png", "title":"Зображення до послуги установки насосів 13"}
       ],
       "priceExplanation": [
         {"title": "Робота:", "price": "700грн"},
@@ -58,9 +58,9 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla.",
       "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh.",
       "photos": [
-        "/assets/srevices/drilling-of-the-wells/Media1.png",
-        "/assets/srevices/drilling-of-the-wells/Media2.png",
-        "/assets/srevices/drilling-of-the-wells/Media3.png"
+        {"imageSrc":"/assets/srevices/drilling-of-the-wells/Media1.png", "title":"Зображення до послуги буріння свердловин 11"},
+        {"imageSrc":"/assets/srevices/drilling-of-the-wells/Media2.png", "title":"Зображення до послуги буріння свердловин 12"},
+        {"imageSrc":"/assets/srevices/drilling-of-the-wells/Media3.png", "title":"Зображення до послуги буріння свердловин 13"}
       ],
       "priceExplanation": [
         {"title": "Робота:", "price": "1000грн"},
@@ -75,15 +75,15 @@
       ]
     },
     {
-      "id": "pump-installation-1",
-      "title": "Установка насосів 1",
+      "id": "pump-installation-2",
+      "title": "Установка насосів 2",
       "minPrice": "3000грн",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla.",
       "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh.",
       "photos": [
-        "/assets/srevices/pump-installation/Media1.png",
-        "/assets/srevices/pump-installation/Media2.png",
-        "/assets/srevices/pump-installation/Media3.png"
+        {"imageSrc":"/assets/srevices/pump-installation/Media1.png", "title":"Зображення до послуги установки насосів 21"},
+        {"imageSrc":"/assets/srevices/pump-installation/Media2.png", "title":"Зображення до послуги установки насосів 22"},
+        {"imageSrc":"/assets/srevices/pump-installation/Media3.png", "title":"Зображення до послуги установки насосів 23"}
       ],
       "priceExplanation": [
         {"title": "Робота:", "price": "700грн"},
@@ -105,9 +105,9 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla.",
       "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh.",
       "photos": [
-        "/assets/srevices/drilling-of-the-wells/Media1.png",
-        "/assets/srevices/drilling-of-the-wells/Media2.png",
-        "/assets/srevices/drilling-of-the-wells/Media3.png"
+        {"imageSrc":"/assets/srevices/drilling-of-the-wells/Media1.png", "title":"Зображення до послуги буріння свердловин 21"},
+        {"imageSrc":"/assets/srevices/drilling-of-the-wells/Media2.png", "title":"Зображення до послуги буріння свердловин 22"},
+        {"imageSrc":"/assets/srevices/drilling-of-the-wells/Media3.png", "title":"Зображення до послуги буріння свердловин 23"}
       ],
       "priceExplanation": [
         {"title": "Робота:", "price": "1000грн"},

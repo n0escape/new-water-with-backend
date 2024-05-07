@@ -15,7 +15,11 @@ const Gallery = ({photosList}) => {
         <div className={s.containerGallery}>
             <div className={s.galleryImage}>
                 <button className={s.btnPrev} onClick={goToPrevious}>{'<'}</button>
-                <img src={process.env.PUBLIC_URL + photosList[currentPhotoIndex]} alt={`Description ${currentPhotoIndex + 1}`} />
+                <img 
+                    src={process.env.PUBLIC_URL + photosList[currentPhotoIndex].imageSrc}
+                    alt={photosList[currentPhotoIndex].title}
+                    title={photosList[currentPhotoIndex].title}
+                />
                 <button className={s.btnNext} onClick={goToNext}>{'>'}</button>
             </div>
             <div className={s.dotList}>

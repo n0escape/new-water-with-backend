@@ -10,7 +10,11 @@ const Services = ({services}) => (
           {services.map( service => (
             <div key={service.id} className={s.serviceCard}>
               <div>
-                <img src={process.env.PUBLIC_URL + service.photos[0]} alt={service.title}/>
+                <img
+                  src={process.env.PUBLIC_URL + service.photos[0].imageSrc}
+                  alt={service.photos[0].title}
+                  title={service.photos[0].title}
+                />
               </div>
               <div className={s.serviceCardInfo}>
                 <div className={s.serviceDetails}>

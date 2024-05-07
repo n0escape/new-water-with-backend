@@ -12,16 +12,16 @@ const NavLinks = ({context, toggleNav}) => {
     return (
         <ul className={linksClass}>
             <li>
-                <Link to="/#anchorAboutUs" onClick={ () => toggleNav && toggleNav() }>Про компанію</Link>
+                <Link to="/#anchorAboutUs" onClick={ () => toggleNav && toggleNav() } title='Про компанію'>Про компанію</Link>
             </li>
             <li>
-                <Link to="/#anchorServices" onClick={ () => toggleNav && toggleNav() }>Послуги</Link>
+                <Link to="/#anchorServices" onClick={ () => toggleNav && toggleNav() } title='Послуги'>Послуги</Link>
             </li>
             <li>
-                <Link to="/#anchorOurWorks" onClick={ () => toggleNav && toggleNav() }>Наші роботи</Link>
+                <Link to="/#anchorOurWorks" onClick={ () => toggleNav && toggleNav() } title='Наші роботи'>Наші роботи</Link>
             </li>
             <li>
-                <Link to="/#anchorContacts" onClick={ () => toggleNav && toggleNav() }>Контакти</Link>
+                <Link to="/#anchorContacts" onClick={ () => toggleNav && toggleNav() } title='Контакти'>Контакти</Link>
             </li>
         </ul>
     )

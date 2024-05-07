@@ -24,7 +24,7 @@ const PhoneNumbers = ({context, phoneNumbersList, toggleContacts}) => {
     <ul className={listClass}>
       {phoneNumbersList.map( (phone, index) => (
         <li key={index}>
-          <a href={`tel:${phone}`} target="_blank" rel="noopener noreferrer" onClick={handleClick}>
+          <a href={`tel:${phone}`} target="_blank" rel="noopener noreferrer" onClick={handleClick} title={`Телефон ${index+1}`}>
             {stylizePhoneNumber(phone)}
           </a>
         </li>

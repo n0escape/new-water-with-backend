@@ -13,7 +13,7 @@ const ContactsInfo = ({context, contacts}) => {
         <div className={listClass}>
             <div className={s.officesInfo}>
                 {contacts.offices.map((office, index) => (
-                    <p key={index}>{office.address}</p>
+                    <p key={index} title={`Офіс ${index+1}`}>{office.address}</p>
                 ))}
             </div>
             <PhoneNumbers context={context} phoneNumbersList={contacts.phoneNumbers} />

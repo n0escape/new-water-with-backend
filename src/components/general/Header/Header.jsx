@@ -23,7 +23,11 @@ const Header = ({logo, contactsIcon, contacts}) => {
       <header id={s.pageHeader}>
         <div className={`${s.item} ${s.logo}`}>
           <Link to="/">
-            <img src={process.env.PUBLIC_URL + logo} alt="Логотип компанії" />
+            <img
+              src={process.env.PUBLIC_URL + logo}
+              alt="Логотип компанії"
+              title="Логотип компанії"
+            />
           </Link>
         </div>
         

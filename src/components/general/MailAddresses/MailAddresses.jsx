@@ -11,7 +11,7 @@ const MailAddresses = ({context, mailAddressesList}) => {
     <ul className={listClass}>
       {mailAddressesList.map( (mail, index) => (
         <li key={index}>
-          <a href={`mailto:${mail}`} target="_blank" rel="noopener noreferrer" key={index}>
+          <a href={`mailto:${mail}`} target="_blank" rel="noopener noreferrer" key={index} title={`Пошта ${index+1}`}>
             {mail}
           </a>
         </li>
