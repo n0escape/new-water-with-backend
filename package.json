@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "proxy": "http://localhost:5000",
   "private": true,
-  "homepage": "https://n0escape.github.io/new-water-with-backend/",
   "dependencies": {
     "@formspree/react": "^2.5.1",
     "@testing-library/jest-dom": "^5.17.0",
@@ -29,6 +28,7 @@
     "eject": "react-scripts eject",
     "server": "node server/server.js",
     "dev": "concurrently \"npm start\" \"npm run server\"",
+    "devVercel": "concurrently \"npm start\" \"vercel dev --listen 5000 --yes\"",
     "deploy": "gh-pages -d build",
     "predeploy": "npm run build"
   },

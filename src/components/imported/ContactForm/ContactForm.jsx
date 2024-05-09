@@ -115,7 +115,7 @@ const ContactForm = ({ servicesList, selectedService = null }) => {
 
     if (formValid) {
       try {
-        const response = await axios.post('/api/send-message', formDataToSend);
+        const response = await axios.post('/api/v1/send-message', formDataToSend);
     
         if (response.data.ok) {
           alert('Ваш запит відправлено! Ми зв\'яжемось з вами якомога раніше.');
