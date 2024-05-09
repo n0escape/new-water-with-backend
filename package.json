@@ -1,8 +1,9 @@
 {
-  "name": "water-well-project-react",
+  "name": "water-well-with-backend",
   "version": "0.1.0",
   "proxy": "http://localhost:5000",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "@formspree/react": "^2.5.1",
     "@testing-library/jest-dom": "^5.17.0",
