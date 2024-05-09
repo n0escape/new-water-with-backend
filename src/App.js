@@ -18,7 +18,6 @@ import LoaderPage from './components/pages/LoaderPage/LoaderPage.jsx';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 export const baseUrl = 'https://new-water.vercel.app';
-export const basePath = process.env.NODE_ENV === 'development' ? '/' : baseUrl;
 export const basePathData = process.env.NODE_ENV === 'development' ? process.env.PUBLIC_URL : baseUrl;
 
 const App = () => {
@@ -82,7 +81,7 @@ const App = () => {
         <meta name="twitter:image" content="/assets/openGraph/laptop.png" />
       </Helmet>
       <div>
-        <Router basename={basePath}>
+        <Router>
           <ScrollToHash />
           <ScrollToTop toTopIcon={data.generalIcons.toTopIcon} />
           <Header logo={data.generalIcons.logo} contactsIcon={data.generalIcons.callIcon} contacts={data.contacts}/>
