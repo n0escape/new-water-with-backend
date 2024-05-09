@@ -17,9 +17,9 @@ import { useEffect, useState } from 'react';
 import LoaderPage from './components/pages/LoaderPage/LoaderPage.jsx';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
-export const baseUrl = 'https://www.example.com';
-export const basePath = process.env.NODE_ENV === 'development' ? '/' : '/new-water-test/';
-export const basePathData = process.env.NODE_ENV === 'development' ? process.env.PUBLIC_URL : '/new-water-test/';
+export const baseUrl = 'https://new-water.vercel.app';
+export const basePath = process.env.NODE_ENV === 'development' ? '/' : '/';
+export const basePathData = process.env.NODE_ENV === 'development' ? process.env.PUBLIC_URL : '/';
 
 const App = () => {
 
