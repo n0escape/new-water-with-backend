@@ -11,7 +11,8 @@ const validateEmail = (email) => {
 
 // Функция для валидации номера телефона
 const validatePhone = (phone) => {
-  return /^\+380\d{9}$/.test(phone);
+  let tmpNumb = phone.replace(/[\s()]/g, "") // удаление пробелов и круглых скобок с введенного номера
+  return /(?:\+380|\b0)\d{2}\d{7}$/.test(tmpNumb);
 };
 
 const labelMap = {
@@ -82,7 +83,7 @@ const ContactForm = ({ servicesList, selectedService = null }) => {
     });
 
     if (!formData.name.value) {
-      setErrors(prevErrors => ({ ...prevErrors, name: 'Введіть будьласка ім\'я' }));
+      setErrors(prevErrors => ({ ...prevErrors, name: 'Введіть будь ласка ім\'я' }));
       formValid = false;
     } else {
       setErrors(prevErrors => (prevErrors.name !== '' ? ({ ...prevErrors }) : ({ ...prevErrors, name: '' })));
@@ -91,8 +92,8 @@ const ContactForm = ({ servicesList, selectedService = null }) => {
     if (!formData.email.value && !formData.phone.value) {
       setErrors(prevErrors => ({
         ...prevErrors,
-        email: 'Будь ласка, введіть або пошту або номер телефону, для зворотнього контакту',
-        phone: 'Будь ласка, введіть або пошту або номер телефону, для зворотнього контакту'
+        email: 'Будь ласка, введіть або пошту або номер телефону, для зворотнього зв\'язку',
+        phone: 'Будь ласка, введіть або пошту або номер телефону, для зворотнього зв\'язку'
       }));
       formValid = false;
     } else {
@@ -107,7 +108,10 @@ const ContactForm = ({ servicesList, selectedService = null }) => {
     }
 
     if (formData.phone.value && !validatePhone(formData.phone.value)) {
-      setErrors(prevErrors => ({ ...prevErrors, phone: 'Будь ласка, введіть валідний номер телефону, який починається з +380' }));
+      setErrors(prevErrors => ({
+        ...prevErrors,
+        phone: 'Будь ласка, введіть дійсний номер телефону, за наступним форматом (можна з пробілами): +38067.../ +38(067).../ 067.../ (067)...'
+      }));
       formValid = false;
     } else {
       setErrors(prevErrors => (prevErrors.phone !== '' ? ({ ...prevErrors }) : ({ ...prevErrors, phone: '' })));
@@ -143,60 +147,63 @@ const ContactForm = ({ servicesList, selectedService = null }) => {
       <div className={s.fields}>
         {Object.entries(formData).map(([fieldName, field]) => (
           <div key={fieldName} className={`${s.formGroup}`}>
-            {
-            fieldName === 'topic' ? (
-              <>
-                <label htmlFor={fieldName} className={`${s.topicLabel}`}>
-                    Оберіть тему
-                </label>
-                <select
-                  id={fieldName}
-                  name={fieldName}
-                  value={field.value}
-                  onChange={(e) => handleChange(fieldName, e.target.value)}
-                >
-                  {servicesList.map(service => ( 
-                    <option key={service.serviceId} value={service.serviceId}>{service.serviceName}</option>
-                  ))}
-                </select>
-              </>
-            ) : (
-              fieldName === 'message' ? (
-                <>
-                  <label htmlFor={fieldName} className={`${s.messageLabel}`}>
-                    Коментар
-                  </label>
-                  <textarea
-                    type={'text'}
-                    id={fieldName}
-                    name={fieldName}
-                    value={field.value}
-                    onChange={(e) => {handleChange(fieldName, e.target.value); handleChangeTextarea(e) }}
-                    className={`${field.filled ? s.filled : ''}`} // Применяем класс filled, если поле заполнено
-                  />
-                </>
-              ) : (
-                <>
-                  <input
-                    type={'text'}
-                    id={fieldName}
-                    name={fieldName}
-                    value={field.value}
-                    onChange={(e) => handleChange(fieldName, e.target.value)}
-                    className={`${s.inputField} ${field.filled ? s.filled : ''}`} // Применяем класс filled, если поле заполнено
-                  />
-                  <label htmlFor={fieldName} className={s.textFieldLable}>
-                    {labelMap[fieldName] || (fieldName.charAt(0).toUpperCase() + fieldName.slice(1))}
-                  </label>
-                </>
-              )
-            )}
+            <div className={`${s.formGroupItem}`}>
+              {
+                fieldName === 'topic' ? (
+                  <>
+                    <label htmlFor={fieldName} className={`${s.topicLabel}`}>
+                        Оберіть тему
+                    </label>
+                    <select
+                      id={fieldName}
+                      name={fieldName}
+                      value={field.value}
+                      onChange={(e) => handleChange(fieldName, e.target.value)}
+                    >
+                      {servicesList.map(service => ( 
+                        <option key={service.serviceId} value={service.serviceId}>{service.serviceName}</option>
+                      ))}
+                    </select>
+                  </>
+                ) : (
+                  fieldName === 'message' ? (
+                    <>
+                      <label htmlFor={fieldName} className={`${s.messageLabel}`}>
+                        Коментар
+                      </label>
+                      <textarea
+                        type={'text'}
+                        id={fieldName}
+                        name={fieldName}
+                        value={field.value}
+                        onChange={(e) => {handleChange(fieldName, e.target.value); handleChangeTextarea(e) }}
+                        className={`${field.filled ? s.filled : ''}`} // Применяем класс filled, если поле заполнено
+                      />
+                    </>
+                  ) : (
+                    <>
+                      <input
+                        type={'text'}
+                        id={fieldName}
+                        name={fieldName}
+                        value={field.value}
+                        onChange={(e) => handleChange(fieldName, e.target.value)}
+                        className={`${s.inputField} ${field.filled ? s.filled : ''}`} // Применяем класс filled, если поле заполнено
+                      />
+                      <label htmlFor={fieldName} className={s.textFieldLable}>
+                        {labelMap[fieldName] || (fieldName.charAt(0).toUpperCase() + fieldName.slice(1))}
+                      </label>
+                    </>
+                  )
+                )
+              }
+            </div>
             {/* Отображение ошибок */}
             {errors[fieldName] !== '' && <span style={{ color: 'red' }}>{errors[fieldName]}</span>}
           </div>
         ))}
       </div>
-      <div className={`${s.formGroup} ${s.submitBox}`}>
+      <div className={`${s.formGroupItem} ${s.submitBox}`}>
         <input type="submit" value="Відправити" />
       </div>
     </form>

@@ -1,6 +1,7 @@
 .container,
 .fields,
-.formGroup {
+.formGroup,
+.formGroupItem {
   width: 100%;
   max-width: 500px;
   box-sizing: border-box;
@@ -16,15 +17,15 @@
 .fields {
   gap: 18px; /*отступ между полями*/
 }
-.formGroup {
+.formGroupItem {
   position: relative;
   display: flex;
   justify-content: center;
 }
 
-.formGroup > .inputField,
-.formGroup > textarea,
-.formGroup > select {
+.formGroupItem > .inputField,
+.formGroupItem > textarea,
+.formGroupItem > select {
   font-size: 16px;
   line-height: 24px;
 
@@ -52,10 +53,10 @@
   -ms-transition: .5s;
   -o-transition: .5s;
 }
-.formGroup > select {
+.formGroupItem > select {
   padding: 12px 10px; /*внутренний отступ у select*/
 }
-.formGroup > textarea {
+.formGroupItem > textarea {
   resize: none;
   height: auto;
   min-height: 50px; /* Минимальная высота textarea, чтобы избежать слишком маленького размера */
@@ -64,7 +65,7 @@
 
 .topicLabel,
 .messageLabel,
-.formGroup .textFieldLable {
+.formGroupItem .textFieldLable {
   font-size: 16px;
   line-height: 24px;
   color: #888888;
@@ -85,10 +86,10 @@
 
 .topicLabel,
 .messageLabel,
-.formGroup .filled ~ .textFieldLable,
-.formGroup .inputField:focus ~ .textFieldLable {
-  padding: 0 10px;
-  /*внутреннийотступlabel(приактивацииполя)*/letter-spacing: .2em;
+.formGroupItem .filled ~ .textFieldLable,
+.formGroupItem .inputField:focus ~ .textFieldLable {
+  padding: 0 10px; /*внутренний отступ label (при активации поля)*/
+  letter-spacing: .2em;
   color: white;
   background-color: #888888;
   border: 1px solid #888888;
@@ -106,13 +107,13 @@
   -ms-transform: translateX(10px) translateY(10px);
   -o-transform: translateX(10px) translateY(10px);
 }
-.formGroup:has(.messageLabel) {
+.formGroupItem:has(.messageLabel) {
   justify-content: flex-start;
   align-items: flex-start;
   margin-top: -23px;
 }
 
-.formGroup  > select:focus-within{
+.formGroupItem  > select:focus-within{
   border-radius: 8px 8px 0 0;
   -webkit-border-radius: 8px 8px 0 0;
   -moz-border-radius: 8px 8px 0 0;
@@ -120,7 +121,7 @@
   -o-border-radius: 8px 8px 0 0;
 }
 
-.formGroup > input[type="submit"] {
+.formGroupItem > input[type="submit"] {
   font-size: 20px;
   line-height: 28px;
 
@@ -146,7 +147,7 @@
   .container {
     gap: 20px; /*отступ между кнопкой и полями*/
   }
-  .formGroup > input[type="submit"] {
+  .formGroupItem > input[type="submit"] {
     width: 100%;
     padding: 12px 8px;
   }
