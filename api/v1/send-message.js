@@ -10,7 +10,7 @@ let lastApiRequestTime = 0;
 module.exports = async (req, res) => {
 
     // Устанавливаем заголовки CORS
-    res.setHeader('Access-Control-Allow-Origin', 'https://new-water.vercel.app');
+    //res.setHeader('Access-Control-Allow-Origin', 'https://new-water.vercel.app');
     res.setHeader('Access-Control-Allow-Methods', 'POST');
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 

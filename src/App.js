@@ -5,16 +5,21 @@ import NotFound from './components/pages/NotFound/NotFound.jsx';
 import MainPage from './components/pages/MainPage/MainPage.jsx';
 import ServicePage from './components/pages/ServicePage/ServicePage.jsx';
 import OrderPage from './components/pages/OrderPage/OrderPage.jsx';
+import LoaderPage from './components/pages/LoaderPage/LoaderPage.jsx';
+
 import Header from './components/general/Header/Header.jsx';
 import Footer from './components/general/Footer/Footer.jsx';
+
+import ScrollToTop from './components/general/ScrollToTop/ScrollToTop.jsx';
 import BreadcrumbList from './components/microMarkups/BreadcrumbList.jsx';
 import LocalBusiness from './components/microMarkups/LocalBusiness.jsx';
-import pageUpTrick from './utils/pageUpTrick.js';
 
+import pageUpTrick from './utils/pageUpTrick.js';
 import ScrollToHash from './utils/scrollToHash.js';
-import ScrollToTop from './components/general/ScrollToTop/ScrollToTop.jsx';
+
+import generateSitemap from './utils/generateSitemap';
+
 import { useEffect, useState } from 'react';
-import LoaderPage from './components/pages/LoaderPage/LoaderPage.jsx';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 export const baseUrl = 'https://new-water.vercel.app';
@@ -45,6 +50,8 @@ const App = () => {
 
         setData(data);
         setServicesList(getServicesList(data.services))
+        // autofill sitemap.xml
+        // generateSitemap(data.services);
       } finally {
         setLoading(false);
         pageUpTrick();
