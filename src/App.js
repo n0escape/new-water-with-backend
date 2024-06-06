@@ -51,7 +51,7 @@ const App = () => {
         setData(data);
         setServicesList(getServicesList(data.services))
         // autofill sitemap.xml
-        generateSitemap(data.services);
+        // generateSitemap(data.services);
       } finally {
         setLoading(false);
         pageUpTrick();
