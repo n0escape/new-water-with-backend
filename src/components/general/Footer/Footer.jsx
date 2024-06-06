@@ -31,9 +31,11 @@ const Footer = ({logo, contacts}) => {
             <SocialMedias context={'footer'} socialMediasList={contacts.socialMedias} />
           </div>
         </div>
+        {/*
         <div className={s.rights}>
           <p>© 2024 New water | All Rights Reserved</p>
         </div>
+        */}
     </footer>
   )
 }

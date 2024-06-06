@@ -1,124 +1,143 @@
 {
   "generalIcons": {
-    "logo": "/assets/general/logo-template.png",
+    "logo": "/assets/general/logo.png",
     "toTopIcon": "/assets/general/pageUp.png",
     "callIcon": "/assets/general/call.png"
   },
   "aboutUs": {
     "companyName": "New Water",
-    "companyDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla. Donec placerat condimentum aliquet. Vivamus ac tellus sed mi fringilla maximus in sed tellus. Nam venenatis nulla non purus feugiat pharetra. Duis rhoncus dignissim suscipit. Nulla pretium arcu in lectus malesuada, vel viverra lacus consequat. Aliquam eget congue velit. Phasellus congue eu ligula ut dignissim. Integer at lectus volutpat, vulputate metus non, faucibus mauris. Curabitur malesuada, dui ac tincidunt euismod, elit risus lobortis lacus, sit amet suscipit magna dui sed libero. Ut convallis risus id facilisis scelerisque. Pellentesque semper massa et urna finibus facilisis. Vestibulum placerat metus varius nulla cursus, id tristique lorem luctus. Sed sit amet sagittis justo. Cras tempor, quam quis sagittis gravida, lorem justo facilisis turpis, vitae sollicitudin leo erat vel felis. Donec sed enim egestas, faucibus odio eget, pulvinar mauris. Phasellus sagittis sit amet purus eget porta. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam erat volutpat.",
+    "companyDescription": "Наша компанія з досвідом роботи понад 10 років пропонує буріння свердловин в Харкові та Харківській області.\nБагаторічний досвід компанії дозволяє з упевненністю заявити - ми кращі в своїй галузі!\nГоловне в нашій роботі, що дозволяє досягти ефективного результату – це досвід.\nЗнання в галузі гідрогеології, компетентність у бурінні та власне обладнання є запорукою якісного виконання робіт. Ми пропонуємо гнучку конкурентну цінову політику і комплексне виконання робіт «під ключ».\nЗа роки своєї роботи ми маємо безліч клієнтів по всій Слобожанщині,  підтверджуємо бездоганність репутації щоденною працею\nМи готові надати бурильні роботи на максимально вигідних для Вас умовах.",
     "advantages": [
       {
-        "title": "Advantage title 1",
-        "description": "Mini description about advantage..."
+        "title": "Роки досвіду",
+        "description": "Більше 13 років роботи в цій галузі"
       },
       {
-        "title": "Advantage title 2",
-        "description": "Mini description about advantage..."
+        "title": "Величезна кількість виконаних робіт",
+        "description": "Більше 1000 встановлених скважин"
       },
       {
-        "title": "Advantage title 3",
-        "description": "Mini description about advantage..."
+        "title": "Різнопланові роботи",
+        "description": "Наша команда може розробляти скважини на глибині від 12 до 120 метрів"
       },
       {
-        "title": "Advantage title 4",
-        "description": "Mini description about advantage..."
+        "title": "Задоволені клієнти",
+        "description": "Величезна кількість клієнтів задоволених нашею роботою"
       }
     ]
   },
   "services": [
     {
-      "id": "pump-installation",
-      "title": "Установка насосів",
-      "minPrice": "3000грн",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla.",
-      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh.",
+      "id": "drilling-water-wells",
+      "title": "Буріння свердловин на воду",
+      "minPrice": "???",
+      "description": "Професійне буріння свердловин для забезпечення вашого дому чистою водою. Гарантуємо якісну роботу та довговічність свердловин. Буріння свердловини відбувається малогабаритною установкою, яка передбачає розміщення техніки навіть на невеликих ділянках.\n\nБуріння свердловини  на воду – найкраще вирішення проблеми водопостачання  будинків, де відсутнє централізоване водопостачання. Ви не будете залежити від постачальників води, тому що свердловина на воду- це Ваша власність.\nМи допоможемо Вам обрати самий оптимальний варіант, який відповідає Вашим запитам.\nМи працюємо на результат!",
       "photos": [
-        {"imageSrc":"/assets/srevices/pump-installation/Media1.png", "title":"Зображення до послуги установки насосів 11"},
-        {"imageSrc":"/assets/srevices/pump-installation/Media2.png", "title":"Зображення до послуги установки насосів 12"},
-        {"imageSrc":"/assets/srevices/pump-installation/Media3.png", "title":"Зображення до послуги установки насосів 13"}
+        {"imageSrc":"/assets/srevices/drilling-water-wells/Media1.png", "title":"Зображення до послуги буріння водних свердловин 1"},
+        {"imageSrc":"/assets/srevices/drilling-water-wells/Media2.png", "title":"Зображення до послуги буріння водних свердловин 2"},
+        {"imageSrc":"/assets/srevices/drilling-water-wells/Media3.png", "title":"Зображення до послуги буріння водних свердловин 3"}
       ],
       "priceExplanation": [
-        {"title": "Робота:", "price": "700грн"},
-        {"title": "Прилад:", "price": "1500грн"},
-        {"title": "Додаткові інструменти:", "price": "300грн"},
-        {"title": "Витрати на шлях:", "price": "200грн"}
+        {"title": "Робота:", "price": "???"},
+        {"title": "Прилад:", "price": "???"},
+        {"title": "Додаткові інструменти:", "price": "???"},
+        {"title": "Витрати на шлях:", "price": "???"}
       ],
       "whatYouWillGet": [
-        "some text point",
-        "some text point",
-        "some text point",
-        "some text point"
+        "Роботу з сертифікованих матеріалів",
+        "Перевірка геологічних умов для буріння скважини",
+        "Прорахування продуктивності свердловини",
+        "Акуратна робота",
+        "Гарантію на виконані роботи",
+        "Консультації по подальшому облаштуванню",
+        "Готова для облаштування водна свердловна"
       ]
     },
     {
-      "id": "drilling-of-the-wells",
-      "title": "Буріння свердловин",
-      "minPrice": "2000грн",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla.",
-      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh.",
+      "id": "arrangement-of-water-wells",
+      "title": "Облаштування свердловин на воду",
+      "minPrice": "???",
+      "description": "Комплексне облаштування свердловин для ефективного водопостачання. Ми надаємо всі необхідні послуги для запуску свердловини в експлуатацію. Дана послуга включає в себе різні аспекти робіт по облаштуванню свердловини для їх подальшого використання, до таких робот відносятся: установка насоса, організація системи водопостачання до приміщення, монтаж гідроакумуляторів тощо.",
       "photos": [
-        {"imageSrc":"/assets/srevices/drilling-of-the-wells/Media1.png", "title":"Зображення до послуги буріння свердловин 11"},
-        {"imageSrc":"/assets/srevices/drilling-of-the-wells/Media2.png", "title":"Зображення до послуги буріння свердловин 12"},
-        {"imageSrc":"/assets/srevices/drilling-of-the-wells/Media3.png", "title":"Зображення до послуги буріння свердловин 13"}
+        {"imageSrc":"/assets/srevices/arrangement-of-water-wells/Media1.png", "title":"Зображення облаштування свердловин 1"},
+        {"imageSrc":"/assets/srevices/arrangement-of-water-wells/Media2.png", "title":"Зображення облаштування свердловин 2"},
+        {"imageSrc":"/assets/srevices/arrangement-of-water-wells/Media3.png", "title":"Зображення облаштування свердловин 3"}
       ],
       "priceExplanation": [
-        {"title": "Робота:", "price": "1000грн"},
-        {"title": "Додаткові інструменти:", "price": "500грн"},
-        {"title": "Витрати на шлях:", "price": "200грн"}
+        {"title": "Робота:", "price": "???"},
+        {"title": "Додаткові інструменти:", "price": "???"},
+        {"title": "Витрати на шлях:", "price": "???"}
       ],
       "whatYouWillGet": [
-        "some text point",
-        "some text point",
-        "some text point",
-        "some text point"
+        "Якісну роботу",
+        "Установку насосного обладнання",
+        "Організоовану система постачання води",
+        "Вмонтований гідроаккумулятор",
+        "Оснащенну та повністю готову для використання скважина"
       ]
     },
     {
-      "id": "pump-installation-2",
-      "title": "Установка насосів 2",
-      "minPrice": "3000грн",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla.",
-      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh.",
+      "id": "water-purification",
+      "title": "Очищення води",
+      "minPrice": "???",
+      "description": "Встановлення систем очищення води для забезпечення високої якості питної води у вашому домі або подвір'ї. Вода буде безпечна для вживання та використання.",
       "photos": [
-        {"imageSrc":"/assets/srevices/pump-installation/Media1.png", "title":"Зображення до послуги установки насосів 21"},
-        {"imageSrc":"/assets/srevices/pump-installation/Media2.png", "title":"Зображення до послуги установки насосів 22"},
-        {"imageSrc":"/assets/srevices/pump-installation/Media3.png", "title":"Зображення до послуги установки насосів 23"}
+        {"imageSrc":"/assets/srevices/water-purification/Media1.png", "title":"Зображення до послуги очищення води 1"},
+        {"imageSrc":"/assets/srevices/water-purification/Media2.png", "title":"Зображення до послуги очищення води 2"},
+        {"imageSrc":"/assets/srevices/water-purification/Media3.png", "title":"Зображення до послуги очищення води 3"}
       ],
       "priceExplanation": [
-        {"title": "Робота:", "price": "700грн"},
-        {"title": "Прилад:", "price": "1500грн"},
-        {"title": "Додаткові інструменти:", "price": "300грн"},
-        {"title": "Витрати на шлях:", "price": "200грн"}
+        {"title": "Робота:", "price": "???"},
+        {"title": "Прилад:", "price": "???"},
+        {"title": "Додаткові інструменти:", "price": "???"},
+        {"title": "Витрати на шлях:", "price": "???"}
       ],
       "whatYouWillGet": [
-        "some text point",
-        "some text point",
-        "some text point",
-        "some text point"
+        "Швидку та висококваліфіковану роботу",
+        "Встановлену систему очищення води",
+        "Консультації з поліпшення якості води"
       ]
     },
     {
-      "id": "drilling-of-the-wells-2",
-      "title": "Буріння свердловин 2",
-      "minPrice": "2000грн",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla.",
-      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh.",
+      "id": "repair-of-wells",
+      "title": "Ремонт свердловин",
+      "minPrice": "???",
+      "description": "Повний ремонт та відновлення функціональності свердловини. Видалення осадів для покращення продуктивності та якості води.",
       "photos": [
-        {"imageSrc":"/assets/srevices/drilling-of-the-wells/Media1.png", "title":"Зображення до послуги буріння свердловин 21"},
-        {"imageSrc":"/assets/srevices/drilling-of-the-wells/Media2.png", "title":"Зображення до послуги буріння свердловин 22"},
-        {"imageSrc":"/assets/srevices/drilling-of-the-wells/Media3.png", "title":"Зображення до послуги буріння свердловин 23"}
+        {"imageSrc":"/assets/srevices/repair-of-wells/Media1.png", "title":"Зображення ремонту свердловини 1"},
+        {"imageSrc":"/assets/srevices/repair-of-wells/Media2.png", "title":"Зображення ремонту свердловини 2"},
+        {"imageSrc":"/assets/srevices/repair-of-wells/Media3.png", "title":"Зображення ремонту свердловини 3"}
       ],
       "priceExplanation": [
-        {"title": "Робота:", "price": "1000грн"},
-        {"title": "Додаткові інструменти:", "price": "500грн"},
-        {"title": "Витрати на шлях:", "price": "200грн"}
+        {"title": "Робота:", "price": "???"},
+        {"title": "Додаткові інструменти:", "price": "???"},
+        {"title": "Витрати на шлях:", "price": "???"}
       ],
       "whatYouWillGet": [
-        "some text point",
-        "some text point",
-        "some text point",
-        "some text point"
+        "Якісну роботу",
+        "Профілактичні заходи для попередження повторних забруднень",
+        "Очищенну свердловину від ілу, піску та осаду"
+      ]
+    },
+    {
+      "id": "uninstallation-of-pumps",
+      "title": "Демонтаж насосів",
+      "minPrice": "???",
+      "description": "Безпечне та професійне витягування залишених у свердловині насосів. Гарантуємо збереження цілісності свердловини та обладнання.",
+      "photos": [
+        {"imageSrc":"/assets/srevices/uninstallation-of-pumps/Media1.png", "title":"Зображення демонтажу насосів 1"},
+        {"imageSrc":"/assets/srevices/uninstallation-of-pumps/Media2.png", "title":"Зображення демонтажу насосів 2"},
+        {"imageSrc":"/assets/srevices/uninstallation-of-pumps/Media3.png", "title":"Зображення демонтажу насосів 3"}
+      ],
+      "priceExplanation": [
+        {"title": "Робота:", "price": "???"},
+        {"title": "Додаткові інструменти:", "price": "???"},
+        {"title": "Витрати на шлях:", "price": "???"}
+      ],
+      "whatYouWillGet": [
+        "Безпечне вилучення насоса",
+        "Рекомендації щодо подальших дій",
+        "Акуратна та висококваліфікована робота"
       ]
     }
   ],
@@ -210,14 +229,13 @@
       }
     ],
     "phoneNumbers": [
-      "+380503455353",
-      "+380675254242"
+      "+380971193265"
     ],
     "mailAddresses": [
       "exampleEmail@gmail.com",
       "companyMail@gmail.com"
     ],
-    "schedule": "Пн - Пт 9:00 - 18:00",
+    "schedule": "Кожен день 9:00 - 21:00",
     "socialMedias": [
       {
         "id": "telegram",

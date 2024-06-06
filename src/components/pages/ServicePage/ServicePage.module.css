@@ -32,6 +32,9 @@
     line-height: 22px;
     color: #888888;
 }
+.serviceDetails p {
+    white-space: pre-wrap;
+}
 .list {
     display: flex;
     flex-direction: column;

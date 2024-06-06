@@ -30,8 +30,8 @@
     display: block;
     margin: 0;
     padding: 0;
-    width: 80px;
-    height: 80px;
+    width: 40px;
+    height: 60px;
 }
 /*Header Links*/
 .nav {
@@ -136,7 +136,7 @@
         gap: 4px 24px;
     }
     .logo a img {
-        width: 52px;
+        width: 39px;
         height: 52px;
     }
     .contactsBlock {

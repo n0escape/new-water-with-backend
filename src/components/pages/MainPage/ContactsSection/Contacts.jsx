@@ -11,7 +11,7 @@ const Contacts = ({contacts}) => (
           </h2>
         </div>
         <div className={s.contactsBox}>
-          <MapFrame content={'office'} markers={contacts.offices}/>
+          {/* <MapFrame content={'office'} markers={contacts.offices}/> */}
           <div className={s.contactsList}>
             <ContactsInfo context={'contacts'} contacts={contacts}/>
             <SocialMedias context={'contacts'} socialMediasList={contacts.socialMedias} />

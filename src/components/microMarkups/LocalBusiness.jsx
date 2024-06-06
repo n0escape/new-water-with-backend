@@ -22,7 +22,9 @@ const LocalBusiness = ({data}) => {
                     "Tuesday",
                     "Wednesday",
                     "Thursday",
-                    "Friday"
+                    "Friday",
+                    "Saturday",
+                    "Sunday"
                 ],
                 "opens": data.contacts.schedule.match(/\d{1,2}:\d{2}/g)[0],
                 "closes": data.contacts.schedule.match(/\d{1,2}:\d{2}/g)[1]

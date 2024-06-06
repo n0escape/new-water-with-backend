@@ -5,7 +5,7 @@ const Product = ({serviceData, canonicalUrl}) => {
         "@context": "http://schema.org",
         "@type": "Product",
         "name": `${serviceData.title}`,
-        "description": `${serviceData.shortDescription}`,
+        "description": `${serviceData.description}`,
         "image": `${baseUrl}${serviceData.photos[0]}`,
         "offers": {
           "@type": "AggregateOffer",
