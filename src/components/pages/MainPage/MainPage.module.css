@@ -10,9 +10,9 @@ body {
     padding: 0;
 }
 
-.anchorAboutUs, .anchorServices, 
-.anchorContacts, .anchorContactUs,
-.anchorOurWorks {
+.anchorAboutUs, .anchorServices,
+.anchorMaterials, .anchorOurWorks,
+.anchorContacts, .anchorContactUs {
     display: block;
     visibility: hidden;
     height: 100px;
@@ -22,9 +22,9 @@ body {
     margin-top: -100px;
 }
 @media screen and (max-width: 600px) {
-    .anchorAboutUs, .anchorServices, 
-    .anchorContacts, .anchorContactUs,
-    .anchorOurWorks {
+    .anchorAboutUs, .anchorServices,
+    .anchorMaterials, .anchorOurWorks,  
+    .anchorContacts, .anchorContactUs {
         height: 60px;
     }
     .anchorAboutUs {

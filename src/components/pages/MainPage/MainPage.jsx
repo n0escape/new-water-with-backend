@@ -2,6 +2,7 @@ import React from 'react';
 import s from './MainPage.module.css';
 import AboutUs from './AboutUsSection/AboutUs.jsx';
 import Services from './ServicesSection/Services.jsx';
+import Materials from './MaterialsSection/Materials.jsx';
 import OurWorks from './OurWorksSection/OurWorks.jsx';
 import ContactUs from './ContactUsSection/ContactUs.jsx';
 import Contacts from './ContactsSection/Contacts';
@@ -9,7 +10,7 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { baseUrl } from '../../../App.js';
 import ImageGallery from '../../microMarkups/ImageGallery.jsx';
 
-const MainPage = ({ aboutUs, services, ourWorks, servicesList, contacts }) => {
+const MainPage = ({ aboutUs, services, materials, ourWorks, servicesList, contacts }) => {
   return (
     <HelmetProvider>
       <Helmet>
@@ -33,6 +34,9 @@ const MainPage = ({ aboutUs, services, ourWorks, servicesList, contacts }) => {
 
         <div id="anchorServices" className={s.anchorServices}></div>
         <Services services={services} />
+
+        <div id="anchorMaterials" className={s.anchorMaterials}></div>
+        <Materials materials={materials} />
 
         <div id="anchorOurWorks" className={s.anchorOurWorks}></div>
         <OurWorks ourWorks={ourWorks} />

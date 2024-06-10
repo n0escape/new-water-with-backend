@@ -94,7 +94,7 @@ const App = () => {
           <Header logo={data.generalIcons.logo} contactsIcon={data.generalIcons.callIcon} contacts={data.contacts}/>
           <div className="pageContent">
             <Routes>
-              <Route exact path="/" element={<MainPage aboutUs={data.aboutUs} services={data.services} ourWorks={data.ourWorks} servicesList={servicesList} contacts={data.contacts}/>} />
+              <Route exact path="/" element={<MainPage aboutUs={data.aboutUs} services={data.services} materials={data.materials} ourWorks={data.ourWorks} servicesList={servicesList} contacts={data.contacts}/>} />
               <Route path="/service/:idFromUrl" element={<ServicePage services={data.services}/>} />
               <Route path="/order/:idService" element={<OrderPage servicesList={servicesList} />} />
               <Route path="*" element={<NotFound />} />

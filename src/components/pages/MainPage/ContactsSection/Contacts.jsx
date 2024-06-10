@@ -1,4 +1,4 @@
-import MapFrame from '../../../imported/Map/Map'
+//import MapFrame from '../../../imported/Map/Map'
 import ContactsInfo from '../../../general/ContactsInfo/ContactsInfo'
 import SocialMedias from '../../../general/SocialMedias/SocialMedias'
 import s from './Contacts.module.css'
