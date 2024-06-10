@@ -10,10 +10,6 @@ body {
     padding: 0;
 }
 
-.generalOutput {
-    background-color: aliceblue;
-}
-
 .anchorAboutUs, .anchorServices, 
 .anchorContacts, .anchorContactUs,
 .anchorOurWorks {

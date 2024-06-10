@@ -6,23 +6,32 @@
   },
   "aboutUs": {
     "companyName": "New Water",
-    "companyDescription": "Наша компанія з досвідом роботи понад 10 років пропонує буріння свердловин в Харкові та Харківській області.\nБагаторічний досвід компанії дозволяє з упевненністю заявити - ми кращі в своїй галузі!\nГоловне в нашій роботі, що дозволяє досягти ефективного результату – це досвід.\nЗнання в галузі гідрогеології, компетентність у бурінні та власне обладнання є запорукою якісного виконання робіт. Ми пропонуємо гнучку конкурентну цінову політику і комплексне виконання робіт «під ключ».\nЗа роки своєї роботи ми маємо безліч клієнтів по всій Слобожанщині,  підтверджуємо бездоганність репутації щоденною працею\nМи готові надати бурильні роботи на максимально вигідних для Вас умовах.",
-    "advantages": [
+    "slogan": [
+      "Буріння свердловин",
+      "у Харкові та в області"
+    ],
+    "companyDescription": [
+      "Наша компанія з досвідом роботи понад 10 років пропонує буріння свердловин в Харкові та Харківській області.Багаторічний досвід компанії дозволяє з упевненністю заявити - ми кращі в своїй галузі!\n",
+      "Головне в нашій роботі, що дозволяє досягти ефективного результату – це досвід.\n",
+      "Знання в галузі гідрогеології, компетентність у бурінні та власне обладнання є запорукою якісного виконання робіт. Ми пропонуємо гнучку конкурентну цінову політику і комплексне виконання робіт «під ключ».За роки своєї роботи ми маємо безліч клієнтів по всій Слобожанщині,  підтверджуємо бездоганність репутації щоденною працею\n",
+      "Ми готові надати бурильні роботи на максимально вигідних для Вас умовах."
+    ],
+    "mainSteps": [
       {
-        "title": "Роки досвіду",
-        "description": "Більше 13 років роботи в цій галузі"
+        "title": "1. Заявка на роботи",
+        "description": "Ви зв’язуєтеся з нами у зручний для вас спосіб: дзвінок, лист на пошту або заявка з сайту"
       },
       {
-        "title": "Величезна кількість виконаних робіт",
-        "description": "Більше 1000 встановлених скважин"
+        "title": "2. Розрахунок вартості",
+        "description": "Наш спеціаліст виїжджає на місце буріння, прораховує  водоносний горизонт та складає детальний кошторис робіт"
       },
       {
-        "title": "Різнопланові роботи",
-        "description": "Наша команда може розробляти скважини на глибині від 12 до 120 метрів"
+        "title": "3. Буріння свердловини",
+        "description": "Після підписання договору швидко та якісно проводимо бурові роботи, встановлюємо обсадні труби та прокачуємо скважину до чистої води"
       },
       {
-        "title": "Задоволені клієнти",
-        "description": "Величезна кількість клієнтів задоволених нашею роботою"
+        "title": "4. Оплата і гарантії",
+        "description": "При Вас виміряємо глибину скважини, підписуємо Акт прийому-передачі, проводимо розрахунок та видаємо паспорт і гарантію на свердловину"
       }
     ]
   },
@@ -33,9 +42,9 @@
       "minPrice": "???",
       "description": "Професійне буріння свердловин для забезпечення вашого дому чистою водою. Гарантуємо якісну роботу та довговічність свердловин. Буріння свердловини відбувається малогабаритною установкою, яка передбачає розміщення техніки навіть на невеликих ділянках.\n\nБуріння свердловини  на воду – найкраще вирішення проблеми водопостачання  будинків, де відсутнє централізоване водопостачання. Ви не будете залежити від постачальників води, тому що свердловина на воду- це Ваша власність.\nМи допоможемо Вам обрати самий оптимальний варіант, який відповідає Вашим запитам.\nМи працюємо на результат!",
       "photos": [
-        {"imageSrc":"/assets/srevices/drilling-water-wells/Media1.png", "title":"Зображення до послуги буріння водних свердловин 1"},
-        {"imageSrc":"/assets/srevices/drilling-water-wells/Media2.png", "title":"Зображення до послуги буріння водних свердловин 2"},
-        {"imageSrc":"/assets/srevices/drilling-water-wells/Media3.png", "title":"Зображення до послуги буріння водних свердловин 3"}
+        {"imageSrc":"/assets/components/srevices/drilling-water-wells/Media1.png", "title":"Зображення до послуги буріння водних свердловин 1"},
+        {"imageSrc":"/assets/components/srevices/drilling-water-wells/Media2.png", "title":"Зображення до послуги буріння водних свердловин 2"},
+        {"imageSrc":"/assets/components/srevices/drilling-water-wells/Media3.png", "title":"Зображення до послуги буріння водних свердловин 3"}
       ],
       "priceExplanation": [
         {"title": "Робота"},
@@ -59,9 +68,9 @@
       "minPrice": "???",
       "description": "Комплексне облаштування свердловин для ефективного водопостачання. Ми надаємо всі необхідні послуги для запуску свердловини в експлуатацію. Дана послуга включає в себе різні аспекти робіт по облаштуванню свердловини для їх подальшого використання, до таких робот відносятся: установка насоса, організація системи водопостачання до приміщення, монтаж гідроакумуляторів тощо.",
       "photos": [
-        {"imageSrc":"/assets/srevices/arrangement-of-water-wells/Media1.png", "title":"Зображення облаштування свердловин 1"},
-        {"imageSrc":"/assets/srevices/arrangement-of-water-wells/Media2.png", "title":"Зображення облаштування свердловин 2"},
-        {"imageSrc":"/assets/srevices/arrangement-of-water-wells/Media3.png", "title":"Зображення облаштування свердловин 3"}
+        {"imageSrc":"/assets/components/srevices/arrangement-of-water-wells/Media1.png", "title":"Зображення облаштування свердловин 1"},
+        {"imageSrc":"/assets/components/srevices/arrangement-of-water-wells/Media2.png", "title":"Зображення облаштування свердловин 2"},
+        {"imageSrc":"/assets/components/srevices/arrangement-of-water-wells/Media3.png", "title":"Зображення облаштування свердловин 3"}
       ],
       "priceExplanation": [
         {"title": "Робота"},
@@ -82,9 +91,9 @@
       "minPrice": "???",
       "description": "Встановлення систем очищення води для забезпечення високої якості питної води у вашому домі або подвір'ї. Вода буде безпечна для вживання та використання.",
       "photos": [
-        {"imageSrc":"/assets/srevices/water-purification/Media1.png", "title":"Зображення до послуги очищення води 1"},
-        {"imageSrc":"/assets/srevices/water-purification/Media2.png", "title":"Зображення до послуги очищення води 2"},
-        {"imageSrc":"/assets/srevices/water-purification/Media3.png", "title":"Зображення до послуги очищення води 3"}
+        {"imageSrc":"/assets/components/srevices/water-purification/Media1.png", "title":"Зображення до послуги очищення води 1"},
+        {"imageSrc":"/assets/components/srevices/water-purification/Media2.png", "title":"Зображення до послуги очищення води 2"},
+        {"imageSrc":"/assets/components/srevices/water-purification/Media3.png", "title":"Зображення до послуги очищення води 3"}
       ],
       "priceExplanation": [
         {"title": "Робота"},
@@ -104,9 +113,9 @@
       "minPrice": "???",
       "description": "Повний ремонт та відновлення функціональності свердловини. Видалення осадів для покращення продуктивності та якості води.",
       "photos": [
-        {"imageSrc":"/assets/srevices/repair-of-wells/Media1.png", "title":"Зображення ремонту свердловини 1"},
-        {"imageSrc":"/assets/srevices/repair-of-wells/Media2.png", "title":"Зображення ремонту свердловини 2"},
-        {"imageSrc":"/assets/srevices/repair-of-wells/Media3.png", "title":"Зображення ремонту свердловини 3"}
+        {"imageSrc":"/assets/components/srevices/repair-of-wells/Media1.png", "title":"Зображення ремонту свердловини 1"},
+        {"imageSrc":"/assets/components/srevices/repair-of-wells/Media2.png", "title":"Зображення ремонту свердловини 2"},
+        {"imageSrc":"/assets/components/srevices/repair-of-wells/Media3.png", "title":"Зображення ремонту свердловини 3"}
       ],
       "priceExplanation": [
         {"title": "Робота"},
@@ -125,9 +134,9 @@
       "minPrice": "???",
       "description": "Безпечне та професійне витягування залишених у свердловині насосів. Гарантуємо збереження цілісності свердловини та обладнання.",
       "photos": [
-        {"imageSrc":"/assets/srevices/uninstallation-of-pumps/Media1.png", "title":"Зображення демонтажу насосів 1"},
-        {"imageSrc":"/assets/srevices/uninstallation-of-pumps/Media2.png", "title":"Зображення демонтажу насосів 2"},
-        {"imageSrc":"/assets/srevices/uninstallation-of-pumps/Media3.png", "title":"Зображення демонтажу насосів 3"}
+        {"imageSrc":"/assets/components/srevices/uninstallation-of-pumps/Media1.png", "title":"Зображення демонтажу насосів 1"},
+        {"imageSrc":"/assets/components/srevices/uninstallation-of-pumps/Media2.png", "title":"Зображення демонтажу насосів 2"},
+        {"imageSrc":"/assets/components/srevices/uninstallation-of-pumps/Media3.png", "title":"Зображення демонтажу насосів 3"}
       ],
       "priceExplanation": [
         {"title": "Робота"},
@@ -148,7 +157,7 @@
       "location": [50.45, 30.5233],
       "address": null,
       "date": null,
-      "imageSrc": "/assets/ourWorks/work1/workImage.png"
+      "imageSrc": "/assets/components/ourWorks/work1/workImage.png"
     },
     {
       "title": "Title about work 2",
@@ -156,7 +165,7 @@
       "location": [48.45, 35.0167],
       "address": "м. Харків, вул. Полтавський шлях 22",
       "date": "13.05.2023",
-      "imageSrc": "/assets/ourWorks/work2/workImage.png"
+      "imageSrc": "/assets/components/ourWorks/work2/workImage.png"
     },
     {
       "title": "Title about work 3",
@@ -164,7 +173,7 @@
       "location": [46.48, 30.7326],
       "address": "м. Харків, вул. Петра Болобочана 9",
       "date": "20.03.2022",
-      "imageSrc": "/assets/ourWorks/work3/workImage.png"
+      "imageSrc": "/assets/components/ourWorks/work3/workImage.png"
     },
     {
       "title": "Title about work 4",
@@ -172,7 +181,7 @@
       "location": [47.45, 34.5233],
       "address": "м. Харків, пров. Степовий 41",
       "date": null,
-      "imageSrc": "/assets/ourWorks/work1/workImage.png"
+      "imageSrc": "/assets/components/ourWorks/work1/workImage.png"
     },
     {
       "title": "Title about work 5",
@@ -180,7 +189,7 @@
       "location": [42.45, 32.0167],
       "address": null,
       "date": "13.05.2023",
-      "imageSrc": "/assets/ourWorks/work2/workImage.png"
+      "imageSrc": "/assets/components/ourWorks/work2/workImage.png"
     },
     {
       "title": "Title about work 6",
@@ -188,7 +197,7 @@
       "location": [46.48, 36.7326],
       "address": null,
       "date": "20.03.2022",
-      "imageSrc": "/assets/ourWorks/work3/workImage.png"
+      "imageSrc": "/assets/components/ourWorks/work3/workImage.png"
     },
     {
       "title": "Title about work 7",
@@ -196,7 +205,7 @@
       "location": [56.45, 25.5233],
       "address": null,
       "date": null,
-      "imageSrc": "/assets/ourWorks/work1/workImage.png"
+      "imageSrc": "/assets/components/ourWorks/work1/workImage.png"
     },
     {
       "title": "Title about work 8",
@@ -204,7 +213,7 @@
       "location": [45.45, 31.0167],
       "address": null,
       "date": "13.05.2023",
-      "imageSrc": "/assets/ourWorks/work2/workImage.png"
+      "imageSrc": "/assets/components/ourWorks/work2/workImage.png"
     },
     {
       "title": "Title about work 9",
@@ -212,7 +221,7 @@
       "location": [41.48, 25.7326],
       "address": null,
       "date": "20.03.2022",
-      "imageSrc": "/assets/ourWorks/work3/workImage.png"
+      "imageSrc": "/assets/components/ourWorks/work3/workImage.png"
     }
   ],
   "contacts": {
@@ -240,12 +249,12 @@
       {
         "id": "telegram",
         "url": "https://t.me/example",
-        "src": "/assets/socialMedias/telegram.png"
+        "src": "/assets/components/socialMedias/telegram.png"
       },
       {
         "id": "facebook",
         "url": "https://facebook.com/example",
-        "src": "/assets/socialMedias/facebook.png"
+        "src": "/assets/components/socialMedias/facebook.png"
       }
     ]
   }

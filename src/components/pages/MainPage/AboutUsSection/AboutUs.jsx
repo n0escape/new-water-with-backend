@@ -1,25 +1,47 @@
+import React from 'react'
 import s from './AboutUs.module.css'
 import { Link } from "react-router-dom"
 
 const AboutUs = ({aboutUs}) => (
-    <section id={s.aboutUs}>
+    <section 
+      id={s.aboutUs} 
+      style={{
+        background: `url('${process.env.PUBLIC_URL}/assets/components/aboutUs/aboutUs_bg.png')`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center'
+      }}
+    >
         <div className={s.details}>
-          <h1>{aboutUs.companyName}</h1>
-          <p>{aboutUs.companyDescription}</p>
+          <div className={s.headline}>
+            <h1>{aboutUs.companyName}</h1>
+              <div className={s.slogan}>
+                {aboutUs.slogan.map((element,index) => (
+                  <p key={index}>{element}</p>
+                ))}
+              </div>
+          </div>
+          <p>
+            {aboutUs.companyDescription.map((element, index) => (
+              index === 0 || index % 2 === 0 
+              ? <React.Fragment key={index}>{element}</React.Fragment>
+              :<strong key={index}>{element}</strong>
+            ))}
+          </p>
         </div>
-        <div className={s.featuresBlock}>
-          <div className={s.featuresSection}>
+        <div className={s.stepsBlock}>
+          <div className={s.stepsSection}>
             <div>
-              <h2>Обираючи нас ви отримаєте</h2>
+              <h2>4 простих кроки до Вашої свердловини</h2>
             </div>
-            <div className={s.featuresContainer}>
-              {aboutUs.advantages.map( avantage => (
-                <div key={avantage.title} className={s.featureItem}>
+            <div className={s.stepsContainer}>
+              {aboutUs.mainSteps.map( step => (
+                <div key={step.title} className={s.stepItem}>
                   <div className={s.header}>
-                    <h3>{avantage.title}</h3>
+                    <h3>{step.title}</h3>
                   </div>
                   <div className={s.info}>
-                    <p>{avantage.description}</p>
+                    <p>{step.description}</p>
                   </div>
                 </div>
               ))}

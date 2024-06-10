@@ -17,7 +17,7 @@ import LocalBusiness from './components/microMarkups/LocalBusiness.jsx';
 import pageUpTrick from './utils/pageUpTrick.js';
 import ScrollToHash from './utils/scrollToHash.js';
 
-import generateSitemap from './utils/generateSitemap';
+// import generateSitemap from './utils/generateSitemap';
 
 import { useEffect, useState } from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
@@ -87,22 +87,24 @@ const App = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content="/assets/openGraph/laptop.png" />
       </Helmet>
-      <div>
+      <>
         <Router>
           <ScrollToHash />
           <ScrollToTop toTopIcon={data.generalIcons.toTopIcon} />
           <Header logo={data.generalIcons.logo} contactsIcon={data.generalIcons.callIcon} contacts={data.contacts}/>
-          <Routes>
-            <Route exact path="/" element={<MainPage aboutUs={data.aboutUs} services={data.services} ourWorks={data.ourWorks} servicesList={servicesList} contacts={data.contacts}/>} />
-            <Route path="/service/:idFromUrl" element={<ServicePage services={data.services}/>} />
-            <Route path="/order/:idService" element={<OrderPage servicesList={servicesList} />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
+          <div className="pageContent">
+            <Routes>
+              <Route exact path="/" element={<MainPage aboutUs={data.aboutUs} services={data.services} ourWorks={data.ourWorks} servicesList={servicesList} contacts={data.contacts}/>} />
+              <Route path="/service/:idFromUrl" element={<ServicePage services={data.services}/>} />
+              <Route path="/order/:idService" element={<OrderPage servicesList={servicesList} />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </div>
           <Footer logo={data.generalIcons.logo} contacts={data.contacts}/>
           <BreadcrumbList />
           <LocalBusiness data={data}/>
         </Router>
-      </div>
+      </>
     </HelmetProvider>
   );
 }

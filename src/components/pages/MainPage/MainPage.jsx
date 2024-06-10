@@ -27,7 +27,7 @@ const MainPage = ({ aboutUs, services, ourWorks, servicesList, contacts }) => {
         <meta name="twitter:title" content="Головна | New Water" />
         <meta name="twitter:description" content="Дізнайтесь більше про компанію, послуги, які ми надаємо, та ознайомтеся з нашими успішними проектами. Зв'яжіться з нами для отримання детальної інформації." />
       </Helmet>
-      <div className={s.generalOutput}>
+      <>
         <div id="anchorAboutUs" className={s.anchorAboutUs}></div>
         <AboutUs aboutUs={aboutUs} />
 
@@ -42,7 +42,7 @@ const MainPage = ({ aboutUs, services, ourWorks, servicesList, contacts }) => {
 
         <div id="anchorContacts" className={s.anchorContacts}></div>
         <Contacts contacts={contacts} />
-      </div>
+      </>
       <ImageGallery context={'works'} photoList={ourWorks}/>
     </HelmetProvider>
   );
