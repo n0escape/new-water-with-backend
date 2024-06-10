@@ -5,6 +5,7 @@
     "callIcon": "/assets/general/call.png"
   },
   "aboutUs": {
+    "background": {"src":"/assets/components/aboutUs/aboutUs_bg.png", "alt":"Фонове зображення секції Про нас"},
     "companyName": "New Water",
     "slogan": [
       "Буріння свердловин",

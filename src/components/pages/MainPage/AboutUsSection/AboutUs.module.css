@@ -8,8 +8,23 @@
     padding: 84px 148px; /*внутренние отступы секции*/
     gap: 20px; /*отступ между блоками внутри секции*/
 }
+.bgImage {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
 #aboutUs > * {
     flex: 1;
+}
+.details,
+.stepsBlock {
+    z-index: 1;
 }
 .details,
 .headline {
