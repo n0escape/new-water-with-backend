@@ -52,10 +52,10 @@ const ServicePage = ({services}) => {
               <div className={s.serviceDetails}>
                 <p>{serviceData.description}</p>
                 <div className={s.list}>
-                  <h4>З чого складається ціна</h4>
+                  <h4>Що входить у вартість:</h4>
                   <ul>
                     {serviceData.priceExplanation.map((point, index) => (
-                      <li key={index}>{point.title} <strong>{point.price}</strong></li>
+                      <li key={index}>{point.title}</li>
                     ))}
                   </ul>
                 </div>

@@ -38,10 +38,10 @@
         {"imageSrc":"/assets/srevices/drilling-water-wells/Media3.png", "title":"Зображення до послуги буріння водних свердловин 3"}
       ],
       "priceExplanation": [
-        {"title": "Робота:", "price": "???"},
-        {"title": "Прилад:", "price": "???"},
-        {"title": "Додаткові інструменти:", "price": "???"},
-        {"title": "Витрати на шлях:", "price": "???"}
+        {"title": "Робота"},
+        {"title": "Прилад"},
+        {"title": "Додаткові інструменти"},
+        {"title": "Витрати на шлях"}
       ],
       "whatYouWillGet": [
         "Роботу з сертифікованих матеріалів",
@@ -64,9 +64,9 @@
         {"imageSrc":"/assets/srevices/arrangement-of-water-wells/Media3.png", "title":"Зображення облаштування свердловин 3"}
       ],
       "priceExplanation": [
-        {"title": "Робота:", "price": "???"},
-        {"title": "Додаткові інструменти:", "price": "???"},
-        {"title": "Витрати на шлях:", "price": "???"}
+        {"title": "Робота"},
+        {"title": "Додаткові інструменти"},
+        {"title": "Витрати на шлях"}
       ],
       "whatYouWillGet": [
         "Якісну роботу",
@@ -87,10 +87,10 @@
         {"imageSrc":"/assets/srevices/water-purification/Media3.png", "title":"Зображення до послуги очищення води 3"}
       ],
       "priceExplanation": [
-        {"title": "Робота:", "price": "???"},
-        {"title": "Прилад:", "price": "???"},
-        {"title": "Додаткові інструменти:", "price": "???"},
-        {"title": "Витрати на шлях:", "price": "???"}
+        {"title": "Робота"},
+        {"title": "Прилад"},
+        {"title": "Додаткові інструменти"},
+        {"title": "Витрати на шлях"}
       ],
       "whatYouWillGet": [
         "Швидку та висококваліфіковану роботу",
@@ -109,9 +109,9 @@
         {"imageSrc":"/assets/srevices/repair-of-wells/Media3.png", "title":"Зображення ремонту свердловини 3"}
       ],
       "priceExplanation": [
-        {"title": "Робота:", "price": "???"},
-        {"title": "Додаткові інструменти:", "price": "???"},
-        {"title": "Витрати на шлях:", "price": "???"}
+        {"title": "Робота"},
+        {"title": "Додаткові інструменти"},
+        {"title": "Витрати на шлях"}
       ],
       "whatYouWillGet": [
         "Якісну роботу",
@@ -130,9 +130,9 @@
         {"imageSrc":"/assets/srevices/uninstallation-of-pumps/Media3.png", "title":"Зображення демонтажу насосів 3"}
       ],
       "priceExplanation": [
-        {"title": "Робота:", "price": "???"},
-        {"title": "Додаткові інструменти:", "price": "???"},
-        {"title": "Витрати на шлях:", "price": "???"}
+        {"title": "Робота"},
+        {"title": "Додаткові інструменти"},
+        {"title": "Витрати на шлях"}
       ],
       "whatYouWillGet": [
         "Безпечне вилучення насоса",
