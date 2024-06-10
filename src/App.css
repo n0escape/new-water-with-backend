@@ -5,9 +5,13 @@
     text-decoration: none;
     color: #000000;
 }
-* > strong {
+* > strong, 
+* > b {
     font-weight: 700;
-} 
+}
+* > i {
+    font-style: italic;
+}
 
 ul {
     padding: 0;
