@@ -40,8 +40,8 @@
     {
       "id": "drilling-water-wells",
       "title": "Буріння свердловин на воду",
-      "minPrice": "???",
-      "description": "Професійне буріння свердловин для забезпечення вашого дому чистою водою. Гарантуємо якісну роботу та довговічність свердловин. Буріння свердловини відбувається малогабаритною установкою, яка передбачає розміщення техніки навіть на невеликих ділянках.\n\nБуріння свердловини  на воду – найкраще вирішення проблеми водопостачання  будинків, де відсутнє централізоване водопостачання. Ви не будете залежити від постачальників води, тому що свердловина на воду- це Ваша власність.\nМи допоможемо Вам обрати самий оптимальний варіант, який відповідає Вашим запитам.\nМи працюємо на результат!",
+      "minPrice": "550 грн/м",
+      "description": "Професійне буріння свердловин для забезпечення вашого дому чистою водою. Гарантуємо якісну роботу та довговічність свердловин. Буріння свердловини відбувається малогабаритною установкою, яка передбачає розміщення техніки навіть на невеликих ділянках.",
       "photos": [
         {"imageSrc":"/assets/components/srevices/drilling-water-wells/Media1.png", "title":"Зображення до послуги буріння водних свердловин 1"},
         {"imageSrc":"/assets/components/srevices/drilling-water-wells/Media2.png", "title":"Зображення до послуги буріння водних свердловин 2"},
@@ -153,10 +153,20 @@
   ],
   "materials": {
     "description": "Матеріали з якими працює наша компанія це - труби з ПВХ, стійкі до окислення, іржі та впливу вологи. Важливо, що така обсадна труба відмінно підходить для будь-якого типу грунту, де буриться свердловина.",
-    "photo": {
-      "imageSrc":"/assets/components/materials/materialsImage.png",
-      "title":"Зображення про матеріали у використанні"
-    },
+    "photos": [
+      {
+        "imageSrc":"/assets/components/materials/materialsImage1.png",
+        "title":"Зображення про матеріали у використанні"
+      },
+      {
+        "imageSrc":"/assets/components/materials/materialsImage2.png",
+        "title":"Зображення про матеріали у використанні"
+      },
+      {
+        "imageSrc":"/assets/components/materials/materialsImage3.png",
+        "title":"Зображення про матеріали у використанні"
+      }
+    ],
     "advantages": [
       {"title": "Термін експлуатації понад 50 років"},
       {"title": "Стійкість до фізико – хімічної взаємодії з довкіллям"},
@@ -166,7 +176,7 @@
   },
   "ourWorks": [
     {
-      "title": "Title about work 1",
+      "title": "Робота 1",
       "description": "Mini description about work...",
       "location": [50.45, 30.5233],
       "address": null,
@@ -174,7 +184,7 @@
       "imageSrc": "/assets/components/ourWorks/work1/workImage.png"
     },
     {
-      "title": "Title about work 2",
+      "title": "Робота 2",
       "description": "Mini description about work...",
       "location": [48.45, 35.0167],
       "address": "м. Харків, вул. Полтавський шлях 22",
@@ -182,7 +192,7 @@
       "imageSrc": "/assets/components/ourWorks/work2/workImage.png"
     },
     {
-      "title": "Title about work 3",
+      "title": "Робота 3",
       "description": "Mini description about work...",
       "location": [46.48, 30.7326],
       "address": "м. Харків, вул. Петра Болобочана 9",
@@ -190,7 +200,7 @@
       "imageSrc": "/assets/components/ourWorks/work3/workImage.png"
     },
     {
-      "title": "Title about work 4",
+      "title": "Робота 4",
       "description": "Mini description about work...",
       "location": [47.45, 34.5233],
       "address": "м. Харків, пров. Степовий 41",
@@ -198,7 +208,7 @@
       "imageSrc": "/assets/components/ourWorks/work1/workImage.png"
     },
     {
-      "title": "Title about work 5",
+      "title": "Робота 5",
       "description": "Mini description about work...",
       "location": [42.45, 32.0167],
       "address": null,
@@ -206,7 +216,7 @@
       "imageSrc": "/assets/components/ourWorks/work2/workImage.png"
     },
     {
-      "title": "Title about work 6",
+      "title": "Робота 6",
       "description": "Mini description about work...",
       "location": [46.48, 36.7326],
       "address": null,
@@ -214,7 +224,7 @@
       "imageSrc": "/assets/components/ourWorks/work3/workImage.png"
     },
     {
-      "title": "Title about work 7",
+      "title": "Робота 7",
       "description": "Mini description about work...",
       "location": [56.45, 25.5233],
       "address": null,
@@ -222,7 +232,7 @@
       "imageSrc": "/assets/components/ourWorks/work1/workImage.png"
     },
     {
-      "title": "Title about work 8",
+      "title": "Робота 8",
       "description": "Mini description about work...",
       "location": [45.45, 31.0167],
       "address": null,
@@ -230,7 +240,7 @@
       "imageSrc": "/assets/components/ourWorks/work2/workImage.png"
     },
     {
-      "title": "Title about work 9",
+      "title": "Робота 9",
       "description": "Mini description about work...",
       "location": [41.48, 25.7326],
       "address": null,

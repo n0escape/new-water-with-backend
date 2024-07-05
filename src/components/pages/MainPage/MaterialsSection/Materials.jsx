@@ -6,10 +6,13 @@ const Materials = ({materials}) => (
             <h1>Матеріали</h1>
         </div>
         <div className={s.details}>
-            <div>
-                <img src={process.env.PUBLIC_URL + materials.photo.imageSrc}
-                alt={materials.photo.title}
-                title={materials.photo.title} />
+            <div className={s.imagesSet}>
+                {materials.photos.map( (elem, index) => (
+                    <img src={process.env.PUBLIC_URL + elem.imageSrc}
+                    alt={elem.title}
+                    title={elem.title}
+                    key={index} />
+                ))}
             </div>
             <div className={s.info}>
                 <p>{materials.description}</p>

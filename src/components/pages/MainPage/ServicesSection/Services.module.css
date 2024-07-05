@@ -81,7 +81,7 @@
     line-height: 22px;
 }
 .minPrice strong {
-    font-weight: 600;
+    color: #52C6EF;
     font-size: 28px;
     line-height: 34px;
 }
@@ -91,13 +91,13 @@
     align-items: center;
     text-align: center;
 }
-.serviceBtn a {
-    font-weight: 500;
+.serviceBtn a {   
+    font-weight: 600;
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 0.1px;
-    color: #FFFFFF;
-    background: #888888;
+    color: #D7FFF3;
+    background: #005144;
 
     width: 100%;
     padding: 12px 24px;
@@ -107,6 +107,10 @@
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
+}
+.serviceBtn a:hover {
+    color: #51F0D2;
+    background: #00201A;
 }
 
 @media screen and (max-width: 1024px) {

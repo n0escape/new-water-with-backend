@@ -12,7 +12,18 @@
 * > i {
     font-style: italic;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:wght@100;200;300;400;500;600;700;800');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+* > a {
+    cursor: pointer;
+    font-family: 'Finlandica';
+    font-style: normal;
+    color: #041D2E
+}
+* > button,
+* > input[type = "submit"] {
+    cursor: pointer;
+} 
 ul {
     padding: 0;
     margin: 0;
