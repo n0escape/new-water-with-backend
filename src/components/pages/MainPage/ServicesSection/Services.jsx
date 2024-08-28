@@ -32,7 +32,7 @@ const Services = ({services}) => (
                   }
                 </div>
                 <div className={s.serviceBtn}>
-                  <Link className={fonts.lableMSemiBold} to={`service/${service.id}`}> Детальніше </Link>
+                  <Link className={fonts.labelMSemiBold} to={`service/${service.id}`}> Детальніше </Link>
                 </div>
               </div>
             </div>

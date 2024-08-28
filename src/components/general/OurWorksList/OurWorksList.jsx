@@ -35,7 +35,7 @@ const OurWorksList = ({ ourWorks }) => {
                                 <div className={s.itemHeader}>
                                     <h3 className={fonts.headerS}>{work.title}</h3>
                                     <p className={`${fonts.textL} ${s.address} ${work.address === null ? s.hidden : ''}`}>{work.address}</p>
-                                    <p className={`${fonts.lableL} ${s.date} ${work.date === null ? s.hidden : ''}`}>{work.date}</p>
+                                    <p className={`${fonts.labelL} ${s.date} ${work.date === null ? s.hidden : ''}`}>{work.date}</p>
                                 </div>
                                 <div className={s.itemDescription}>
                                     <p className={fonts.textS}>{work.description}</p>
@@ -48,7 +48,7 @@ const OurWorksList = ({ ourWorks }) => {
             </div>
             <div className={s.btnContainer}>
                 {ourWorks.length > visibleWorks && (
-                    <button className={`${fonts.lableS} ${s.moreBtn}`} onClick={showMoreWorks}>
+                    <button className={`${fonts.labelS} ${s.moreBtn}`} onClick={showMoreWorks}>
                         Більше
                     </button>
                 )}

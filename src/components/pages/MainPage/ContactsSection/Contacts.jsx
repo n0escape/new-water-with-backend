@@ -2,11 +2,12 @@
 import ContactsInfo from '../../../general/ContactsInfo/ContactsInfo'
 import SocialMedias from '../../../general/SocialMedias/SocialMedias'
 import s from './Contacts.module.css'
+import fonts from '../../../../generalStyles/Fonts.module.css'
 
 const Contacts = ({contacts}) => (
     <section id={s.contacts}>
         <div className={s.header}>
-          <h2>
+          <h2 className={fonts.headerM}>
             ...або зв'яжіться з нами за наступними контактами
           </h2>
         </div>

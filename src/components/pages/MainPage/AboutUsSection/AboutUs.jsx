@@ -43,7 +43,7 @@ const AboutUs = ({aboutUs}) => (
             </div>
           </div>
           <div className={s.contactUsBtn}>
-            <Link className={fonts.lableLSemiBold} to="/#anchorContactUs">Залишити замовлення</Link>
+            <Link className={fonts.labelLSemiBold} to="/#anchorContactUs">Залишити замовлення</Link>
           </div>
         </div>
       </section>

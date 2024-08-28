@@ -12,7 +12,7 @@ const ContactsInfo = ({context, contacts}) => {
     });
     const textClass = classNames({
         [fonts.textL]: context === 'contacts',
-        [fonts.lableS]: context === 'footer',
+        [fonts.labelS]: context === 'footer',
     });
     return (
         <div className={listClass}>

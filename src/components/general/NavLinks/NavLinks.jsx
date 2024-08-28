@@ -10,7 +10,7 @@ const NavLinks = ({context, toggleNav}) => {
         [s.footer]: context === 'footer',
     });
     const textClass = classNames({
-        [fonts.lableM]: context === 'header',
+        [fonts.labelM]: context === 'header',
         [fonts.textMRegular]: context === 'footer',
     });
 

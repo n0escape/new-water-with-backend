@@ -14,7 +14,7 @@ const NotFound = () => {
                 </p>
             </div>
             <div className={s.btnMainContainer}>
-                <Link className={fonts.lableS}to="/#anchorAboutUs">Повернутися на головну</Link>
+                <Link className={fonts.labelS}to="/#anchorAboutUs">Повернутися на головну</Link>
             </div>
         </div>
     )

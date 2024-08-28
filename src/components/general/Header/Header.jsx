@@ -50,7 +50,7 @@ const Header = ({logo, contactsIcon, contacts}) => {
         <div className={`${s.item} ${s.contactsBlock} ${contactsExpanded ? s.expanded : ''}`}>
           <PhoneNumbers context={'header'} phoneNumbersList={contacts.phoneNumbers} toggleContacts={toggleContacts}/>
           <div className={s.schedule}>
-            <p className={fonts.lableS}>{contacts.schedule}</p>
+            <p className={fonts.labelS}>{contacts.schedule}</p>
           </div>
         </div>
       </header>
