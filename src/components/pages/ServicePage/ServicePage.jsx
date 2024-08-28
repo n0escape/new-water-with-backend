@@ -77,8 +77,11 @@ const ServicePage = ({services}) => {
             <div className={s.aditionalBox}>
               <div className={s.toOrderBox}>
                 <div className={s.orderInfo}>
-                  <h1>Вартість</h1>
-                  <p>від <strong>{serviceData.minPrice}</strong></p>
+                  <h1>Вартість</h1> 
+                  { serviceData.minPrice !== null
+                    ? <p>від <strong>{serviceData.minPrice}</strong></p>
+                    : <p>індивідуально</p>
+                  }
                 </div>
                 <div className={s.toServicesBtn}>
                   <Link to={`/order/${serviceData.id}`}>
