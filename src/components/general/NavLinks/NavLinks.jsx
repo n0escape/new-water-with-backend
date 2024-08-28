@@ -9,20 +9,24 @@ const NavLinks = ({context, toggleNav}) => {
         [s.header]: context === 'header',
         [s.footer]: context === 'footer',
     });
+    const textClass = classNames({
+        [fonts.lableM]: context === 'header',
+        [fonts.textMRegular]: context === 'footer',
+    });
 
     return (
         <ul className={linksClass}>
             <li>
-                <Link className={fonts.lableM} to="/#anchorAboutUs" onClick={ () => toggleNav && toggleNav() } title='Про компанію'>Про компанію</Link>
+                <Link className={textClass} to="/#anchorAboutUs" onClick={ () => toggleNav && toggleNav() } title='Про компанію'>Про компанію</Link>
             </li>
             <li>
-                <Link className={fonts.lableM} to="/#anchorServices" onClick={ () => toggleNav && toggleNav() } title='Послуги'>Послуги</Link>
+                <Link className={textClass} to="/#anchorServices" onClick={ () => toggleNav && toggleNav() } title='Послуги'>Послуги</Link>
             </li>
             <li>
-                <Link className={fonts.lableM} to="/#anchorOurWorks" onClick={ () => toggleNav && toggleNav() } title='Наші роботи'>Наші роботи</Link>
+                <Link className={textClass} to="/#anchorOurWorks" onClick={ () => toggleNav && toggleNav() } title='Наші роботи'>Наші роботи</Link>
             </li>
             <li>
-                <Link className={fonts.lableM} to="/#anchorContacts" onClick={ () => toggleNav && toggleNav() } title='Контакти'>Контакти</Link>
+                <Link className={textClass} to="/#anchorContacts" onClick={ () => toggleNav && toggleNav() } title='Контакти'>Контакти</Link>
             </li>
         </ul>
     )

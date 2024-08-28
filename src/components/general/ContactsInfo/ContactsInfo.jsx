@@ -1,4 +1,5 @@
 import s from './ContactsInfo.module.css';
+import fonts from '../../../generalStyles/Fonts.module.css'
 import classNames from 'classnames';
 import MailAddresses from '../MailAddresses/MailAddresses';
 import PhoneNumbers from '../PhoneNumbers/PhoneNumbers';
@@ -8,6 +9,10 @@ const ContactsInfo = ({context, contacts}) => {
     const listClass = classNames(s.contactsContainer, {
         [s.contacts]: context === 'contacts',
         [s.footer]: context === 'footer',
+    });
+    const textClass = classNames({
+        [fonts.textL]: context === 'contacts',
+        [fonts.lableS]: context === 'footer',
     });
     return (
         <div className={listClass}>
@@ -21,7 +26,7 @@ const ContactsInfo = ({context, contacts}) => {
             <PhoneNumbers context={context} phoneNumbersList={contacts.phoneNumbers} />
             <MailAddresses context={context} mailAddressesList={contacts.mailAddresses} />
             <div className={s.schedule}>
-                <p>{contacts.schedule}</p>
+                <p className={textClass}>{contacts.schedule}</p>
             </div>
         </div>
     )

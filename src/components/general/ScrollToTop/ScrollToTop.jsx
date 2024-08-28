@@ -9,7 +9,7 @@ const ScrollToTop = ({toTopIcon}) => {
   return (
     <div className={s.pageUp}>
         <Link to="#">
-            <img src={process.env.PUBLIC_URL + toTopIcon} alt="Page Up" width="50px" />
+            <img src={process.env.PUBLIC_URL + toTopIcon} alt="Page Up" width="48px" />
         </Link>
     </div>
   );

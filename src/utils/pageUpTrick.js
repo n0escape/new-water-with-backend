@@ -8,9 +8,9 @@ const calcPageUpBtnPos = () => {
     let footerOffset = footer.getBoundingClientRect().top - window.innerHeight;
 
     if (footerOffset <= 0) {
-        bottomLeft.style.bottom = Math.abs(footerOffset) + 'px';
+        bottomLeft.style.bottom = Math.abs(footerOffset) + 12 +'px';
     } else {
-        bottomLeft.style.bottom = '10px';
+        bottomLeft.style.bottom = '12px';
     }
 };
 

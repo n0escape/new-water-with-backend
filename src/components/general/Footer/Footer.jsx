@@ -1,4 +1,5 @@
 import s from './Footer.module.css'
+import fonts from '../../../generalStyles/Fonts.module.css'
 import SocialMedias from '../SocialMedias/SocialMedias'
 import NavLinks from '../NavLinks/NavLinks';
 import ContactsInfo from '../ContactsInfo/ContactsInfo';
@@ -17,17 +18,17 @@ const Footer = ({logo, contacts}) => {
           </div>
 
           <div className={s.nav}>
-            <h2>Навігація</h2>
+            <h2 className={fonts.titleM}>Навігація</h2>
             <NavLinks context={'footer'}/>
           </div>
 
           <div className={s.contacts}>
-            <h2>Контакти</h2>
+            <h2 className={fonts.titleM}>Контакти</h2>
             <ContactsInfo context={'footer'} contacts={contacts}/>
           </div>
 
           <div className={s.socialMedias}>
-            <h2>Соціальні мережі</h2>
+            <h2 className={fonts.titleM}>Соціальні мережі</h2>
             <SocialMedias context={'footer'} socialMediasList={contacts.socialMedias} />
           </div>
         </div>
