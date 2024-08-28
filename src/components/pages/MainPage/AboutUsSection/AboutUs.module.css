@@ -5,19 +5,19 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 84px 148px; /*внутренние отступы секции*/
-    gap: 20px; /*отступ между блоками внутри секции*/
+    padding: 84px 148px;
+    /*внутренние отступы секции*/
+    gap: 20px;
+    /*отступ между блоками внутри секции*/
     background: url('../../../../../public/assets/components/aboutUs/aboutUs_bg.webp') top no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
 }
-#aboutUs > * {
+
+#aboutUs>* {
     flex: 1;
 }
-.details,
-.stepsBlock {
-    z-index: 1;
-}
+
 .details,
 .headline {
     width: 100%;
@@ -26,143 +26,114 @@
     align-items: center;
     text-align: center;
     box-sizing: border-box;
-    padding: 12px 36px 0 16px; /*внутренние отступы для блока описания компании*/
-    gap: 20px; /*отступ между заголовком и текстом*/
+    padding: 12px 36px 0 16px;
+    /*внутренние отступы для блока описания компании*/
+    gap: 20px;
+    /*отступ между заголовком и текстом*/
 }
-.headline {
-    padding: 0; /*внутренние отступы для блока описания компании*/
-    gap: 4px; /*отступ между заголовком и текстом*/
-}
-.details > *,
-.headline > *,
-.slogan > * {
-    margin: 0; /*внешние отступы в заголовке и тексте блока описания*/
-}
-.headline > h1 {
-    font-weight: 800;
-    font-size: 80px;
-    line-height: 120%;
 
-    background: linear-gradient(180deg, #52C6EF 0%, #0F7CA3 100%);
+.headline {
+    padding: 0;
+    /*внутренние отступы для блока описания компании*/
+    gap: 4px;
+    /*отступ между заголовком и текстом*/
+}
+
+.headline > h1 {  
+    background: linear-gradient(0deg, #004D63 0%, #52C6EF 69.27%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    /* Elevation Light/3 */
-    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.1);
+    text-fill-color: transparent;
+}
 
-}
-.slogan > p {
-    font-weight: 600;
-}
-.slogan > p:nth-child(1) {
-    font-size: 32px;
-    line-height: 40px;
-}
-.slogan > p:nth-child(2) {
-    font-size: 28px;
-    line-height: 36px;
-}
 .details p {
     white-space: pre-wrap;
-    font-size: 16px;
-    line-height: 22px;
 }
-.details p strong {
-    font-size: 18px;
-}
+
 .stepsBlock {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 44px; /*внешний отступ перед блоком особенностей*/
-    gap: 40px; /*отступу между ососбеностями и кнопкой заказа*/
+    margin-top: 44px;
+    /*внешний отступ перед блоком особенностей*/
+    gap: 40px;
+    /*отступу между ососбеностями и кнопкой заказа*/
 }
-.stepsBlock > * {
-    margin: 0;
-    flex: 1;
-}
+
 .stepsSection {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 28px; /*отступ между заголовком и списком особенностей*/
+    gap: 28px;
+    /*отступ между заголовком и списком особенностей*/
 }
-.stepsSection h2 {
-    margin: 0; /*отступ заголовка в блоке особенностей*/
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 36px;
-}
+
 .stepsContainer {
     display: flex;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    gap: 28px 24px; /*отступ ТОЛЬКО между элементами особенностей (сверху/снизу/справа/слева)*/
+    gap: 28px 24px;
+    /*отступ ТОЛЬКО между элементами особенностей (сверху/снизу/справа/слева)*/
 }
+
 .stepItem {
-    max-width: 224px; /*ширина элемента особенностей*/
+    max-width: 224px;
+    /*ширина элемента особенностей*/
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center; 
+    text-align: center;
+    box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
 }
+
 .stepItem > * {
     flex: 1;
     width: 100%;
 }
+
 .header,
 .info {
     text-align: center;
     text-wrap: wrap;
-    box-sizing: border-box; /*ограничение по border чтобы работали padding ниже*/
+    box-sizing: border-box;
+    /*ограничение по border чтобы работали padding ниже*/
 }
+
 .header {
-    padding: 16px 6px; /*внетренние отступы загловка элемента особенностей*/
-}
-.info {
-    padding: 16px 8px; /*внутренние отступы описания элемента особенностей*/
-}
-.stepItem .header {
+    padding: 6px 16px;
+    /*внетренние отступы загловка элемента особенностей*/
     background: #DFF4FF;
     box-shadow: inset 0px -2px 5.8px 1px rgba(0, 53, 69, 0.24);
-
-    border-radius: 15px 15px 0 0;
-    -webkit-border-radius: 15px 15px 0 0;
-    -moz-border-radius: 15px 15px 0 0;
-    -ms-border-radius: 15px 15px 0 0;
-    -o-border-radius: 15px 15px 0 0;
+    filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.3));
+    border-radius: 12px 12px 0 0;
+    -webkit-border-radius: 12px 12px 0 0;
+    -moz-border-radius: 12px 12px 0 0;
+    -ms-border-radius: 12px 12px 0 0;
+    -o-border-radius: 12px 12px 0 0;
 }
-.stepItem .info {
+
+.info {
+    padding: 16px 8px;
+    /*внутренние отступы описания элемента особенностей*/
     background: rgba(255, 255, 255, 0.4);
+    border-radius: 0 0 12px 12px;
+    -webkit-border-radius: 0 0 12px 12px;
+    -moz-border-radius: 0 0 12px 12px;
+    -ms-border-radius: 0 0 12px 12px;
+    -o-border-radius: 0 0 12px 12px;
+}
 
-    border-radius: 0 0 15px 15px;
-    -webkit-border-radius: 0 0 15px 15px;
-    -moz-border-radius: 0 0 15px 15px;
-    -ms-border-radius: 0 0 15px 15px;
-    -o-border-radius: 0 0 15px 15px;
-}
-.header h3,
 .info p {
-    margin: 0;
-    width: 100%;
+    color: #003545;
 }
-.header h3 {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 22px;
-    color: #000000;
-}
-.info p {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    color: #888888;
-}
+
 .contactUsBtn {
     width: 100%;
     display: flex;
@@ -170,24 +141,23 @@
     text-align: center;
     justify-content: center;
 }
+
 .contactUsBtn a {
-    font-size: 20px;
-    line-height: 28px;
     color: #DFF4FF;
     background: linear-gradient(0deg, #004D63 0%, #52C6EF 69.27%);
-
-    padding: 16px; /*внетренние отступы внутри кнопки*/
+    padding: 16px;
+    /*внетренние отступы внутри кнопки*/
     text-align: center;
     text-decoration: none;
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
+    border-radius: 28px;
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    -ms-border-radius: 28px;
+    -o-border-radius: 28px;
 }
 
 .contactUsBtn a:hover {
-    box-shadow: 0px 0px 8px 4px rgba(0, 53, 69, 0.5);
+    box-shadow: 0px 0px 20px 12px rgba(0, 31, 41, 0.15), 0px 0px 8px 1px rgba(0, 31, 41, 0.3);
     color: #FFFFFF;
 }
 
@@ -196,38 +166,48 @@
         padding: 48px 64px 32px 64px;
         gap: 40px 48px;
     }
+
     .stepsBlock {
-        margin-top: 0; /*внешний отступ перед блоком особенностей*/
+        margin-top: 0;
+        /*внешний отступ перед блоком особенностей*/
     }
+
     .stepsSection h2 {
         text-wrap: nowrap;
     }
+
     .stepsBlock {
         margin: 0;
     }
 }
+
 @media screen and (max-width: 600px) {
     #aboutUs {
         flex-direction: column;
         padding: 24px 16px 16px 16px;
         gap: 36px;
     }
-    #aboutUs > * {
+
+    #aboutUs>* {
         flex: auto;
         box-sizing: border-box;
     }
+
     .details {
         padding: 0px 16px;
     }
+
     .details h1 {
         font-size: 48px;
         line-height: 64px;
     }
+
     .stepsSection h2 {
         font-size: 24px;
         line-height: 32px;
         text-wrap: wrap;
     }
+
     .contactUsBtn a {
         width: 80%;
     }
