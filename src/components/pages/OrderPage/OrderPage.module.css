@@ -19,17 +19,9 @@
 .header {
     text-align: center;
 }
-.header h1 {
-    margin: 0;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 44px;
-}
 .moveBack a {
-    font-size: 20px;
-    line-height: 28px;
     text-decoration-line: underline;
-    color: #888888;
+    color: #041D2E;
 }
 
 @media screen and (max-width: 1024px) {

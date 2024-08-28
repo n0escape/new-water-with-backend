@@ -1,6 +1,7 @@
 import { Link, useParams } from 'react-router-dom';
 import ContactForm from '../../imported/ContactForm/ContactForm';
 import s from './OrderPage.module.css'
+import fonts from '../../../generalStyles/Fonts.module.css'
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { baseUrl } from '../../../App';
 
@@ -29,12 +30,12 @@ const OrderPage = ({servicesList}) => {
         </Helmet>
         <div className={s.orderPage}>
             <div className={s.header}>
-                <h1>Замовити послугу</h1>
+                <h1 className={fonts.headerL}>Замовити послугу</h1>
             </div>
             <div className={s.orderPageContent}>
                 <ContactForm servicesList={servicesList} selectedService={idService} />
                 <div className={s.moveBack}>
-                    <Link to="/#anchorServices">Повернутись до списку послуг</Link>
+                    <Link className={fonts.textL} to="/#anchorServices">Повернутись до списку послуг</Link>
                 </div>
             </div>
         </div>
