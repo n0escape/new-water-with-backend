@@ -2,111 +2,119 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 32px; /*отступ между кнопкой и списком работ*/
+    gap: 32px;
+    /*отступ между кнопкой и списком работ*/
 }
+
 .worksList {
     display: flex;
     flex-direction: column;
     width: 80vw;
-    padding: 0 24px; /*внутренний отступ списка работ*/
+    padding: 0 24px;
+    /*внутренний отступ списка работ*/
 }
+
 .workItem {
     display: flex;
     flex-direction: column;
 }
+
 .fadeIn {
     animation: fadeIn 1.5s ease forwards;
     opacity: 0;
     -webkit-animation: fadeIn 1.5s ease forwards;
 }
+
 .fadeOut {
     animation: fadeOut 1.5s ease forwards;
     opacity: 1;
     -webkit-animation: fadeOut 1.5s ease forwards;
 }
+
 .workItem hr {
-    border-width: 3px;
+    border: 1px solid #52C6EF;
     width: 100%;
     margin: 0;
 }
+
 .workItemContent {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 24px 0; /*внутренний отступ блока работы*/
+    gap: 72px;
+    padding: 24px 0;
+    /*внутренний отступ блока работы*/
 }
+
 .workImage {
-    width: 100%;
     display: flex;
 }
+
 .workImage img {
     width: 425px;
 }
+
 .itemDetails {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     text-align: end;
-    justify-content: space-between; /*отступ между заголовком и описанием*/
-    padding: 16px 0; /*внутренний отступ инфо о работе*/
+    justify-content: space-between;
+    /*отступ между заголовком и описанием*/
+    padding: 16px 0;
+    /*внутренний отступ инфо о работе*/
 }
+
 .hidden {
     display: none;
 }
-.itemDetails h3,
-.itemDetails p {
-    margin: 0;
-}
+
 .itemHeader {
     display: flex;
     flex-direction: column;
-    gap: 4px; /*отступ между элементами заголовка*/
+    gap: 4px;
+    /*отступ между элементами заголовка*/
 }
+
 .itemHeader h3 {
     text-wrap: nowrap;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 36px;
+    color: #00201A;
 }
-.date,
+
 .address {
-    font-size: 20px;
-    line-height: 26px;
-    color: #888888;
+    color: #005144;
 }
+
 .date {
-    font-weight: 300;
+    color: #303030;
 }
+
 .itemDescription p {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    color: #888888;
+    color: #5E5E5E;
 }
+
 .btnContainer {
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 20px; /*отступ между кнопками*/
+    gap: 20px;
+    /*отступ между кнопками*/
 }
+
 .lessBtn,
 .moreBtn {
-    font-size: 18px;
-    line-height: 24px;
-    letter-spacing: 0.1px;
-
-    padding: 12px 60px; /*внутренний отступ кнопок*/
-    
+    padding: 12px 60px;
+    /*внутренний отступ кнопок*/
     background-color: rgba(255, 255, 255, 0);
     color: #003545;
     border: 1px solid #003545;
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
 }
 
 .lessBtn:hover,
@@ -119,14 +127,17 @@
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
 }
+
 @keyframes fadeOut {
     from {
         opacity: 1;
     }
+
     to {
         opacity: 0;
     }
@@ -136,58 +147,80 @@
     .workItemContent {
         flex-direction: column;
     }
+
     .workImage img {
         width: 300px;
     }
+
     .itemDetails {
         align-items: flex-start;
-        gap: 8px; /*отступ между заголовком и описанием */
+        gap: 8px;
+        /*отступ между заголовком и описанием */
     }
+
     .itemHeader {
         align-items: flex-start;
-        gap: 0; /*отступ между элементами заголовка*/
+        gap: 0;
+        /*отступ между элементами заголовка*/
     }
+
     .itemHeader h3 {
         font-size: 24px;
         line-height: 30px;
     }
 }
+
 @media screen and (max-width: 600px) {
     .worksContainer {
-        gap: 20px; /*отступ между кнопкой и списком работ*/
+        gap: 20px;
+        /*отступ между кнопкой и списком работ*/
     }
+
     .worksList {
-        padding: 0 16px; /*внутренний отступ списка работ*/
+        padding: 0 16px;
+        /*внутренний отступ списка работ*/
     }
+
     .workItemContent {
-        padding: 12px 0; /*внутренний отступ блока работы*/
+        padding: 12px 0;
+        /*внутренний отступ блока работы*/
     }
+
     .workImage {
         justify-content: center;
     }
+
     .workImage img {
         width: 256px;
     }
+
     .itemDetails {
         align-items: center;
-        gap: 4px; /*отступ между заголовком и описанием */
+        gap: 4px;
+        /*отступ между заголовком и описанием */
     }
+
     .itemHeader {
         align-items: center;
     }
+
     .itemHeader h3 {
         text-wrap: wrap;
         font-size: 20px;
         line-height: 28px;
     }
-    .itemHeader p{
-        margin-top: -2px; /*отступ между элементами заголовка (костыль)*/
+
+    .itemHeader p {
+        margin-top: -2px;
+        /*отступ между элементами заголовка (костыль)*/
         font-size: 16px;
         line-height: 24px;
     }
+
     .btnContainer {
         flex-direction: column;
     }
+
     .lessBtn,
     .moreBtn {
         width: 100%;

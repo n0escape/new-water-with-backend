@@ -1,11 +1,13 @@
-#materials {    
+#materials {
     max-width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 24px 60px; /*внутренние отступы секции*/
-    gap: 40px; /*отступы между заголовком, картой и списком работ*/
+    padding: 24px 60px;
+    /*внутренние отступы секции*/
+    gap: 40px;
+    /*отступы между заголовком, картой и списком работ*/
 }
 
 .details {
@@ -18,6 +20,7 @@
     padding: 0px 24px;
     gap: 36px;
 }
+
 .imagesSet {
     width: 100%;
     display: flex;
@@ -28,6 +31,7 @@
     padding: 0px;
     gap: 36px;
 }
+
 .imagesSet img {
     width: 256px;
     height: 220px;
@@ -37,6 +41,7 @@
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
 }
+
 .info {
     display: flex;
     flex-direction: column;
@@ -45,15 +50,17 @@
     text-wrap: wrap;
     text-align: center;
 }
+
 .info * {
     color: #041D2E;
 }
 
-.advantages > ul {
-    list-style: none; 
+.advantages>ul {
+    list-style: none;
     list-style-position: inside;
 }
-.advantages > ul > li::before {
+
+.advantages>ul>li::before {
     content: "\1f4a7";
     padding-right: 8px;
 }
@@ -62,14 +69,17 @@
     .details {
         flex-wrap: wrap;
     }
+
     .imagesSet img {
         width: 180px;
         height: 154px;
     }
+
     .info {
         width: 100%;
     }
 }
+
 @media screen and (max-width: 600px) {
     .imagesSet img {
         width: 132px;

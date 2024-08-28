@@ -7,15 +7,6 @@
     padding: 24px 60px; /*внутренние отступы секции*/
     gap: 40px; /*отступы между заголовком, картой и списком работ*/
 }
-#ourWorks h1{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 44px;
-}
 
 @media screen and (max-width: 1024px) {
     #ourWorks {

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import s from './OurWorksList.module.css';
+import fonts from '../../../generalStyles/Fonts.module.css'
 
 const OurWorksList = ({ ourWorks }) => {
     const [visibleWorks, setVisibleWorks] = useState(4);
@@ -32,12 +33,12 @@ const OurWorksList = ({ ourWorks }) => {
                             </div>
                             <div className={s.itemDetails}>
                                 <div className={s.itemHeader}>
-                                    <h3>{work.title}</h3>
-                                    <p className={`${s.address} ${work.address === null ? s.hidden : ''}`}>{work.address}</p>
-                                    <p className={`${s.date} ${work.date === null ? s.hidden : ''}`}>{work.date}</p>
+                                    <h3 className={fonts.headerS}>{work.title}</h3>
+                                    <p className={`${fonts.textL} ${s.address} ${work.address === null ? s.hidden : ''}`}>{work.address}</p>
+                                    <p className={`${fonts.lableL} ${s.date} ${work.date === null ? s.hidden : ''}`}>{work.date}</p>
                                 </div>
                                 <div className={s.itemDescription}>
-                                    <p>{work.description}</p>
+                                    <p className={fonts.textS}>{work.description}</p>
                                 </div>
                             </div>
                         </div>
@@ -47,12 +48,12 @@ const OurWorksList = ({ ourWorks }) => {
             </div>
             <div className={s.btnContainer}>
                 {ourWorks.length > visibleWorks && (
-                    <button className={s.moreBtn} onClick={showMoreWorks}>
+                    <button className={`${fonts.lableS} ${s.moreBtn}`} onClick={showMoreWorks}>
                         Більше
                     </button>
                 )}
                 {visibleWorks > 4 && (
-                    <button className={s.lessBtn} onClick={showLessWorks}>
+                    <button className={`${fonts.lableS} ${s.lessBtn}`} onClick={showLessWorks}>
                         Згорнути
                     </button>
                 )}
