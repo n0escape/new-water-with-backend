@@ -2,6 +2,7 @@
     padding: 64px 0;
     gap: 40px;
 }
+
 .notFound,
 .message,
 .btnMainContainer {
@@ -11,60 +12,58 @@
     align-items: center;
     text-align: center;
 }
+
 .message {
     width: 100%;
     max-width: 456px;
 }
-.message > * {
-    margin: 0;
-    font-family: 'Open Sans';
-    font-style: normal;
-}
+
 .message h1 {
-    font-weight: 700;
-    font-size: 164px;
-    line-height: 172px;
-    color: #273446;
+    color: #52C6EF;
 }
+
 .message p {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    color: #000000;
+    color: #001F29;
+
 }
+
 .btnMainContainer {
     width: 100%;
 }
-.btnMainContainer a {    
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
 
-    padding: 16px 60px; /*внутренний отступ кнопок*/
+.btnMainContainer a {
+    padding: 16px 60px;
+    /*внутренний отступ кнопок*/
     background-color: white;
-    color: #888888;
-    border: 1px solid #888888;
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
+    border: 1px solid #003545;
+    color: #003545;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
 }
 
-@media screen and (max-width: 1024px){
+.btnMainContainer a:hover {
+    border: 1px solid #52C6EF;
+    color: #52C6EF;
+}
+
+@media screen and (max-width: 1024px) {
     .message h1 {
         font-size: 128px;
         line-height: 136px;
     }
+
     .message p {
         font-size: 14px;
     }
+
     .btnMainContainer a {
         font-size: 18px;
         line-height: 24px;
-        padding: 12px 60px; /*внутренний отступ кнопок*/
+        padding: 12px 60px;
+        /*внутренний отступ кнопок*/
     }
 }
 
@@ -72,14 +71,17 @@
     .notFound {
         padding: 40px 0;
     }
+
     .message h1 {
         font-size: 96px;
         line-height: 104px;
     }
+
     .btnMainContainer a {
         width: 80%;
         font-size: 16px;
         line-height: 24px;
-        padding: 12px 0; /*внутренний отступ кнопок*/
+        padding: 12px 0;
+        /*внутренний отступ кнопок*/
     }
 }
