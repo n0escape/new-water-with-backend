@@ -4,12 +4,12 @@ import { Link } from "react-router-dom"
 
 const AboutUs = ({aboutUs}) => (
     <section id={s.aboutUs}>
-      <img
+      {/* <img
         src={process.env.PUBLIC_URL + aboutUs.background.src}
         alt={aboutUs.background.title}
         title={aboutUs.background.title}
         className={s.bgImage}
-      />
+      /> */}
         <div className={s.details}>
           <div className={s.headline}>
             <h1>{aboutUs.companyName}</h1>

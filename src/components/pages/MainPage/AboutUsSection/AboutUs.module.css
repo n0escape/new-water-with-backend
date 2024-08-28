@@ -7,6 +7,9 @@
     justify-content: space-between;
     padding: 84px 148px; /*внутренние отступы секции*/
     gap: 20px; /*отступ между блоками внутри секции*/
+    background: url('../../../../../public/assets/components/aboutUs/aboutUs_bg.png') top no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
 }
 .bgImage {
     margin: 0;
