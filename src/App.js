@@ -1,4 +1,5 @@
 import './App.css';
+import './generalStyles/Fonts.module.css'
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NotFound from './components/pages/NotFound/NotFound.jsx';

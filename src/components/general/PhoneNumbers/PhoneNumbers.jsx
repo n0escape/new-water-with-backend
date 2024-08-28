@@ -1,5 +1,6 @@
 import classNames from 'classnames';
 import s from './PhoneNumbers.module.css';
+import fonts from '../../../generalStyles/Fonts.module.css'
 import React from 'react';
 
 const PhoneNumbers = ({context, phoneNumbersList, toggleContacts}) => {
@@ -17,6 +18,10 @@ const PhoneNumbers = ({context, phoneNumbersList, toggleContacts}) => {
     [s.contacts]: context === 'contacts',
     [s.footer]: context === 'footer',
   });
+  const textClass = classNames({
+    [fonts.textL]: context === 'contacts',
+    [fonts.textMRegular]: context === 'footer' || context === 'header',
+  });
 
   const handleClick = () => toggleContacts && toggleContacts()
 
@@ -24,7 +29,14 @@ const PhoneNumbers = ({context, phoneNumbersList, toggleContacts}) => {
     <ul className={listClass}>
       {phoneNumbersList.map( (phone, index) => (
         <li key={index}>
-          <a href={`tel:${phone}`} target="_blank" rel="noopener noreferrer" onClick={handleClick} title={`Телефон ${index+1}`}>
+          <a 
+            className={textClass} 
+            href={`tel:${phone}`} 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            onClick={handleClick} 
+            title={`Телефон ${index+1}`}
+          >
             {stylizePhoneNumber(phone)}
           </a>
         </li>

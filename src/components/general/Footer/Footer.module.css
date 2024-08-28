@@ -4,12 +4,18 @@
     flex-direction: column;
     align-items: center;
     background-color: #CEE5FC;
-    padding: 28px 60px; /*внутренний отступ секции*/
-    gap: 60px; /*отступ между контентом и списком разрешений*/
+    padding: 28px 60px;
+    /*внутренний отступ секции*/
+    gap: 60px;
+    /*отступ между контентом и списком разрешений*/
+    background: linear-gradient(360deg, #E6F2FF 0%, #F1F7FF 100%);
+    box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px rgba(0, 0, 0, 0.3);
 }
+
 #pageFooter * {
     color: #888888;
 }
+
 .rights {
     width: 100%;
     display: flex;
@@ -19,26 +25,31 @@
     justify-content: space-between;
     padding: 0 24px;
 }
+
 .rights p {
     margin: 0;
     font-weight: 300;
     font-size: 14px;
     line-height: 20px;
 }
+
 .container {
-    padding: 0 40px; /*внутренний отступ содержимого footer*/
+    padding: 0 40px;
+    /*внутренний отступ содержимого footer*/
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     box-sizing: border-box;
-    justify-content: space-between; /*отступ между содержимым footer*/
+    justify-content: space-between;
+    /*отступ между содержимым footer*/
     align-items: flex-start;
     align-content: flex-start;
     gap: 32px 24px;
 
 }
-.container > * {
+
+.container>* {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -46,6 +57,7 @@
     text-align: start;
     gap: 16px;
 }
+
 .container h2 {
     margin: 0;
     font-weight: 700;
@@ -59,50 +71,67 @@
 
 @media screen and (max-width: 1024px) {
     #pageFooter {
-        padding: 28px 32px; /*внутренний отступ секции*/
-        gap: 32px; /*отступ между контентом и списком разрешений*/
+        padding: 28px 32px;
+        /*внутренний отступ секции*/
+        gap: 32px;
+        /*отступ между контентом и списком разрешений*/
     }
+
     .rights {
         flex-direction: column;
         justify-content: center;
         gap: 8px;
     }
+
     .container {
-        padding: 0 24px; /*внутренний отступ содержимого footer*/
+        padding: 0 24px;
+        /*внутренний отступ содержимого footer*/
     }
-    .container > * {
+
+    .container>* {
         padding: 0 20px;
     }
+
     .logo,
     .socialMedias {
         align-items: center;
         text-align: center;
     }
+
     .nav {
         align-items: flex-end;
         text-align: end;
     }
+
     .contacts {
         align-items: flex-start;
         text-align: start;
     }
 }
+
 @media screen and (max-width: 600px) {
     #pageFooter {
-        padding: 28px 16px; /*внутренний отступ секции*/
-        gap: 40px; /*отступ между контентом и списком разрешений*/
+        padding: 28px 16px;
+        /*внутренний отступ секции*/
+        gap: 40px;
+        /*отступ между контентом и списком разрешений*/
     }
+
     .rights {
         gap: 4px;
     }
+
     .container {
-        justify-content: center; /* Изменено на center */
+        justify-content: center;
+        /* Изменено на center */
         align-items: center;
         align-content: center;
-        padding: 0px 20px; /*внутренний отступ содержимого footer*/
+        padding: 0px 20px;
+        /*внутренний отступ содержимого footer*/
         gap: 28px 60px;
     }
-    .container > div {
+
+    .container>div {
         flex: none;
         padding: 0;
         width: 100%;
@@ -110,12 +139,14 @@
         text-align: center;
         gap: 8px;
     }
-    .container > div:nth-child(2),
-    .container > div:nth-child(3) {
+
+    .container>div:nth-child(2),
+    .container>div:nth-child(3) {
         width: 40%;
     }
-    .container > div:nth-child(4) {
+
+    .container>div:nth-child(4) {
         gap: 16px;
     }
-    
+
 }

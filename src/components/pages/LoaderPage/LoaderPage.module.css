@@ -11,11 +11,12 @@
 }
 
 .loaderPage h1 {
-    font-family: 'Open Sans';
+    font-family: 'Finlandica';
     font-style: normal;
     font-weight: 700;
-    font-size: 48px;
-    line-height: 56px;
+    font-size: 36px;
+    line-height: 44px;
+    color: #001F29;
 }
 
 .loaderGif img,

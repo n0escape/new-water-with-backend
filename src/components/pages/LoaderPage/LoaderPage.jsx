@@ -7,7 +7,6 @@ const LoaderPage = () => {
             <div className={s.loaderGif}>
                 <img src={process.env.PUBLIC_URL + '/assets/general/loading.gif'} alt='loading gif' />
             </div>
-            {/* <div className={s.loaderItem}></div> */}
         </div>
     )
 }

@@ -1,4 +1,5 @@
 import s from './Header.module.css';
+import fonts from '../../../generalStyles/Fonts.module.css';
 import { Link } from 'react-router-dom';
 
 import PhoneNumbers from '../PhoneNumbers/PhoneNumbers';
@@ -49,7 +50,7 @@ const Header = ({logo, contactsIcon, contacts}) => {
         <div className={`${s.item} ${s.contactsBlock} ${contactsExpanded ? s.expanded : ''}`}>
           <PhoneNumbers context={'header'} phoneNumbersList={contacts.phoneNumbers} toggleContacts={toggleContacts}/>
           <div className={s.schedule}>
-            <p>{contacts.schedule}</p>
+            <p className={fonts.lableS}>{contacts.schedule}</p>
           </div>
         </div>
       </header>
