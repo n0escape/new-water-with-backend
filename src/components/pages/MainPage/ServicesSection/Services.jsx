@@ -25,7 +25,7 @@ const Services = ({services}) => (
                   </div>
                   { service.minPrice !== null
                     ? <p className={`${fonts.textMRegular} ${s.minPrice}`}>
-                        від 
+                        від&nbsp;
                         <span className={fonts.price}>{service.minPrice}</span>
                       </p>
                     : null

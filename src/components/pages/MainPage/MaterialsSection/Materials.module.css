@@ -7,15 +7,6 @@
     padding: 24px 60px; /*внутренние отступы секции*/
     gap: 40px; /*отступы между заголовком, картой и списком работ*/
 }
-#materials h1 {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 44px;
-}
 
 .details {
     display: flex;
@@ -25,7 +16,7 @@
     align-items: flex-start;
     align-content: center;
     padding: 0px 24px;
-    gap: 28px;
+    gap: 36px;
 }
 .imagesSet {
     width: 100%;
@@ -50,25 +41,21 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+    width: 840px;
     text-wrap: wrap;
     text-align: center;
 }
 .info * {
-    margin: 0;
-    font-size: 16px;
-    line-height: 22px;
     color: #041D2E;
 }
 
-.titleAdvantanges {
-    font-weight: 600;
+.advantages > ul {
+    list-style: none; 
+    list-style-position: inside;
 }
-.advantages > ul > li {
-    list-style-type: none;
-    /* list-style-type: "\1f4a7"; */
-}
-.importantInfo {
-    font-weight: 700;
+.advantages > ul > li::before {
+    content: "\1f4a7";
+    padding-right: 8px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -78,6 +65,9 @@
     .imagesSet img {
         width: 180px;
         height: 154px;
+    }
+    .info {
+        width: 100%;
     }
 }
 @media screen and (max-width: 600px) {

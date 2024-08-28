@@ -1,10 +1,9 @@
 import s from './Materials.module.css'
+import fonts from '../../../../generalStyles/Fonts.module.css'
 
 const Materials = ({materials}) => (
     <section id={s.materials}>
-        <div>
-            <h1>Матеріали</h1>
-        </div>
+        <h1 className={fonts.headerL}>Матеріали</h1>
         <div className={s.details}>
             <div className={s.imagesSet}>
                 {materials.photos.map( (elem, index) => (
@@ -15,16 +14,18 @@ const Materials = ({materials}) => (
                 ))}
             </div>
             <div className={s.info}>
-                <p>{materials.description}</p>
+                <p className={fonts.textMRegular}>{materials.description}</p>
                 <div className={s.advantages}>
-                    <p className={s.titleAdvantanges}>Переваги обсадної труби ПВХ:</p>
+                    <p className={fonts.textMBold}>Переваги обсадної труби ПВХ:</p>
                     <ul>
                         {materials.advantages.map( (elem, index) => (
-                            <li key={index}>{elem.title}</li>
+                            <li className={fonts.textMRegular} key={index}>
+                                {elem.title}    
+                            </li>
                         ))}
                     </ul>
                 </div>
-                <p className={s.importantInfo}>! Уся продукція сертифікована та відповідає нормам СЕС України.</p>
+                <p className={fonts.textMBold}>! Уся продукція сертифікована та відповідає нормам СЕС України.</p>
             </div>
         </div>
     </section>
