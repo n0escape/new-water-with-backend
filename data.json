@@ -1,199 +1,251 @@
 {
   "generalIcons": {
-    "logo": "/assets/general/logo-template.png",
+    "logo": "/assets/general/logo.png",
     "toTopIcon": "/assets/general/pageUp.png",
     "callIcon": "/assets/general/call.png"
   },
   "aboutUs": {
+    "background": {"src":"/assets/components/aboutUs/aboutUs_bg.png", "alt":"Фонове зображення секції Про нас"},
     "companyName": "New Water",
-    "companyDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla. Donec placerat condimentum aliquet. Vivamus ac tellus sed mi fringilla maximus in sed tellus. Nam venenatis nulla non purus feugiat pharetra. Duis rhoncus dignissim suscipit. Nulla pretium arcu in lectus malesuada, vel viverra lacus consequat. Aliquam eget congue velit. Phasellus congue eu ligula ut dignissim. Integer at lectus volutpat, vulputate metus non, faucibus mauris. Curabitur malesuada, dui ac tincidunt euismod, elit risus lobortis lacus, sit amet suscipit magna dui sed libero. Ut convallis risus id facilisis scelerisque. Pellentesque semper massa et urna finibus facilisis. Vestibulum placerat metus varius nulla cursus, id tristique lorem luctus. Sed sit amet sagittis justo. Cras tempor, quam quis sagittis gravida, lorem justo facilisis turpis, vitae sollicitudin leo erat vel felis. Donec sed enim egestas, faucibus odio eget, pulvinar mauris. Phasellus sagittis sit amet purus eget porta. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam erat volutpat.",
-    "advantages": [
+    "slogan": [
+      "Буріння свердловин",
+      "у Харкові та в області"
+    ],
+    "companyDescription": [
+      "Наша компанія з досвідом роботи понад 10 років пропонує буріння свердловин в Харкові та Харківській області.Багаторічний досвід компанії дозволяє з упевненністю заявити - ми кращі в своїй галузі!\n",
+      "Головне в нашій роботі, що дозволяє досягти ефективного результату – це досвід.\n",
+      "Знання в галузі гідрогеології, компетентність у бурінні та власне обладнання є запорукою якісного виконання робіт. Ми пропонуємо гнучку конкурентну цінову політику і комплексне виконання робіт «під ключ».За роки своєї роботи ми маємо безліч клієнтів по всій Слобожанщині,  підтверджуємо бездоганність репутації щоденною працею\n",
+      "Ми готові надати бурильні роботи на максимально вигідних для Вас умовах."
+    ],
+    "mainSteps": [
       {
-        "title": "Advantage title 1",
-        "description": "Mini description about advantage..."
+        "title": "1. Заявка на роботи",
+        "description": "Ви зв’язуєтеся з нами у зручний для вас спосіб: дзвінок, лист на пошту або заявка з сайту"
       },
       {
-        "title": "Advantage title 2",
-        "description": "Mini description about advantage..."
+        "title": "2. Розрахунок вартості",
+        "description": "Наш спеціаліст виїжджає на місце буріння, прораховує  водоносний горизонт та складає детальний кошторис робіт"
       },
       {
-        "title": "Advantage title 3",
-        "description": "Mini description about advantage..."
+        "title": "3. Буріння свердловини",
+        "description": "Після підписання договору швидко та якісно проводимо бурові роботи, встановлюємо обсадні труби та прокачуємо скважину до чистої води"
       },
       {
-        "title": "Advantage title 4",
-        "description": "Mini description about advantage..."
+        "title": "4. Оплата і гарантії",
+        "description": "При Вас виміряємо глибину скважини, підписуємо Акт прийому-передачі, проводимо розрахунок та видаємо паспорт і гарантію на свердловину"
       }
     ]
   },
   "services": [
     {
-      "id": "pump-installation",
-      "title": "Установка насосів",
-      "minPrice": "3000грн",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla.",
-      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh.",
+      "id": "drilling-water-wells",
+      "title": "Буріння свердловин на воду",
+      "minPrice": "550 грн/м",
+      "description": "Професійне буріння свердловин для забезпечення вашого дому чистою водою. Гарантуємо якісну роботу та довговічність свердловин. Буріння свердловини відбувається малогабаритною установкою, яка передбачає розміщення техніки навіть на невеликих ділянках.",
       "photos": [
-        {"imageSrc":"/assets/srevices/pump-installation/Media1.png", "title":"Зображення до послуги установки насосів 11"},
-        {"imageSrc":"/assets/srevices/pump-installation/Media2.png", "title":"Зображення до послуги установки насосів 12"},
-        {"imageSrc":"/assets/srevices/pump-installation/Media3.png", "title":"Зображення до послуги установки насосів 13"}
+        {"imageSrc":"/assets/components/srevices/drilling-water-wells/Media1.png", "title":"Зображення до послуги буріння водних свердловин 1"},
+        {"imageSrc":"/assets/components/srevices/drilling-water-wells/Media2.png", "title":"Зображення до послуги буріння водних свердловин 2"},
+        {"imageSrc":"/assets/components/srevices/drilling-water-wells/Media3.png", "title":"Зображення до послуги буріння водних свердловин 3"}
       ],
       "priceExplanation": [
-        {"title": "Робота:", "price": "700грн"},
-        {"title": "Прилад:", "price": "1500грн"},
-        {"title": "Додаткові інструменти:", "price": "300грн"},
-        {"title": "Витрати на шлях:", "price": "200грн"}
+        {"title": "Робота"},
+        {"title": "Прилад"},
+        {"title": "Додаткові інструменти"},
+        {"title": "Витрати на шлях"}
       ],
       "whatYouWillGet": [
-        "some text point",
-        "some text point",
-        "some text point",
-        "some text point"
+        "Роботу з сертифікованих матеріалів",
+        "Перевірка геологічних умов для буріння скважини",
+        "Прорахування продуктивності свердловини",
+        "Акуратна робота",
+        "Гарантію на виконані роботи",
+        "Консультації по подальшому облаштуванню",
+        "Готова для облаштування водна свердловна"
       ]
     },
     {
-      "id": "drilling-of-the-wells",
-      "title": "Буріння свердловин",
-      "minPrice": "2000грн",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla.",
-      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh.",
+      "id": "arrangement-of-water-wells",
+      "title": "Облаштування свердловин на воду",
+      "minPrice": "???",
+      "description": "Комплексне облаштування свердловин для ефективного водопостачання. Ми надаємо всі необхідні послуги для запуску свердловини в експлуатацію. Дана послуга включає в себе різні аспекти робіт по облаштуванню свердловини для їх подальшого використання, до таких робот відносятся: установка насоса, організація системи водопостачання до приміщення, монтаж гідроакумуляторів тощо.",
       "photos": [
-        {"imageSrc":"/assets/srevices/drilling-of-the-wells/Media1.png", "title":"Зображення до послуги буріння свердловин 11"},
-        {"imageSrc":"/assets/srevices/drilling-of-the-wells/Media2.png", "title":"Зображення до послуги буріння свердловин 12"},
-        {"imageSrc":"/assets/srevices/drilling-of-the-wells/Media3.png", "title":"Зображення до послуги буріння свердловин 13"}
+        {"imageSrc":"/assets/components/srevices/arrangement-of-water-wells/Media1.png", "title":"Зображення облаштування свердловин 1"},
+        {"imageSrc":"/assets/components/srevices/arrangement-of-water-wells/Media2.png", "title":"Зображення облаштування свердловин 2"},
+        {"imageSrc":"/assets/components/srevices/arrangement-of-water-wells/Media3.png", "title":"Зображення облаштування свердловин 3"}
       ],
       "priceExplanation": [
-        {"title": "Робота:", "price": "1000грн"},
-        {"title": "Додаткові інструменти:", "price": "500грн"},
-        {"title": "Витрати на шлях:", "price": "200грн"}
+        {"title": "Робота"},
+        {"title": "Додаткові інструменти"},
+        {"title": "Витрати на шлях"}
       ],
       "whatYouWillGet": [
-        "some text point",
-        "some text point",
-        "some text point",
-        "some text point"
+        "Якісну роботу",
+        "Установку насосного обладнання",
+        "Організоовану система постачання води",
+        "Вмонтований гідроаккумулятор",
+        "Оснащенну та повністю готову для використання скважина"
       ]
     },
     {
-      "id": "pump-installation-2",
-      "title": "Установка насосів 2",
-      "minPrice": "3000грн",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla.",
-      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh.",
+      "id": "water-purification",
+      "title": "Очищення води",
+      "minPrice": "???",
+      "description": "Встановлення систем очищення води для забезпечення високої якості питної води у вашому домі або подвір'ї. Вода буде безпечна для вживання та використання.",
       "photos": [
-        {"imageSrc":"/assets/srevices/pump-installation/Media1.png", "title":"Зображення до послуги установки насосів 21"},
-        {"imageSrc":"/assets/srevices/pump-installation/Media2.png", "title":"Зображення до послуги установки насосів 22"},
-        {"imageSrc":"/assets/srevices/pump-installation/Media3.png", "title":"Зображення до послуги установки насосів 23"}
+        {"imageSrc":"/assets/components/srevices/water-purification/Media1.png", "title":"Зображення до послуги очищення води 1"},
+        {"imageSrc":"/assets/components/srevices/water-purification/Media2.png", "title":"Зображення до послуги очищення води 2"},
+        {"imageSrc":"/assets/components/srevices/water-purification/Media3.png", "title":"Зображення до послуги очищення води 3"}
       ],
       "priceExplanation": [
-        {"title": "Робота:", "price": "700грн"},
-        {"title": "Прилад:", "price": "1500грн"},
-        {"title": "Додаткові інструменти:", "price": "300грн"},
-        {"title": "Витрати на шлях:", "price": "200грн"}
+        {"title": "Робота"},
+        {"title": "Прилад"},
+        {"title": "Додаткові інструменти"},
+        {"title": "Витрати на шлях"}
       ],
       "whatYouWillGet": [
-        "some text point",
-        "some text point",
-        "some text point",
-        "some text point"
+        "Швидку та висококваліфіковану роботу",
+        "Встановлену систему очищення води",
+        "Консультації з поліпшення якості води"
       ]
     },
     {
-      "id": "drilling-of-the-wells-2",
-      "title": "Буріння свердловин 2",
-      "minPrice": "2000грн",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh. Aliquam tortor odio, consectetur nec justo nec, eleifend fringilla nulla.",
-      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, mi vitae mattis pulvinar, sem metus tincidunt arcu, venenatis semper ante urna ac est. Proin in lacus eu mauris pretium scelerisque a vel nibh.",
+      "id": "repair-of-wells",
+      "title": "Ремонт свердловин",
+      "minPrice": "???",
+      "description": "Повний ремонт та відновлення функціональності свердловини. Видалення осадів для покращення продуктивності та якості води.",
       "photos": [
-        {"imageSrc":"/assets/srevices/drilling-of-the-wells/Media1.png", "title":"Зображення до послуги буріння свердловин 21"},
-        {"imageSrc":"/assets/srevices/drilling-of-the-wells/Media2.png", "title":"Зображення до послуги буріння свердловин 22"},
-        {"imageSrc":"/assets/srevices/drilling-of-the-wells/Media3.png", "title":"Зображення до послуги буріння свердловин 23"}
+        {"imageSrc":"/assets/components/srevices/repair-of-wells/Media1.png", "title":"Зображення ремонту свердловини 1"},
+        {"imageSrc":"/assets/components/srevices/repair-of-wells/Media2.png", "title":"Зображення ремонту свердловини 2"},
+        {"imageSrc":"/assets/components/srevices/repair-of-wells/Media3.png", "title":"Зображення ремонту свердловини 3"}
       ],
       "priceExplanation": [
-        {"title": "Робота:", "price": "1000грн"},
-        {"title": "Додаткові інструменти:", "price": "500грн"},
-        {"title": "Витрати на шлях:", "price": "200грн"}
+        {"title": "Робота"},
+        {"title": "Додаткові інструменти"},
+        {"title": "Витрати на шлях"}
       ],
       "whatYouWillGet": [
-        "some text point",
-        "some text point",
-        "some text point",
-        "some text point"
+        "Якісну роботу",
+        "Профілактичні заходи для попередження повторних забруднень",
+        "Очищенну свердловину від ілу, піску та осаду"
+      ]
+    },
+    {
+      "id": "uninstallation-of-pumps",
+      "title": "Демонтаж насосів",
+      "minPrice": "???",
+      "description": "Безпечне та професійне витягування залишених у свердловині насосів. Гарантуємо збереження цілісності свердловини та обладнання.",
+      "photos": [
+        {"imageSrc":"/assets/components/srevices/uninstallation-of-pumps/Media1.png", "title":"Зображення демонтажу насосів 1"},
+        {"imageSrc":"/assets/components/srevices/uninstallation-of-pumps/Media2.png", "title":"Зображення демонтажу насосів 2"},
+        {"imageSrc":"/assets/components/srevices/uninstallation-of-pumps/Media3.png", "title":"Зображення демонтажу насосів 3"}
+      ],
+      "priceExplanation": [
+        {"title": "Робота"},
+        {"title": "Додаткові інструменти"},
+        {"title": "Витрати на шлях"}
+      ],
+      "whatYouWillGet": [
+        "Безпечне вилучення насоса",
+        "Рекомендації щодо подальших дій",
+        "Акуратна та висококваліфікована робота"
       ]
     }
   ],
+  "materials": {
+    "description": "Матеріали з якими працює наша компанія це - труби з ПВХ, стійкі до окислення, іржі та впливу вологи. Важливо, що така обсадна труба відмінно підходить для будь-якого типу грунту, де буриться свердловина.",
+    "photos": [
+      {
+        "imageSrc":"/assets/components/materials/materialsImage1.png",
+        "title":"Зображення про матеріали у використанні"
+      },
+      {
+        "imageSrc":"/assets/components/materials/materialsImage2.png",
+        "title":"Зображення про матеріали у використанні"
+      },
+      {
+        "imageSrc":"/assets/components/materials/materialsImage3.png",
+        "title":"Зображення про матеріали у використанні"
+      }
+    ],
+    "advantages": [
+      {"title": "Термін експлуатації понад 50 років"},
+      {"title": "Стійкість до фізико – хімічної взаємодії з довкіллям"},
+      {"title": "Легка вага, труби пвх легко з’ єднуються, при їх монтажі не потрібне зварювання"},
+      {"title": "Пластикові сурми відрізняються міцністю та герметичністю, завдяки різьбовим з’ єднанням."}
+    ]
+  },
   "ourWorks": [
     {
-      "title": "Title about work 1",
+      "title": "Робота 1",
       "description": "Mini description about work...",
       "location": [50.45, 30.5233],
       "address": null,
       "date": null,
-      "imageSrc": "/assets/ourWorks/work1/workImage.png"
+      "imageSrc": "/assets/components/ourWorks/work1/workImage.png"
     },
     {
-      "title": "Title about work 2",
+      "title": "Робота 2",
       "description": "Mini description about work...",
       "location": [48.45, 35.0167],
       "address": "м. Харків, вул. Полтавський шлях 22",
       "date": "13.05.2023",
-      "imageSrc": "/assets/ourWorks/work2/workImage.png"
+      "imageSrc": "/assets/components/ourWorks/work2/workImage.png"
     },
     {
-      "title": "Title about work 3",
+      "title": "Робота 3",
       "description": "Mini description about work...",
       "location": [46.48, 30.7326],
       "address": "м. Харків, вул. Петра Болобочана 9",
       "date": "20.03.2022",
-      "imageSrc": "/assets/ourWorks/work3/workImage.png"
+      "imageSrc": "/assets/components/ourWorks/work3/workImage.png"
     },
     {
-      "title": "Title about work 4",
+      "title": "Робота 4",
       "description": "Mini description about work...",
       "location": [47.45, 34.5233],
       "address": "м. Харків, пров. Степовий 41",
       "date": null,
-      "imageSrc": "/assets/ourWorks/work1/workImage.png"
+      "imageSrc": "/assets/components/ourWorks/work1/workImage.png"
     },
     {
-      "title": "Title about work 5",
+      "title": "Робота 5",
       "description": "Mini description about work...",
       "location": [42.45, 32.0167],
       "address": null,
       "date": "13.05.2023",
-      "imageSrc": "/assets/ourWorks/work2/workImage.png"
+      "imageSrc": "/assets/components/ourWorks/work2/workImage.png"
     },
     {
-      "title": "Title about work 6",
+      "title": "Робота 6",
       "description": "Mini description about work...",
       "location": [46.48, 36.7326],
       "address": null,
       "date": "20.03.2022",
-      "imageSrc": "/assets/ourWorks/work3/workImage.png"
+      "imageSrc": "/assets/components/ourWorks/work3/workImage.png"
     },
     {
-      "title": "Title about work 7",
+      "title": "Робота 7",
       "description": "Mini description about work...",
       "location": [56.45, 25.5233],
       "address": null,
       "date": null,
-      "imageSrc": "/assets/ourWorks/work1/workImage.png"
+      "imageSrc": "/assets/components/ourWorks/work1/workImage.png"
     },
     {
-      "title": "Title about work 8",
+      "title": "Робота 8",
       "description": "Mini description about work...",
       "location": [45.45, 31.0167],
       "address": null,
       "date": "13.05.2023",
-      "imageSrc": "/assets/ourWorks/work2/workImage.png"
+      "imageSrc": "/assets/components/ourWorks/work2/workImage.png"
     },
     {
-      "title": "Title about work 9",
+      "title": "Робота 9",
       "description": "Mini description about work...",
       "location": [41.48, 25.7326],
       "address": null,
       "date": "20.03.2022",
-      "imageSrc": "/assets/ourWorks/work3/workImage.png"
+      "imageSrc": "/assets/components/ourWorks/work3/workImage.png"
     }
   ],
   "contacts": {
@@ -210,24 +262,23 @@
       }
     ],
     "phoneNumbers": [
-      "+380503455353",
-      "+380675254242"
+      "+380971193265"
     ],
     "mailAddresses": [
       "exampleEmail@gmail.com",
       "companyMail@gmail.com"
     ],
-    "schedule": "Пн - Пт 9:00 - 18:00",
+    "schedule": "Кожен день 9:00 - 21:00",
     "socialMedias": [
       {
         "id": "telegram",
         "url": "https://t.me/example",
-        "src": "/assets/socialMedias/telegram.png"
+        "src": "/assets/components/socialMedias/telegram.png"
       },
       {
         "id": "facebook",
         "url": "https://facebook.com/example",
-        "src": "/assets/socialMedias/facebook.png"
+        "src": "/assets/components/socialMedias/facebook.png"
       }
     ]
   }
