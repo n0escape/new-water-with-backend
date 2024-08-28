@@ -98,14 +98,14 @@
     line-height: 20px;
 }
 
-.lableL {
+.labelL {
     font-family: 'Open Sans';
     font-weight: 300;
     font-size: 20px;
     line-height: 26px;
 }
 
-.lableLSemiBold {
+.labelLSemiBold {
     font-family: 'Open Sans';
     font-weight: 600;
     font-size: 20px;
@@ -113,21 +113,21 @@
 
 }
 
-.lableM {
+.labelM {
     font-family: 'Finlandica';
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
 }
 
-.lableMSemiBold {
+.labelMSemiBold {
     font-family: 'Open Sans';
     font-weight: 600;
     font-size: 18px;
     line-height: 24px;
 }
 
-.lableS {
+.labelS {
     font-family: 'Open Sans';
     font-weight: 400;
     font-size: 16px;

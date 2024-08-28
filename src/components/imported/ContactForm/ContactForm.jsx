@@ -1,4 +1,5 @@
 import s from './ContactForm.module.css';
+import fonts from '../../../generalStyles/Fonts.module.css'
 import axios from 'axios';
 import React, { 
   //useEffect, 
@@ -151,13 +152,14 @@ const ContactForm = ({ servicesList, selectedService = null }) => {
               {
                 fieldName === 'topic' ? (
                   <>
-                    <label htmlFor={fieldName} className={`${s.topicLabel}`}>
+                    <label htmlFor={fieldName} className={`${fonts.labelS} ${s.topicLabel}`}>
                         Оберіть тему
                     </label>
                     <select
                       id={fieldName}
                       name={fieldName}
                       value={field.value}
+                      className={fonts.labelS}
                       onChange={(e) => handleChange(fieldName, e.target.value)}
                     >
                       {servicesList.map(service => ( 
@@ -168,7 +170,7 @@ const ContactForm = ({ servicesList, selectedService = null }) => {
                 ) : (
                   fieldName === 'message' ? (
                     <>
-                      <label htmlFor={fieldName} className={`${s.messageLabel}`}>
+                      <label htmlFor={fieldName} className={`${fonts.labelS} ${s.messageLabel}`}>
                         Коментар
                       </label>
                       <textarea
@@ -177,7 +179,7 @@ const ContactForm = ({ servicesList, selectedService = null }) => {
                         name={fieldName}
                         value={field.value}
                         onChange={(e) => {handleChange(fieldName, e.target.value); handleChangeTextarea(e) }}
-                        className={`${field.filled ? s.filled : ''}`} // Применяем класс filled, если поле заполнено
+                        className={`${fonts.labelS} ${field.filled ? s.filled : ''}`} // Применяем класс filled, если поле заполнено
                       />
                     </>
                   ) : (
@@ -188,9 +190,9 @@ const ContactForm = ({ servicesList, selectedService = null }) => {
                         name={fieldName}
                         value={field.value}
                         onChange={(e) => handleChange(fieldName, e.target.value)}
-                        className={`${s.inputField} ${field.filled ? s.filled : ''}`} // Применяем класс filled, если поле заполнено
+                        className={`${fonts.labelS} ${s.inputField} ${field.filled ? s.filled : ''}`} // Применяем класс filled, если поле заполнено
                       />
-                      <label htmlFor={fieldName} className={s.textFieldLable}>
+                      <label htmlFor={fieldName} className={`${fonts.labelS} ${s.textFieldLable}`}>
                         {labelMap[fieldName] || (fieldName.charAt(0).toUpperCase() + fieldName.slice(1))}
                       </label>
                     </>
@@ -199,12 +201,12 @@ const ContactForm = ({ servicesList, selectedService = null }) => {
               }
             </div>
             {/* Отображение ошибок */}
-            {errors[fieldName] !== '' && <span style={{ color: 'red' }}>{errors[fieldName]}</span>}
+            {errors[fieldName] !== '' && <span className={fonts.labelS} style={{ color: 'red' }}>{errors[fieldName]}</span>}
           </div>
         ))}
       </div>
       <div className={`${s.formGroupItem} ${s.submitBox}`}>
-        <input type="submit" value="Відправити" />
+        <input className={fonts.labelLSemiBold} type="submit" value="Відправити запит" />
       </div>
     </form>
   );

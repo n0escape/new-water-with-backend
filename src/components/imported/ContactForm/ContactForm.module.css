@@ -11,12 +11,17 @@
   flex-wrap: wrap;
   align-content: center;
 }
+
 .container {
-  gap: 32px; /*отступ между кнопкой и полями*/
+  gap: 32px;
+  /*отступ между кнопкой и полями*/
 }
+
 .fields {
-  gap: 18px; /*отступ между полями*/
+  gap: 18px;
+  /*отступ между полями*/
 }
+
 .formGroupItem {
   position: relative;
   display: flex;
@@ -26,15 +31,14 @@
 .formGroupItem > .inputField,
 .formGroupItem > textarea,
 .formGroupItem > select {
-  font-size: 16px;
-  line-height: 24px;
-  color: #1B1B1B;
   background-color: rgba(255, 255, 255, 0);
   border: 1px solid #52C6EF;
 
-  padding: 12px 16px; /*внутренний отступ всех полей ввода*/
+  padding: 12px 16px;
+  /*внутренний отступ всех полей ввода*/
   width: 100%;
-  max-width: 500px; /*ширина всех полей ввода*/
+  max-width: 500px;
+  /*ширина всех полей ввода*/
 
   box-sizing: border-box;
   outline: none;
@@ -50,25 +54,29 @@
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
 }
+
 .formGroupItem > select {
-  padding: 12px 10px; /*внутренний отступ у select*/
+  padding: 12px 10px;
+  /*внутренний отступ у select*/
 }
+
 .formGroupItem > textarea {
   resize: none;
   height: auto;
-  min-height: 50px; /* Минимальная высота textarea, чтобы избежать слишком маленького размера */
-  max-height: 400px; /* Максимальная высота textarea, чтобы избежать слишком большого размера */
+  min-height: 50px;
+  /* Минимальная высота textarea, чтобы избежать слишком маленького размера */
+  max-height: 400px;
+  /* Максимальная высота textarea, чтобы избежать слишком большого размера */
 }
 
 .topicLabel,
 .messageLabel,
 .formGroupItem .textFieldLable {
-  font-size: 16px;
-  line-height: 24px;
   color: #52C6EF;
 
   left: 0;
-  padding: 10px 15px; /*внутренний отступ у всех label*/
+  padding: 10px 15px;
+  /*внутренний отступ у всех label*/
 
   position: absolute;
   pointer-events: none;
@@ -83,9 +91,10 @@
 
 .topicLabel,
 .messageLabel,
-.formGroupItem .filled ~ .textFieldLable,
-.formGroupItem .inputField:focus ~ .textFieldLable {
-  padding: 0 10px; /*внутренний отступ label (при активации поля)*/
+.formGroupItem .filled~.textFieldLable,
+.formGroupItem .inputField:focus~.textFieldLable {
+  padding: 0 10px;
+  /*внутренний отступ label (при активации поля)*/
   letter-spacing: .2em;
   color: #001F29;
   background: #F1F7FF;
@@ -95,6 +104,7 @@
   -ms-transform: translateX(10px) translateY(-25px);
   -o-transform: translateX(10px) translateY(-25px);
 }
+
 .messageLabel {
   position: relative;
   transform: translateX(10px) translateY(10px);
@@ -103,13 +113,14 @@
   -ms-transform: translateX(10px) translateY(10px);
   -o-transform: translateX(10px) translateY(10px);
 }
+
 .formGroupItem:has(.messageLabel) {
   justify-content: flex-start;
   align-items: flex-start;
   margin-top: -23px;
 }
 
-.formGroupItem  > select:focus-within{
+.formGroupItem>select:focus-within {
   border-radius: 8px 8px 0 0;
   -webkit-border-radius: 8px 8px 0 0;
   -moz-border-radius: 8px 8px 0 0;
@@ -118,36 +129,38 @@
 }
 
 .formGroupItem > input[type="submit"] {
-  font-size: 20px;
-  line-height: 28px;
-  
   border: 0px;
   color: #DFF4FF;
   background: linear-gradient(0deg, #004D63 0%, #52C6EF 69.27%);
-
-  padding: 16px 120px; /*внутренний отступ кнопки*/
-
-  border-radius: 30px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
+  width: 100%;
+  padding: 16px 0;
+  /*внутренний отступ кнопки*/
+  border-radius: 28px;
+  -webkit-border-radius: 28px;
+  -moz-border-radius: 28px;
+  -ms-border-radius: 28px;
+  -o-border-radius: 28px;
 }
+
 .formGroupItem > input[type="submit"]:hover {
-  box-shadow: 0px 0px 8px 4px rgba(0, 53, 69, 0.5);
+  box-shadow: 0px 0px 20px 12px rgba(0, 31, 41, 0.15), 0px 0px 8px 1px rgba(0, 31, 41, 0.3);
   color: #FFFFFF;
 }
 
 @media screen and (max-width: 1024px) {
   .container {
-    gap: 28px; /*отступ между кнопкой и полями*/
+    gap: 28px;
+    /*отступ между кнопкой и полями*/
   }
 }
+
 @media screen and (max-width: 600px) {
   .container {
-    gap: 20px; /*отступ между кнопкой и полями*/
+    gap: 20px;
+    /*отступ между кнопкой и полями*/
   }
-  .formGroupItem > input[type="submit"] {
+
+  .formGroupItem>input[type="submit"] {
     width: 100%;
     padding: 12px 8px;
   }
