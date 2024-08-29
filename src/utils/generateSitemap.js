@@ -18,7 +18,7 @@ const generateSitemapData = (pagesData) => {
     xml += `<url>
         <loc>${baseUrl}</loc>
         <lastmod>${currDate}</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1</priority>
     </url>
     `;
@@ -27,7 +27,7 @@ const generateSitemapData = (pagesData) => {
         xml += `<url>
         <loc>${baseUrl}/service/${page.id}</loc>
         <lastmod>${currDate}</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     `;
@@ -36,7 +36,7 @@ const generateSitemapData = (pagesData) => {
         xml += `<url>
         <loc>${baseUrl}/order/${page.id}</loc>
         <lastmod>${currDate}</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
 `;
