@@ -12,30 +12,34 @@ const generateSitemapData = (pagesData) => {
     let currDate = getCurrentDate();
 
     let xml = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">`;
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    `;
 
     xml += `<url>
         <loc>${baseUrl}</loc>
         <lastmod>${currDate}</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1</priority>
-    </url>`;
+    </url>
+    `;
 
     pagesData.forEach(page => {
         xml += `<url>
-            <loc>${baseUrl}/service/${page.id}</loc>
-            <lastmod>${currDate}</lastmod>
-            <changefreq>monthly</changefreq>
-            <priority>0.9</priority>
-        </url>`;
+        <loc>${baseUrl}/service/${page.id}</loc>
+        <lastmod>${currDate}</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    `;
     });
     pagesData.forEach(page => {
         xml += `<url>
-            <loc>${baseUrl}/order/${page.id}</loc>
-            <lastmod>${currDate}</lastmod>
-            <changefreq>monthly</changefreq>
-            <priority>0.8</priority>
-        </url>`;
+        <loc>${baseUrl}/order/${page.id}</loc>
+        <lastmod>${currDate}</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+`;
     });
 
     xml += `</urlset>`;
