@@ -2,29 +2,36 @@
     max-width: 100vw;
     display: flex;
     flex-direction: row;
-    justify-content: space-between; /*отступ между описанием и боковым блоком*/
-    padding: 64px 148px; /*внутренний отступ секции*/
+    justify-content: space-between;
+    /*отступ между описанием и боковым блоком*/
+    padding: 64px 148px;
+    /*внутренний отступ секции*/
 }
+
 .serviceBox {
     display: flex;
     flex-direction: column;
-    padding: 0 36px 0 24px; /*внутренний отступ описания*/
-    gap: 16px; /*отступ между заголовком и описанием*/
+    padding: 0 36px 0 24px;
+    /*внутренний отступ описания*/
+    gap: 16px;
+    /*отступ между заголовком и описанием*/
 }
 
 .serviceDetails {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    gap: 24px; /*отступ между блоками текста*/
+    gap: 24px;
+    /*отступ между блоками текста*/
 }
+
 .serviceDescription {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
-.serviceDescription > p {
+.serviceDescription>p {
     color: #5E5E5E;
 }
 
@@ -32,16 +39,18 @@
     font-style: italic;
 }
 
-.list ul > li {
+.list ul>li {
     color: #5E5E5E;
 }
 
 .list {
     display: flex;
     flex-direction: column;
-    gap: 12px; /*отступ между заголовком и списком*/
+    gap: 12px;
+    /*отступ между заголовком и списком*/
 }
-.list ul > li::before {
+
+.list ul>li::before {
     content: "\1f4a7";
     padding-right: 12px;
 }
@@ -51,19 +60,22 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: space-between;
+    gap: 40px;
+    /*отступ между блоком цены, галереей и кнопкой связи*/
     flex-wrap: wrap;
 }
-.toOrderBox {
-    padding: 16px 24px;
-    width: 336px;
-    box-sizing: border-box; /*виксирует размер блока не давая padding расширять блок*/
-    gap: 40px; /*отступ между кнопкой и текстом*/
+
+.priceInfo {
+    padding: 8px 16px 12px 16px;
+    width: 300px;
+    box-sizing: border-box;
+    /*фиксирует размер блока не давая padding расширять блок*/
+    gap: 12px;
+    /*отступ заголовком и текстом*/
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: #E7E7E7;
-    
+    text-align: end;
+    /* background-color: #E7E7E7; */
     border-radius: 12px;
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
@@ -71,92 +83,89 @@
     -o-border-radius: 12px;
 }
 
-.orderInfo {
-    width: 100%;
-    gap: 16px; /*отсутп между заголовком и ценой*/
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+.priceInfo h1,
+.priceInfo p {
+    color: #003545;
 }
-.orderInfo h1 {
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 36px;
-}
-.orderInfo p {
-    margin: 0;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 32px;
-}
-.orderInfo p strong {
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 44px;
 
-    color: #888888;
-}
 .toServicesBtn {
     width: 100%;
     display: flex;
     text-align: center;
     justify-content: center;
 }
-.toServicesBtn a {
-    font-size: 20px;
-    line-height: 28px;
-    color: #FFFFFF;
-    background-color: #888888;
 
+.toServicesBtn a {
+    color: #DFF4FF;
+    background: linear-gradient(0deg, #004D63 0%, #52C6EF 69.27%);
     width: 100%;
     padding: 16px;
     text-decoration: none;
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
+    border-radius: 28px;
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    -ms-border-radius: 28px;
+    -o-border-radius: 28px;
+}
+
+.toServicesBtn a:hover {
+    color: #FFFFFF;
+    box-shadow: 0px 0px 20px 12px rgba(0, 31, 41, 0.15), 0px 0px 8px 1px rgba(0, 31, 41, 0.3);
 }
 
 @media screen and (max-width: 1024px) {
     .servicePage {
         flex-direction: column;
         justify-content: initial;
-        padding: 64px 32px; /*внутренний отступ секции*/
-        gap: 40px; /*отступ между описанием и боковым блоком*/
+        padding: 64px 32px;
+        /*внутренний отступ секции*/
+        gap: 40px;
+        /*отступ между описанием и боковым блоком*/
     }
+
     .serviceBox {
-        padding: 0 24px; /*внутренний отступ описания*/
+        padding: 0 24px;
+        /*внутренний отступ описания*/
     }
+
     .serviceBox h1 {
         font-size: 32px;
         line-height: 40px;
         text-align: center;
 
     }
+
     .aditionalBox {
         box-sizing: border-box;
         padding: 0 48px;
         gap: 48px;
         width: 100%;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
     }
-    .orderInfo {
-        align-items: flex-start;
+    
+    .priceInfo h1,
+    .priceInfo p {
+        text-align: center;
     }
 }
+
 @media screen and (max-width: 600px) {
     .servicePage {
-        padding: 16px; /*внутренний отступ секции*/
-        gap: 28px; /*отступ между описанием и боковым блоком*/
+        padding: 16px;
+        /*внутренний отступ секции*/
+        gap: 28px;
+        /*отступ между описанием и боковым блоком*/
     }
+
     .serviceBox {
-        padding: 0px 36px 0px 24px; /*внутренний отступ описания*/
+        padding: 0px 36px 0px 24px;
+        /*внутренний отступ описания*/
         gap: 16px;
 
     }
+
     .serviceBox h1 {
         font-size: 28px;
         line-height: 44px;
@@ -164,35 +173,32 @@
 
 
     .aditionalBox {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
         padding: 0;
         gap: 28px;
     }
-    .toOrderBox {
+
+    .priceInfo {
         width: 100%;
         padding: 16px;
-        gap: 12px; /*отступ между текстом и кнопкой*/
+        gap: 12px;
+        /*отступ между текстом и кнопкой*/
     }
-    .orderInfo {
-        align-items: center;
-        text-align: center;
-        padding: 0 4px;
-        gap: 4px;
-    }
-    .orderInfo h1 {
+
+    h1 {
         font-size: 24px;
         line-height: 32px;
     }
-    .orderInfo p {
+
+    p {
         font-size: 20px;
         line-height: 28px;
     }
-    .orderInfo strong {
+
+    strong {
         font-size: 32px;
         line-height: 40px;
     }
+
     .toServicesBtn a {
         padding: 12px 16px;
     }

@@ -84,21 +84,22 @@ const ServicePage = ({services}) => {
               </div>
             </div>
             <div className={s.aditionalBox}>
-              <div className={s.toOrderBox}>
-                <div className={s.orderInfo}>
-                  <h1>Вартість</h1> 
-                  { serviceData.minPrice !== null
-                    ? <p>від <strong>{serviceData.minPrice}</strong></p>
-                    : <p>Договірна</p>
-                  }
-                </div>
-                <div className={s.toServicesBtn}>
-                  <Link to={`/order/${serviceData.id}`}>
-                    Зв'язатись з нами
-                  </Link>
-                </div>
+              <div className={s.priceInfo}>
+                <h1 className={fonts.headerS}>Вартість</h1> 
+                { serviceData.minPrice !== null
+                  ? <p className={fonts.textMRegular}>
+                      від&nbsp;
+                      <span className={fonts.price}>{serviceData.minPrice}</span>
+                    </p>
+                  : <span className={fonts.price}>Договірна</span>
+                }
               </div>
               <Gallery photosList={serviceData.photos} />
+              <div className={s.toServicesBtn}>
+                <Link className={fonts.labelLSemiBold} to={`/order/${serviceData.id}`}>
+                  Зв'язатись з нами
+                </Link>
+              </div>
             </div>
           </div>
           <Product serviceData={serviceData} canonicalUrl={canonicalUrl}/>
