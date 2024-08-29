@@ -6,19 +6,26 @@
     flex-wrap: nowrap;
     align-items: center;
 }
+
 .orderPage {
-    padding: 64px 0; /*внутренний отступ секции*/
-    gap: 40px; /*отступ между формой и заголовком*/
+    padding: 64px 0;
+    /*внутренний отступ секции*/
+    gap: 40px;
+    /*отступ между формой и заголовком*/
 }
+
 .orderPageContent {
     width: 100%;
     max-width: 500px;
     padding: 0;
-    gap: 16px; /*отступ между формой и обратной ссылкой*/
+    gap: 16px;
+    /*отступ между формой и обратной ссылкой*/
 }
+
 .header {
     text-align: center;
 }
+
 .moveBack a {
     text-decoration-line: underline;
     color: #041D2E;
@@ -26,25 +33,34 @@
 
 @media screen and (max-width: 1024px) {
     .orderPage {
-        gap: 32px; /*отступ между формой и заголовком*/
+        gap: 32px;
+        /*отступ между формой и заголовком*/
     }
+
     .header h1 {
         font-size: 32px;
         line-height: 40px;
     }
 }
+
 @media screen and (max-width: 600px) {
     .orderPage {
-        padding: 20px 16px; /*внутренний отступ секции*/
-        gap: 28px; /*отступ между формой и заголовком*/
+        padding: 20px 16px;
+        /*внутренний отступ секции*/
+        gap: 28px;
+        /*отступ между формой и заголовком*/
     }
+
     .header h1 {
         font-size: 28px;
         line-height: 36px;
     }
+
     .orderPageContent {
-        gap: 12px; /*отступ между формой и обратной ссылкой*/
+        gap: 12px;
+        /*отступ между формой и обратной ссылкой*/
     }
+
     .moveBack a {
         font-size: 16px;
         line-height: 24px;
