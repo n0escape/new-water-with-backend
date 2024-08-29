@@ -47,9 +47,11 @@
         "Вартість найпростішої однотрубної свердловинної конструкції з розрахунку на метр глибини складатиме від 550,00 грн."
       ],
       "photos": [
-        {"imageSrc":"/assets/components/srevices/drilling-water-wells/Media1.png", "title":"Зображення до послуги буріння водних свердловин 1"},
-        {"imageSrc":"/assets/components/srevices/drilling-water-wells/Media2.png", "title":"Зображення до послуги буріння водних свердловин 2"},
-        {"imageSrc":"/assets/components/srevices/drilling-water-wells/Media3.png", "title":"Зображення до послуги буріння водних свердловин 3"}
+        {"imageSrc":"/assets/components/services/drilling-water-wells/Media1.jpg", "title":"Зображення до послуги буріння водних свердловин 1"},
+        {"imageSrc":"/assets/components/services/drilling-water-wells/Media2.jpg", "title":"Зображення до послуги буріння водних свердловин 2"},
+        {"imageSrc":"/assets/components/services/drilling-water-wells/Media3.jpg", "title":"Зображення до послуги буріння водних свердловин 3"},
+        {"imageSrc":"/assets/components/services/drilling-water-wells/Media4.jpg", "title":"Зображення до послуги буріння водних свердловин 4"},
+        {"imageSrc":"/assets/components/services/drilling-water-wells/Media5.jpg", "title":"Зображення до послуги буріння водних свердловин 5"}
       ],
       "contents": [
         {"title": "Ціна за роботу"},
@@ -76,9 +78,11 @@
         "Мінімальна загальна вартість виконаних робіт по бурінню та облаштуванню свердловини на воду на приватній ділянці становить від 13 000,00 грн."
       ],
       "photos": [
-        {"imageSrc":"/assets/components/srevices/arrangement-of-water-wells/Media1.png", "title":"Зображення облаштування свердловин 1"},
-        {"imageSrc":"/assets/components/srevices/arrangement-of-water-wells/Media2.png", "title":"Зображення облаштування свердловин 2"},
-        {"imageSrc":"/assets/components/srevices/arrangement-of-water-wells/Media3.png", "title":"Зображення облаштування свердловин 3"}
+        {"imageSrc":"/assets/components/services/arrangement-of-water-wells/Media1.jpg", "title":"Зображення облаштування свердловин 1"},
+        {"imageSrc":"/assets/components/services/arrangement-of-water-wells/Media2.jpg", "title":"Зображення облаштування свердловин 2"},
+        {"imageSrc":"/assets/components/services/arrangement-of-water-wells/Media3.jpg", "title":"Зображення облаштування свердловин 3"},
+        {"imageSrc":"/assets/components/services/arrangement-of-water-wells/Media4.jpg", "title":"Зображення облаштування свердловин 4"},
+        {"imageSrc":"/assets/components/services/arrangement-of-water-wells/Media5.jpg", "title":"Зображення облаштування свердловин 5"}
       ],
       "contents": [
         {"title": "Ціна за роботу"},
@@ -104,9 +108,8 @@
         "Вартість послуги, включаючи ціну за фільтр з поліпропіленовим напиленням, складає щонайменше 1000 грн."
       ],
       "photos": [
-        {"imageSrc":"/assets/components/srevices/water-purification/Media1.png", "title":"Зображення до послуги очищення води 1"},
-        {"imageSrc":"/assets/components/srevices/water-purification/Media2.png", "title":"Зображення до послуги очищення води 2"},
-        {"imageSrc":"/assets/components/srevices/water-purification/Media3.png", "title":"Зображення до послуги очищення води 3"}
+        {"imageSrc":"/assets/components/services/water-purification/Media1.jpg", "title":"Зображення до послуги очищення води 1"},
+        {"imageSrc":"/assets/components/services/water-purification/Media2.jpg", "title":"Зображення до послуги очищення води 2"}
       ],
       "contents": [
         {"title": "Ціна за роботу"},
@@ -128,9 +131,9 @@
         "Щоб дізнатись більше, зв'яжіться з нами засобами зв'язку, або через форму на сайті."
       ],
       "photos": [
-        {"imageSrc":"/assets/components/srevices/repair-of-wells/Media1.png", "title":"Зображення ремонту свердловини 1"},
-        {"imageSrc":"/assets/components/srevices/repair-of-wells/Media2.png", "title":"Зображення ремонту свердловини 2"},
-        {"imageSrc":"/assets/components/srevices/repair-of-wells/Media3.png", "title":"Зображення ремонту свердловини 3"}
+        {"imageSrc":"/assets/components/services/repair-of-wells/Media1.jpg", "title":"Зображення ремонту свердловини 1"},
+        {"imageSrc":"/assets/components/services/repair-of-wells/Media2.jpg", "title":"Зображення ремонту свердловини 2"},
+        {"imageSrc":"/assets/components/services/repair-of-wells/Media3.jpg", "title":"Зображення ремонту свердловини 3"}
       ],
       "contents": [
         {"title": "Ціна за роботу"},
@@ -152,9 +155,8 @@
         "Щоб дізнатись більше, зв'яжіться з нами засобами зв'язку, або через форму на сайті."
       ],
       "photos": [
-        {"imageSrc":"/assets/components/srevices/uninstallation-of-pumps/Media1.png", "title":"Зображення демонтажу насосів 1"},
-        {"imageSrc":"/assets/components/srevices/uninstallation-of-pumps/Media2.png", "title":"Зображення демонтажу насосів 2"},
-        {"imageSrc":"/assets/components/srevices/uninstallation-of-pumps/Media3.png", "title":"Зображення демонтажу насосів 3"}
+        {"imageSrc":"/assets/components/services/uninstallation-of-pumps/Media1.jpg", "title":"Зображення демонтажу насосів 1"},
+        {"imageSrc":"/assets/components/services/uninstallation-of-pumps/Media2.jpg", "title":"Зображення демонтажу насосів 2"}
       ],
       "contents": [
         {"title": "Ціна за роботу"},
@@ -197,7 +199,7 @@
       "location": [50.45, 30.5233],
       "address": null,
       "date": null,
-      "imageSrc": "/assets/components/ourWorks/work1/workImage.png"
+      "imageSrc": "/assets/components/ourWorks/work1/workImage.jpg"
     },
     {
       "title": "Робота 2",
@@ -205,7 +207,7 @@
       "location": [48.45, 35.0167],
       "address": "м. Харків, вул. Полтавський шлях 22",
       "date": "13.05.2023",
-      "imageSrc": "/assets/components/ourWorks/work2/workImage.png"
+      "imageSrc": "/assets/components/ourWorks/work2/workImage.jpg"
     },
     {
       "title": "Робота 3",
@@ -213,7 +215,7 @@
       "location": [46.48, 30.7326],
       "address": "м. Харків, вул. Петра Болобочана 9",
       "date": "20.03.2022",
-      "imageSrc": "/assets/components/ourWorks/work3/workImage.png"
+      "imageSrc": "/assets/components/ourWorks/work3/workImage.jpg"
     },
     {
       "title": "Робота 4",
@@ -221,7 +223,7 @@
       "location": [47.45, 34.5233],
       "address": "м. Харків, пров. Степовий 41",
       "date": null,
-      "imageSrc": "/assets/components/ourWorks/work1/workImage.png"
+      "imageSrc": "/assets/components/ourWorks/work1/workImage.jpg"
     },
     {
       "title": "Робота 5",
@@ -229,7 +231,7 @@
       "location": [42.45, 32.0167],
       "address": null,
       "date": "13.05.2023",
-      "imageSrc": "/assets/components/ourWorks/work2/workImage.png"
+      "imageSrc": "/assets/components/ourWorks/work2/workImage.jpg"
     },
     {
       "title": "Робота 6",
@@ -237,7 +239,7 @@
       "location": [46.48, 36.7326],
       "address": null,
       "date": "20.03.2022",
-      "imageSrc": "/assets/components/ourWorks/work3/workImage.png"
+      "imageSrc": "/assets/components/ourWorks/work3/workImage.jpg"
     },
     {
       "title": "Робота 7",
@@ -245,7 +247,7 @@
       "location": [56.45, 25.5233],
       "address": null,
       "date": null,
-      "imageSrc": "/assets/components/ourWorks/work1/workImage.png"
+      "imageSrc": "/assets/components/ourWorks/work1/workImage.jpg"
     },
     {
       "title": "Робота 8",
@@ -253,7 +255,7 @@
       "location": [45.45, 31.0167],
       "address": null,
       "date": "13.05.2023",
-      "imageSrc": "/assets/components/ourWorks/work2/workImage.png"
+      "imageSrc": "/assets/components/ourWorks/work2/workImage.jpg"
     },
     {
       "title": "Робота 9",
@@ -261,7 +263,7 @@
       "location": [41.48, 25.7326],
       "address": null,
       "date": "20.03.2022",
-      "imageSrc": "/assets/components/ourWorks/work3/workImage.png"
+      "imageSrc": "/assets/components/ourWorks/work3/workImage.jpg"
     }
   ],
   "contacts": {

@@ -22,20 +22,33 @@
 
 .galleryImage,
 .galleryImage img {
+  object-fit: scale-down;
+  max-height: 372px;
   width: 448px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
 }
 
 .btnPrev,
 .btnNext {
+  background-color: #E7E7E7;
+  padding: 3px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: none;
   border: none;
   color: #000000;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 28px;
   cursor: pointer;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
 }
 
 .btnPrev {
@@ -47,6 +60,9 @@
 }
 
 .dotList {
+  background-color: #E7E7E7;
+  padding: 2px;
+  border-radius: 100px;
   position: absolute;
   bottom: 10px;
   /* расположение относительно нижнего края блока */
@@ -63,7 +79,7 @@
 }
 
 .active {
-  background-color: #717171;
+  background-color: #2a2a2a;
 }
 
 @media screen and (max-width: 600px) {

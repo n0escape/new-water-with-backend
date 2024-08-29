@@ -34,9 +34,18 @@
     -o-border-radius: 8px;
 }
 
-.serviceCard,
-.serviceCard img {
+.serviceCard {
     max-width: 360px;
+}
+
+.serviceCard img {
+    height: 176px;
+    width: 360px;
+    border-radius: 8px 8px 0px 0px;
+    -webkit-border-radius: 8px 8px 0px 0px;
+    -moz-border-radius: 8px 8px 0px 0px;
+    -ms-border-radius: 8px 8px 0px 0px;
+    -o-border-radius: 8px 8px 0px 0px;
 }
 
 .serviceCardInfo {
