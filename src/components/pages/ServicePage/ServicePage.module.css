@@ -11,12 +11,6 @@
     padding: 0 36px 0 24px; /*внутренний отступ описания*/
     gap: 16px; /*отступ между заголовком и описанием*/
 }
-.serviceBox h1 {
-    margin: 0;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 44px;
-}
 
 .serviceDetails {
     display: flex;
@@ -24,36 +18,32 @@
     flex-direction: column;
     gap: 24px; /*отступ между блоками текста*/
 }
-.list h4,
-.list ul > li,
-.serviceDetails p,
-.slogan {
-    margin: 0;
-    font-size: 16px;
-    line-height: 22px;
-    color: #888888;
+.serviceDescription {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
+
+.serviceDescription > p {
+    color: #5E5E5E;
+}
+
 .slogan {
     font-style: italic;
 }
+
+.list ul > li {
+    color: #5E5E5E;
+}
+
 .list {
     display: flex;
     flex-direction: column;
     gap: 12px; /*отступ между заголовком и списком*/
 }
-.list h4 {
-    font-weight: 700;
-    color: #000000;
-}
-.list ul {
-    padding-left: 20px;
-}
-.list ul > li {
-    padding-left: 20px;
-    list-style-type: disc;
-}
-.list ul > li strong {
-    font-weight: 700;
+.list ul > li::before {
+    content: "\1f4a7";
+    padding-right: 12px;
 }
 
 .aditionalBox {

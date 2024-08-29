@@ -60,7 +60,7 @@
     list-style-position: inside;
 }
 
-.advantages>ul>li::before {
+.advantages > ul > li::before {
     content: "\1f4a7";
     padding-right: 8px;
 }

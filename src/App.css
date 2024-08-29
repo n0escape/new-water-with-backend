@@ -11,12 +11,12 @@
     text-decoration: none;
 }
 
-* li>a:hover {
+* li > a:hover {
     text-decoration: underline;
 }
 
-*>button,
-*>input[type="submit"] {
+* > button,
+* > input[type="submit"] {
     cursor: pointer;
 }
 

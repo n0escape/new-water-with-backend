@@ -25,7 +25,9 @@ const Materials = ({materials}) => (
                         ))}
                     </ul>
                 </div>
-                <p className={fonts.textMBold}>! Уся продукція сертифікована та відповідає нормам СЕС України.</p>
+                <p className={fonts.textMBold}>
+                    ! Уся продукція сертифікована та відповідає нормам СЕС України.
+                </p>
             </div>
         </div>
     </section>

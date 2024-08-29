@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import s from './ServicePage.module.css'
+import fonts from '../../../generalStyles/Fonts.module.css'
 import Gallery from '../../general/Gallery/Gallery';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { baseUrl } from '../../../App';
@@ -47,28 +48,36 @@ const ServicePage = ({services}) => {
           <div className={s.servicePage}>
             <div className={s.serviceBox}>
               <div>
-                <h1>{serviceData.title}</h1>
+                <h1 className={fonts.headerL}>{serviceData.title}</h1>
               </div>
               <div className={s.serviceDetails}>
-                <p>{serviceData.description}</p>
-                <p className={s.slogan}>
-                  Буріння свердловини на воду – найкраще вирішення проблеми водопостачання будинків, де відсутнє централізоване водопостачання. Ви не будете залежити від постачальників води, тому що свердловина на воду- це Ваша власність.
-                  <br/>Ми допоможемо Вам обрати самий оптимальний варіант, який відповідає Вашим запитам.
-                  <br/>Ми працюємо на результат!
-                </p>
+                <div className={s.serviceDescription}>
+                  {serviceData.description.map((text, index) => (
+                    <p className={fonts.textMRegular} key={index}>
+                      {text}
+                    </p>
+                  ))}
+                  <p className={`${fonts.textMRegular} ${s.slogan}`}>
+                    Буріння свердловини на воду – найкраще вирішення проблеми водопостачання будинків, де відсутнє централізоване водопостачання. Ви не будете залежити від постачальників води, тому що свердловина на воду- це Ваша власність.
+                    <br/>Ми допоможемо Вам обрати самий оптимальний варіант, який відповідає Вашим запитам.
+                    <br/>Ми працюємо на результат!
+                  </p>
+                </div>
                 <div className={s.list}>
-                  <h4>Що входить у вартість:</h4>
+                  <h4 className={fonts.textMBold}>З чого формується ціна:</h4>
                   <ul>
-                    {serviceData.priceExplanation.map((point, index) => (
-                      <li key={index}>{point.title}</li>
+                    {serviceData.contents.map((point, index) => (
+                      <li className={fonts.textMRegular} key={index}>
+                        {point.title}
+                      </li>
                     ))}
                   </ul>
                 </div>
                 <div className={s.list}>
-                  <h4>Що ви отримаєте в результаті:</h4>
+                  <h4 className={fonts.textMBold}>Що ви отримаєте в результаті:</h4>
                   <ul>
                     {serviceData.whatYouWillGet.map((point, index) => (
-                      <li key={index}>{point}</li>
+                      <li className={fonts.textMRegular} key={index}>{point}</li>
                     ))}
                   </ul>
                 </div>
@@ -80,12 +89,12 @@ const ServicePage = ({services}) => {
                   <h1>Вартість</h1> 
                   { serviceData.minPrice !== null
                     ? <p>від <strong>{serviceData.minPrice}</strong></p>
-                    : <p>індивідуально</p>
+                    : <p>Договірна</p>
                   }
                 </div>
                 <div className={s.toServicesBtn}>
                   <Link to={`/order/${serviceData.id}`}>
-                    Замовити послугу
+                    Зв'язатись з нами
                   </Link>
                 </div>
               </div>
