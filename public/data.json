@@ -194,76 +194,52 @@
   },
   "ourWorks": [
     {
-      "title": "Робота 1",
-      "description": "Mini description about work...",
-      "location": [50.45, 30.5233],
-      "address": null,
-      "date": null,
+      "title": "Буріння свердловини на воду з подальшим облаштуванням",
+      "description": "Повний об'єм роботи з буріння та облаштування свердловини на воду. Роботу виконано було \"під ключ\" у найкоротші строки на задньому подвір'ї часного сектору.",
+      "location": null,
+      "address": "обл. Харківська",
+      "date": "27.11.2019",
       "imageSrc": "/assets/components/ourWorks/work1/workImage.jpg"
     },
     {
-      "title": "Робота 2",
-      "description": "Mini description about work...",
-      "location": [48.45, 35.0167],
-      "address": "м. Харків, вул. Полтавський шлях 22",
-      "date": "13.05.2023",
+      "title": "Облаштування свердловини для подвір'я",
+      "description": "Було проведено роботи по очищенню води з колодязя, шляхом встановленню фільтру з поліпропіленовим напиленням. ",
+      "location": null,
+      "address": null,
+      "date": "10.11.2021",
       "imageSrc": "/assets/components/ourWorks/work2/workImage.jpg"
     },
     {
-      "title": "Робота 3",
-      "description": "Mini description about work...",
-      "location": [46.48, 30.7326],
-      "address": "м. Харків, вул. Петра Болобочана 9",
-      "date": "20.03.2022",
+      "title": "Буріння свердловини у часному подвір'ї",
+      "description": "У ході роботи було створено свердловину на воду. Роботи проведені оперативно та якісно, з дотриманням усіх стандартів і вимог до подібних робіт.",
+      "location": null,
+      "address": null,
+      "date": "10.05.2018",
       "imageSrc": "/assets/components/ourWorks/work3/workImage.jpg"
     },
     {
-      "title": "Робота 4",
-      "description": "Mini description about work...",
-      "location": [47.45, 34.5233],
-      "address": "м. Харків, пров. Степовий 41",
-      "date": null,
-      "imageSrc": "/assets/components/ourWorks/work1/workImage.jpg"
-    },
-    {
-      "title": "Робота 5",
-      "description": "Mini description about work...",
-      "location": [42.45, 32.0167],
-      "address": null,
-      "date": "13.05.2023",
-      "imageSrc": "/assets/components/ourWorks/work2/workImage.jpg"
-    },
-    {
-      "title": "Робота 6",
-      "description": "Mini description about work...",
-      "location": [46.48, 36.7326],
-      "address": null,
-      "date": "20.03.2022",
-      "imageSrc": "/assets/components/ourWorks/work3/workImage.jpg"
-    },
-    {
-      "title": "Робота 7",
-      "description": "Mini description about work...",
-      "location": [56.45, 25.5233],
+      "title": "Очищення води для приміщення",
+      "description": "Було проведено роботи по очищенню води з колодязя, шляхом встановленню фільтру з поліпропіленовим напиленням.",
+      "location": null,
       "address": null,
       "date": null,
-      "imageSrc": "/assets/components/ourWorks/work1/workImage.jpg"
+      "imageSrc": "/assets/components/ourWorks/work4/workImage.jpg"
     },
     {
-      "title": "Робота 8",
-      "description": "Mini description about work...",
-      "location": [45.45, 31.0167],
+      "title": "Облаштування свердловини для подвір'я",
+      "description": "Проведена повна робота по облаштуванню свердловини з підводом води до приміщення.",
+      "location": null,
       "address": null,
-      "date": "13.05.2023",
-      "imageSrc": "/assets/components/ourWorks/work2/workImage.jpg"
+      "date": "19.08.2021",
+      "imageSrc": "/assets/components/ourWorks/work5/workImage.jpg"
     },
     {
-      "title": "Робота 9",
-      "description": "Mini description about work...",
-      "location": [41.48, 25.7326],
+      "title": "Буріння та облаштування свердловини в обмеженому просторі",
+      "description": "Об'єм роботи включав буріння, прокладання труб та підключення системи водопостачання. Буріння проведено в умовах обмеженого простору, що свідчить про високий рівень підготовки команди.",
+      "location": null,
       "address": null,
-      "date": "20.03.2022",
-      "imageSrc": "/assets/components/ourWorks/work3/workImage.jpg"
+      "date": null,
+      "imageSrc": "/assets/components/ourWorks/work6/workImage.jpg"
     }
   ],
   "contacts": {

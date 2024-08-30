@@ -22,7 +22,7 @@ const OurWorksList = ({ ourWorks }) => {
         <div className={s.worksContainer}>
             <div className={s.worksList}>
                 {ourWorks.slice(0, visibleWorks).map((work, index) => (
-                    <div key={work.title} className={`${s.workItem} ${index < 4 ? '' : (index >= 4 && fade ? s.fadeIn : s.fadeOut)}`}>
+                    <div key={index} className={`${s.workItem} ${index < 4 ? '' : (index >= 4 && fade ? s.fadeIn : s.fadeOut)}`}>
                         <div className={s.workItemContent}>
                             <div className={s.workImage}>
                                 <img
@@ -53,7 +53,7 @@ const OurWorksList = ({ ourWorks }) => {
                     </button>
                 )}
                 {visibleWorks > 4 && (
-                    <button className={`${fonts.lableS} ${s.lessBtn}`} onClick={showLessWorks}>
+                    <button className={`${fonts.labelS} ${s.lessBtn}`} onClick={showLessWorks}>
                         Згорнути
                     </button>
                 )}

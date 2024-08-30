@@ -51,7 +51,14 @@
 }
 
 .workImage img {
-    width: 425px;
+    max-width: 360px;
+    max-height: 280px;
+    object-fit: scale-down;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 .itemDetails {
@@ -77,7 +84,7 @@
 }
 
 .itemHeader h3 {
-    text-wrap: nowrap;
+    text-wrap: wrap;
     color: #00201A;
 }
 

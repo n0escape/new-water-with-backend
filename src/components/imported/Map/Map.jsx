@@ -28,7 +28,7 @@ const MapPlaceholder = () => {
   )
 }
 
-const startPositionWorks = [49.0, 31.0]; // Начальное положение карты
+const startPositionWorks = [49.988358, 36.232845]; // Начальное положение карты
 
 const MapTemplate = ({content, startPos, zoomSize, markers}) => {
 
@@ -52,13 +52,15 @@ const MapTemplate = ({content, startPos, zoomSize, markers}) => {
         {/* Дополнительные слои карты или компоненты могут быть добавлены здесь */}
 
         {markers.map((marker, index) => (
-          <Marker key={index} position={marker.location} icon={defaultIcon}>
+          marker.location !== null
+          ? <Marker key={index} position={marker.location} icon={defaultIcon}>
             <Popup>
               <b>{marker.title}</b>
               <br />
               {marker.description}
             </Popup>
           </Marker>
+          : null
         ))}
       </MapContainer>
     </div>
@@ -68,7 +70,7 @@ const MapTemplate = ({content, startPos, zoomSize, markers}) => {
 const MapFrame = ({content, markers}) => {
   switch (content) {
     case 'works': 
-    return <MapTemplate content={content} startPos={startPositionWorks} zoomSize={5}  markers={markers}/>
+    return <MapTemplate content={content} startPos={startPositionWorks} zoomSize={8}  markers={markers}/>
     case 'office':
     return <MapTemplate content={content} startPos={markers[0].location} zoomSize={13} markers={markers}/>
     default: 
