@@ -57,7 +57,14 @@ const MapTemplate = ({content, startPos, zoomSize, markers}) => {
             <Popup>
               <b>{marker.title}</b>
               <br />
-              {marker.description}
+              {marker.date !== null ? marker.date : null}
+              {marker.description !== null 
+                ?<>
+                    <hr/><br />
+                    {marker.description}
+                </>
+                : null  
+              }
             </Popup>
           </Marker>
           : null
@@ -70,7 +77,7 @@ const MapTemplate = ({content, startPos, zoomSize, markers}) => {
 const MapFrame = ({content, markers}) => {
   switch (content) {
     case 'works': 
-    return <MapTemplate content={content} startPos={startPositionWorks} zoomSize={8}  markers={markers}/>
+    return <MapTemplate content={content} startPos={startPositionWorks} zoomSize={7}  markers={markers}/>
     case 'office':
     return <MapTemplate content={content} startPos={markers[0].location} zoomSize={13} markers={markers}/>
     default: 

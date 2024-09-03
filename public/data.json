@@ -196,50 +196,122 @@
     {
       "title": "Буріння свердловини на воду з подальшим облаштуванням",
       "description": "Повний об'єм роботи з буріння та облаштування свердловини на воду. Роботу виконано було \"під ключ\" у найкоротші строки на задньому подвір'ї часного сектору.",
-      "location": null,
-      "address": "обл. Харківська",
+      "location": [49.97976003162465, 35.85198803671371],
+      "address": "смт. Манченки",
       "date": "27.11.2019",
       "imageSrc": "/assets/components/ourWorks/work1/workImage.jpg"
     },
     {
       "title": "Облаштування свердловини для подвір'я",
       "description": "У ході роботи було проведено низку дій для облаштування свердловини на подвір'ї. Як результат було створено повністю робочу свердловину з підводом води до необхідного приміщення.",
-      "location": null,
-      "address": null,
+      "location": [50.0026338884219, 36.53967595709017],
+      "address": "с. Сороківка",
       "date": "10.11.2021",
       "imageSrc": "/assets/components/ourWorks/work2/workImage.jpg"
     },
     {
       "title": "Буріння свердловини у часному подвір'ї",
       "description": "У ході роботи було створено свердловину на воду. Роботи проведені оперативно та якісно, з дотриманням усіх стандартів і вимог до подібних робіт.",
-      "location": null,
-      "address": null,
+      "location": [50.21055157564162, 36.15547633297196],
+      "address": "смт. Слатине",
       "date": "10.05.2018",
       "imageSrc": "/assets/components/ourWorks/work3/workImage.jpg"
     },
     {
       "title": "Очищення води для приміщення",
       "description": "Було проведено роботи по очищенню води з колодязя, шляхом встановленню фільтру з поліпропіленовим напиленням.",
-      "location": null,
-      "address": null,
-      "date": null,
+      "location": [49.5870631062871, 37.70896720119506],
+      "address": "с. Глушківка",
+      "date": "11.02.2022",
       "imageSrc": "/assets/components/ourWorks/work4/workImage.jpg"
     },
     {
       "title": "Облаштування свердловини для подвір'я",
       "description": "Проведена повна робота по облаштуванню свердловини з підводом води до приміщення.",
-      "location": null,
-      "address": null,
+      "location": [49.14254171348591, 35.86995936456255],
+      "address": "с. Сахновщина",
       "date": "19.08.2021",
       "imageSrc": "/assets/components/ourWorks/work5/workImage.jpg"
     },
     {
       "title": "Буріння та облаштування свердловини в обмеженому просторі",
       "description": "Об'єм роботи включав буріння, прокладання труб та підключення системи водопостачання. Буріння проведено в умовах обмеженого простору, що свідчить про високий рівень підготовки команди.",
-      "location": null,
-      "address": null,
-      "date": null,
+      "location": [50.19120755213836, 37.204880955745644],
+      "address": "с. Вірівка",
+      "date": "23.11.2019",
       "imageSrc": "/assets/components/ourWorks/work6/workImage.jpg"
+    },
+    {
+      "title": "Демонтаж не працюючого насосу та ремонт",
+      "description": null,
+      "location": [49.28603414411412, 37.48027927710986],
+      "address": "с. Комарівка",
+      "date": "12.03.2017",
+      "imageSrc": "/assets/components/ourWorks/work7/workImage.png"
+    },
+    {
+      "title": "Облаштування вже виритої свердловини",
+      "description": null,
+      "location": [49.449542496425295, 36.707251481442626],
+      "address": "с. Мілова",
+      "date": "24.07.2015",
+      "imageSrc": "/assets/components/ourWorks/work8/workImage.png"
+    },
+    {
+      "title": "Встановлення фільтра очистки води для працюючої свердлвини",
+      "description": null,
+      "location": [49.559316000871036, 36.11112609360188],
+      "address": "с. Роздольне",
+      "date": "08.10.2023",
+      "imageSrc": "/assets/components/ourWorks/work9/workImage.png"
+    },
+    {
+      "title": "Буріння свердловини на воду з подальшим облаштуванням та встновленням фільтру",
+      "description": null,
+      "location": [49.74109041188811, 37.13037703189064],
+      "address": "с. Мостове",
+      "date": "01.04.2024",
+      "imageSrc": "/assets/components/ourWorks/work10/workImage.png"
+    },
+    {
+      "title": "Ремонт старої свердловини без насосу",
+      "description": null,
+      "location": [49.94916846957505, 34.98927684717116],
+      "address": "с. Рябоконеве",
+      "date": "11.04.2016",
+      "imageSrc": "/assets/components/ourWorks/work11/workImage.png"
+    },
+    {
+      "title": "Буріння свердловини без облаштування",
+      "description": null,
+      "location": [49.72755850896546, 35.86488046056231],
+      "address": "смт. Нова Водолага",
+      "date": "26.07.2018",
+      "imageSrc": "/assets/components/ourWorks/work12/workImage.png"
+    },
+    {
+      "title": "Ремонт старої свердловини з подальшим болаштуванням",
+      "description": null,
+      "location": [49.001066960794724, 36.78834054878702],
+      "address": "с. Велика Андріївка",
+      "date": "15.04.2022",
+      "imageSrc": "/assets/components/ourWorks/work13/workImage.png"
+    },
+    {
+      "title": "Буріння свердловини з повним облаштуванням без підводу води до приміщення",
+      "description": null,
+      "location": [49.18607870289903, 35.18607627585103],
+      "address": "с. Скалонівка",
+      "date": "05.12.2023",
+      "imageSrc": "/assets/components/ourWorks/work14/workImage.png"
+    },
+    {
+      "title": "Демонтаж насосу",
+      "description": null,
+      "location": [50.31641161536515, 35.8087159358143],
+      "address": "с. Лютівка",
+      "date": "29.08.2024",
+      "imageSrc": "/assets/components/ourWorks/work15/workImage.png"
     }
   ],
   "contacts": {
