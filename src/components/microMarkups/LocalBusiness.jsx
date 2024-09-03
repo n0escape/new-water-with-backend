@@ -35,7 +35,7 @@ const LocalBusiness = ({data}) => {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": `${data.aboutUs.companyName}`,
-        "description": `${data.aboutUs.companyDescription}`,
+        "description": `${data.aboutUs.companyDescription.join(' ').replace(/\s*\n\s*/g, ' ').trim()}`,
         "currenciesAccepted": "UAH",
         "url": `${baseUrl}`,
         "logo": `${baseUrl}${data.generalIcons.logo}`,
