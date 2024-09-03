@@ -248,30 +248,40 @@
         "title": "Office name",
         "location": [50.45, 30.5233],
         "address": "м. Харків, вул. Полтавський шлях 142"
-      },
-      {
-        "title": "Office name 2",
-        "location": [50.458, 30.5239],
-        "address": "м. Харків, вул. Полтавський шлях 12"
       }
     ],
     "phoneNumbers": [
+      "+380687874009",
       "+380971193265"
     ],
     "mailAddresses": [
-      "exampleEmail@gmail.com",
-      "companyMail@gmail.com"
+      "info.water.bur@gmail.com"
     ],
     "schedule": "Кожен день 9:00 - 21:00",
     "socialMedias": [
       {
         "id": "telegram",
-        "url": "https://t.me/example",
+        "url": "https://t.me/+380687874009",
         "src": "/assets/components/socialMedias/telegram.png"
       },
       {
+        "id": "viber",
+        "url": "viber://chat?number=%2B380687874009",
+        "src": "/assets/components/socialMedias/viber.png"
+      },
+      {
+        "id": "tiktok",
+        "url": "https://www.tiktok.com/@skvaginakharkov",
+        "src": "/assets/components/socialMedias/tiktok.png"
+      },
+      {
+        "id": "instagram",
+        "url": "https://www.instagram.com/burenie_skvagin777",
+        "src": "/assets/components/socialMedias/instagram.png"
+      },
+      {
         "id": "facebook",
-        "url": "https://facebook.com/example",
+        "url": "https://www.facebook.com/share/6Jdg5osEWqnh6D6n/",
         "src": "/assets/components/socialMedias/facebook.png"
       }
     ]
