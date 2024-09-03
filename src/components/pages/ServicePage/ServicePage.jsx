@@ -24,7 +24,14 @@ const ServicePage = ({services}) => {
           <Helmet>
             <title>Послуга {serviceData.title.toLowerCase()} | New Water</title>
             <meta name="description" content={serviceData.shortDescription} />
-            <meta name="keywords" content={serviceData.title.toLowerCase() +", new water, нова вода, новая вода, буріння свердловин, бурение скаважин, замовлення послуги, форма зворотного зв'язку, послуги "} />
+            <meta name="keywords" content={
+              serviceData.title.toLowerCase() + " Харків, " +
+              serviceData.title.toLowerCase() + " Харківська область, " +
+              "new water, нова вода, буріння свердловин Харків, буріння свердловин Харківcька область, буріння свердловин, " + 
+              serviceData.title.toLowerCase() + " Харьков, " +
+              serviceData.title.toLowerCase() + " Харьковская область, " +
+              "новая вода, бурение скаважин Харьков, бурение скаважин Харьковcька область, бурение скаважин"
+            } />
             <link rel="canonical" href={canonicalUrl} />
             {/* social metadata */}
             
