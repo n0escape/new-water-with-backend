@@ -38,7 +38,7 @@ const OurWorksList = ({ ourWorks }) => {
                                     <p className={`${fonts.labelL} ${s.date} ${work.date === null ? s.hidden : ''}`}>{work.date}</p>
                                 </div>
                                 <div className={s.itemDescription}>
-                                    <p className={fonts.textS}>{work.description}</p>
+                                    <p className={fonts.textMRegular}>{work.description}</p>
                                 </div>
                             </div>
                         </div>
