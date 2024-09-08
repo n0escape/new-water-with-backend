@@ -5,7 +5,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 84px 148px;
+    padding: 20px 148px;
     /*внутренние отступы секции*/
     gap: 20px;
     /*отступ между блоками внутри секции*/
