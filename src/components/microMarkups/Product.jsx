@@ -4,7 +4,7 @@ function extractPrice(priceString) {
   // Используем регулярное выражение для поиска чисел в строке
   const match = priceString.match(/\d+(\s?\d{3})*/);
   // Если найдено совпадение, удаляем пробелы и возвращаем результат
-  return match ? match[0].replace(/\s/g, '') : null;
+  return match[0].replace(/\s/g, '');
 }
 
 const Product = ({serviceData, canonicalUrl}) => {
@@ -17,7 +17,7 @@ const Product = ({serviceData, canonicalUrl}) => {
         "offers": {
           "@type": "AggregateOffer",
           "availability": "http://schema.org/InStock",
-          "lowPrice": `${extractPrice(serviceData.minPrice)}`, 
+          ...(serviceData.minPrice ? { "lowPrice": `${extractPrice(serviceData.minPrice)}` } : {}), 
           "priceCurrency": "UAH",
           "url": `${canonicalUrl}`
         }
