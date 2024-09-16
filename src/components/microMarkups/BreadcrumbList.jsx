@@ -1,4 +1,7 @@
-import { useLocation, useParams } from "react-router-dom";
+import { 
+  useLocation,
+  // useParams
+} from "react-router-dom";
 import { baseUrl } from "../../App";
 
 
@@ -14,7 +17,6 @@ const BreadcrumbList = () => {
     } else if (currentPath.includes('/order')) {
       id = currentPath.split('/order')[1]
     }
-    console.log(baseUrl)
   
     const itemListElement = [
       {
