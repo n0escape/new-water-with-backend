@@ -162,6 +162,7 @@
 
     .itemDetails {
         align-items: flex-start;
+        text-align: start;
         gap: 8px;
         /*отступ между заголовком и описанием */
     }
@@ -204,6 +205,7 @@
 
     .itemDetails {
         align-items: center;
+        text-align: center;
         gap: 4px;
         /*отступ между заголовком и описанием */
     }
