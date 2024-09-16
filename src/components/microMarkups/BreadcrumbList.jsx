@@ -4,23 +4,39 @@ import { baseUrl } from "../../App";
 
 const BreadcrumbList = () => {
     const location = useLocation();
-    const params = useParams();
-    const id = params.idFromUrl || params.idService;
+    // const params = useParams();
+    // const id = params.idFromUrl || params.idService;
     const currentPath = location.pathname;
+    let id = null;
+    
+    if (currentPath.includes('/service')) {
+      id = currentPath.split('/service')[1]
+    } else if (currentPath.includes('/order')) {
+      id = currentPath.split('/order')[1]
+    }
+    console.log(baseUrl)
   
     const itemListElement = [
       {
         "@type": "ListItem",
         "position": 1,
-        "name": "Буріння свердловин в Харкові та області",
+        "name": "Головна",
         "item": `${baseUrl}`
       },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": currentPath === '/service' ? "Послуги" : "Замовлення послуги",
-        "item": `${baseUrl}${currentPath}${id ? `/${id}` : ''}`
-      }
+      ...(id !== null
+        ? [{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Послуга",
+            "item": `${baseUrl}/service${id}`
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Замовити послугу",
+            "item": `${baseUrl}/order${id}`
+          }]
+        : [])
     ];
   
     const breadcrumbList = {
