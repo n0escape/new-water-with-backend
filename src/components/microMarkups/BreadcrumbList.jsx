@@ -12,7 +12,7 @@ const BreadcrumbList = () => {
       {
         "@type": "ListItem",
         "position": 1,
-        "name": "Головна",
+        "name": "Буріння свердловин в Харкові та області",
         "item": `${baseUrl}`
       },
       {
