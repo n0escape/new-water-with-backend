@@ -14,7 +14,7 @@ const MainPage = ({ aboutUs, services, materials, ourWorks, servicesList, contac
   return (
     <HelmetProvider>
       <Helmet>
-        <title>Головна | New Water</title>
+        <title>Буріння свердловин в Харкові та області | New Water</title>
         <meta name="description" content="Дізнайтесь більше про компанію, послуги, які ми надаємо, та ознайомтеся з нашими успішними проектами. Зв'яжіться з нами для отримання детальної інформації." />
         <meta name="keywords" content={
           "new water, " + 
@@ -23,13 +23,13 @@ const MainPage = ({ aboutUs, services, materials, ourWorks, servicesList, contac
         }/>
         <link rel="canonical" href={baseUrl} />
         {/* social metadata */}
-        <meta property="og:title" content="Головна | New Water" />
+        <meta property="og:title" content="Буріння свердловин в Харкові та області | New Water" />
         <meta property="og:description" content="Дізнайтесь більше про компанію, послуги, які ми надаємо, та ознайомтеся з нашими успішними проектами. Зв'яжіться з нами для отримання детальної інформації." />
         <meta property="og:url" content={baseUrl} /> 
 
         <meta property="og:image:alt" content="Візитка для головнної сторінки" />
 
-        <meta name="twitter:title" content="Головна | New Water" />
+        <meta name="twitter:title" content="Буріння свердловин в Харкові та області | New Water" />
         <meta name="twitter:description" content="Дізнайтесь більше про компанію, послуги, які ми надаємо, та ознайомтеся з нашими успішними проектами. Зв'яжіться з нами для отримання детальної інформації." />
       </Helmet>
       <>
