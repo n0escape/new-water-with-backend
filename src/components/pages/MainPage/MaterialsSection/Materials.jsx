@@ -3,7 +3,7 @@ import fonts from '../../../../generalStyles/Fonts.module.css'
 
 const Materials = ({materials}) => (
     <section id={s.materials}>
-        <h1 className={fonts.headerL}>Матеріали</h1>
+        <h2 className={fonts.headerL}>Матеріали</h2>
         <div className={s.details}>
             <div className={s.imagesSet}>
                 {materials.photos.map( (elem, index) => (
