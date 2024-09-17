@@ -1,0 +1,14 @@
+{
+    "redirects": [
+      {
+        "source": "/service/pump-installation-2",
+        "destination": "/404",
+        "statusCode": 410
+      },
+      {
+        "source": "/order/drilling-of-the-wells-2",
+        "destination": "/404",
+        "statusCode": 410
+      }
+    ]
+  }

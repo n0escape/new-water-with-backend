@@ -98,10 +98,8 @@ const App = () => {
               <Route exact path="/" element={<MainPage aboutUs={data.aboutUs} services={data.services} materials={data.materials} ourWorks={data.ourWorks} servicesList={servicesList} contacts={data.contacts}/>} />
               <Route path="/service/:idFromUrl" element={<ServicePage services={data.services}/>} />
               <Route path="/order/:idService" element={<OrderPage servicesList={servicesList} />} />
-              {/* хардкодинг 404 (временно) */}
-              <Route path="/order/drilling-of-the-wells-2" element={<NotFound />} />
-              <Route path="/service/pump-installation-2" element={<NotFound />} />
               
+              <Route path="/404" element={<NotFound />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </div>
