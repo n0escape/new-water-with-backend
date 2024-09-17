@@ -6,18 +6,16 @@ import { Link } from "react-router-dom"
 const AboutUs = ({aboutUs}) => (
     <section id={s.aboutUs}>
         <div className={s.details}>
-          <div className={s.headline}>
-            <h1 className={fonts.display}>{aboutUs.companyName}</h1>
-              <div className={s.slogan}>
-                {aboutUs.slogan.map((element,index) => (
-                  <p className={index === 0 ? fonts.headerM : fonts.headerS}
-                    key={index}
-                  >
-                    {element}
-                  </p>
-                ))}
-              </div>
-          </div>
+          <h1 className={fonts.display}>
+            <span className={s.companyName}>{aboutUs.companyName}</span>
+              {aboutUs.slogan.map((element,index) => (
+                <span className={index === 0 ? fonts.headerM : fonts.headerS}
+                  key={index}
+                >
+                  {element}
+                </span>
+              ))}
+          </h1>
           <p className={fonts.textMRegular}>
             {aboutUs.companyDescription.map((element, index) => (
               index === 0 || index % 2 === 0 

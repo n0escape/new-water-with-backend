@@ -18,8 +18,7 @@
     flex: 1;
 }
 
-.details,
-.headline {
+.details {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -32,19 +31,17 @@
     /*отступ между заголовком и текстом*/
 }
 
-.headline {
-    padding: 0;
-    /*внутренние отступы для блока описания компании*/
-    gap: 4px;
-    /*отступ между заголовком и текстом*/
+.details > h1 span {
+    display: block;
 }
 
-.headline > h1 {  
+.companyName {
     background: linear-gradient(0deg, #004D63 0%, #52C6EF 69.27%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+    margin-bottom: 4px;
 }
 
 .details p {
