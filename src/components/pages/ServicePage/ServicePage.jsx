@@ -54,9 +54,7 @@ const ServicePage = ({services}) => {
           </Helmet>
           <div className={s.servicePage}>
             <div className={s.serviceBox}>
-              <div>
-                <h1 className={fonts.headerL}>{serviceData.title}</h1>
-              </div>
+              <h1 className={fonts.headerL}>{serviceData.title}</h1>
               <div className={s.serviceDetails}>
                 <div className={s.serviceDescription}>
                   {serviceData.description.map((text, index) => (
@@ -92,7 +90,7 @@ const ServicePage = ({services}) => {
             </div>
             <div className={s.aditionalBox}>
               <div className={s.priceInfo}>
-                <h1 className={fonts.headerS}>Вартість</h1> 
+                <h4 className={fonts.headerS}>Вартість</h4> 
                 { serviceData.minPrice !== null
                   ? <p className={fonts.textMRegular}>
                       від&nbsp;

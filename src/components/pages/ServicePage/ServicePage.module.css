@@ -83,7 +83,7 @@
     -o-border-radius: 12px;
 }
 
-.priceInfo h1,
+.priceInfo h4,
 .priceInfo p {
     color: #003545;
 }
@@ -144,7 +144,7 @@
         align-items: center;
     }
     
-    .priceInfo h1,
+    .priceInfo h4,
     .priceInfo p,
     .priceInfo span {
         text-align: center;
@@ -184,7 +184,7 @@
         /*отступ между текстом и кнопкой*/
     }
 
-    h1 {
+    .priceInfo h4 {
         font-size: 24px;
         line-height: 32px;
     }
