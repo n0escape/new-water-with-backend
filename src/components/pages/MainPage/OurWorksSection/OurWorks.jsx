@@ -5,7 +5,7 @@ import OurWorksList from './../../../general/OurWorksList/OurWorksList';
 
 const OurWorks = ({ourWorks}) => (
     <section id={s.ourWorks}>
-        <h1 className={fonts.headerL}>Виконані замовлення</h1>
+        <h2 className={fonts.headerL}>Виконані замовлення</h2>
         <MapFrame content='works' markers={ourWorks}/>
         <OurWorksList ourWorks={ourWorks}/>
     </section>
