@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 const Services = ({services}) => (
     <section id={s.services}>
         <div className={s.header}>
-          <h1 className={fonts.headerL}>Послуги</h1>
+          <h2 className={fonts.headerL}>Послуги</h2>
         </div>
         <div className={s.servicesList}>
           {services.map( service => (
