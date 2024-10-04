@@ -1,10 +1,13 @@
 import s from './NavLinks.module.css'
 import fonts from '../../../generalStyles/Fonts.module.css';
 import classNames from 'classnames';
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
+import { CommonTranslationsContext } from '../../../App';
 
-const NavLinks = ({context, toggleNav}) => {
+const NavLinks = ({context, currLang, toggleNav}) => {
+    const commonTranslations = useContext(CommonTranslationsContext);
+
     const linksClass = classNames(s.links, {
         [s.header]: context === 'header',
         [s.footer]: context === 'footer',
@@ -16,18 +19,18 @@ const NavLinks = ({context, toggleNav}) => {
 
     return (
         <ul className={linksClass}>
-            <li>
-                <Link className={textClass} to="/#anchorAboutUs" onClick={ () => toggleNav && toggleNav() } title='Про компанію'>Про компанію</Link>
-            </li>
-            <li>
-                <Link className={textClass} to="/#anchorServices" onClick={ () => toggleNav && toggleNav() } title='Послуги'>Послуги</Link>
-            </li>
-            <li>
-                <Link className={textClass} to="/#anchorOurWorks" onClick={ () => toggleNav && toggleNav() } title='Наші роботи'>Наші роботи</Link>
-            </li>
-            <li>
-                <Link className={textClass} to="/#anchorContacts" onClick={ () => toggleNav && toggleNav() } title='Контакти'>Контакти</Link>
-            </li>
+            {commonTranslations.navLinks.map(link => 
+                Object.entries(link).map(( [key, val], index ) =>
+                    <li key={index}>
+                        <Link 
+                            className={textClass} 
+                            to={`${currLang}/#${key}`} 
+                            onClick={ () => toggleNav && toggleNav() } 
+                            title={`${val}`}>{val}
+                        </Link>
+                    </li>
+                )
+            )}
         </ul>
     )
 }

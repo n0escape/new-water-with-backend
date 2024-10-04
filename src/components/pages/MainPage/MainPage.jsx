@@ -10,27 +10,23 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { baseUrl } from '../../../App.js';
 import ImageGallery from '../../microMarkups/ImageGallery.jsx';
 
-const MainPage = ({ aboutUs, services, materials, ourWorks, servicesList, contacts }) => {
+const MainPage = ({ metaTrans, lang, aboutUs, services, materials, ourWorks, servicesList, contacts }) => {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>Буріння свердловин в Харкові та області | New Water</title>
-        <meta name="description" content="Дізнайтесь більше про компанію, послуги, які ми надаємо, та ознайомтеся з нашими успішними проектами. Зв'яжіться з нами для отримання детальної інформації." />
-        <meta name="keywords" content={
-          "new water, " + 
-          "нова вода, буріння свердловин, буріння свердловин Харків, буріння свердловин Харківська область, облаштування свердловин, облаштування свердловин Харків, облаштування свердлвин Харківська область, ремонт свердловин, ремонт свердловин Харків, ремонт свердловин Харківська область, установка насосів, установка насосів Харків, установка насосів Харківська область " +
-          "новая вода, бурение скаважин, бурение скаважин Харьков, бурение скаважин Харьковская область, обустройство скважин, обустройство скважин Харьков, обустройство скважин Харьковская область, ремонт скважин, ремонт скважин Харьков, ремонт скважин Харьковская область, установка насосов, установка насосов Харьков, установка насосов Харьковская область"
-        }/>
-        <link rel="canonical" href={baseUrl} />
+        <title>{metaTrans.mainPage.title}</title>
+        <meta name="description" content={metaTrans.mainPage.description} />
+        <meta name="keywords" content={"new water, " + metaTrans.mainPage.keywords}/>
+        <link rel="canonical" href={`${baseUrl}/${lang}`} />
         {/* social metadata */}
-        <meta property="og:title" content="Буріння свердловин в Харкові та області | New Water" />
-        <meta property="og:description" content="Дізнайтесь більше про компанію, послуги, які ми надаємо, та ознайомтеся з нашими успішними проектами. Зв'яжіться з нами для отримання детальної інформації." />
-        <meta property="og:url" content={baseUrl} /> 
+        <meta property="og:title" content={metaTrans.mainPage.title} />
+        <meta property="og:description" content={metaTrans.mainPage.description} />
+        <meta property="og:url" content={`${baseUrl}/${lang}`} /> 
 
-        <meta property="og:image:alt" content="Візитка для головнної сторінки" />
+        <meta property="og:image:alt" content={metaTrans.mainPage.ogImageAlt} />
 
-        <meta name="twitter:title" content="Буріння свердловин в Харкові та області | New Water" />
-        <meta name="twitter:description" content="Дізнайтесь більше про компанію, послуги, які ми надаємо, та ознайомтеся з нашими успішними проектами. Зв'яжіться з нами для отримання детальної інформації." />
+        <meta name="twitter:title" content={metaTrans.mainPage.title} />
+        <meta name="twitter:description" content={metaTrans.mainPage.description} />
       </Helmet>
       <>
         <div id="anchorAboutUs" className={s.anchorAboutUs}></div>

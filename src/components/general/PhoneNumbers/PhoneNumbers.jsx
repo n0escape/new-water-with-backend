@@ -31,13 +31,13 @@ const PhoneNumbers = ({context, phoneNumbersList, toggleContacts}) => {
         <li key={index}>
           <a 
             className={textClass} 
-            href={`tel:${phone}`} 
+            href={`tel:${phone.url}`} 
             target="_blank" 
             rel="noopener noreferrer" 
             onClick={handleClick} 
-            title={`Телефон ${index+1}`}
+            title={`${phone.title} ${index+1}`}
           >
-            {stylizePhoneNumber(phone)}
+            {stylizePhoneNumber(phone.url)}
           </a>
         </li>
       ))}

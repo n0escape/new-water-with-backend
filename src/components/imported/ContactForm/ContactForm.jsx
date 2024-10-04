@@ -1,9 +1,8 @@
 import s from './ContactForm.module.css';
 import fonts from '../../../generalStyles/Fonts.module.css'
 import axios from 'axios';
-import React, { 
-  //useEffect, 
-  useState } from 'react';
+import React, { useContext, useState } from 'react';
+import { CommonTranslationsContext } from '../../../App';
 
 // Функция для валидации адреса электронной почты
 const validateEmail = (email) => {
@@ -16,14 +15,10 @@ const validatePhone = (phone) => {
   return /(?:\+380|\b0)\d{2}\d{7}$/.test(tmpNumb);
 };
 
-const labelMap = {
-  name: 'Ім\'я*',
-  email: 'Пошта*',
-  phone: 'Телефон*',
-  message: 'Коментар'
-};
-
 const ContactForm = ({ servicesList, selectedService = null }) => {
+  
+  const commonTranslations = useContext(CommonTranslationsContext);
+
   const defaultSelectedValue = 'contactMe';
   const initialFields = {
     name: { value: '', filled: false },
@@ -62,10 +57,6 @@ const ContactForm = ({ servicesList, selectedService = null }) => {
     }));
   };
 
-  // useEffect(() => {
-  //   console.log(errors)
-  // }, [errors])
-
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -84,7 +75,7 @@ const ContactForm = ({ servicesList, selectedService = null }) => {
     });
 
     if (!formData.name.value) {
-      setErrors(prevErrors => ({ ...prevErrors, name: 'Введіть будь ласка ім\'я' }));
+      setErrors(prevErrors => ({ ...prevErrors, name: commonTranslations.form.errors.blankName }));
       formValid = false;
     } else {
       setErrors(prevErrors => (prevErrors.name !== '' ? ({ ...prevErrors }) : ({ ...prevErrors, name: '' })));
@@ -93,8 +84,8 @@ const ContactForm = ({ servicesList, selectedService = null }) => {
     if (!formData.email.value && !formData.phone.value) {
       setErrors(prevErrors => ({
         ...prevErrors,
-        email: 'Будь ласка, введіть або пошту або номер телефону, для зворотнього зв\'язку',
-        phone: 'Будь ласка, введіть або пошту або номер телефону, для зворотнього зв\'язку'
+        email: commonTranslations.form.errors.blankPhoneOrEmail,
+        phone: commonTranslations.form.errors.blankPhoneOrEmail
       }));
       formValid = false;
     } else {
@@ -102,7 +93,7 @@ const ContactForm = ({ servicesList, selectedService = null }) => {
     }
 
     if (formData.email.value && !validateEmail(formData.email.value)) {
-      setErrors(prevErrors => ({ ...prevErrors, email: 'Будь ласка, введіть валідну пошту, наприклад: example@gmail.com' }));
+      setErrors(prevErrors => ({ ...prevErrors, email: commonTranslations.form.errors.invalidEmail }));
       formValid = false;
     } else {
       setErrors(prevErrors => (prevErrors.email !== '' ? ({ ...prevErrors }) : ({ ...prevErrors, email: '' })));
@@ -111,7 +102,7 @@ const ContactForm = ({ servicesList, selectedService = null }) => {
     if (formData.phone.value && !validatePhone(formData.phone.value)) {
       setErrors(prevErrors => ({
         ...prevErrors,
-        phone: 'Будь ласка, введіть дійсний номер телефону, за наступним форматом (можна з пробілами): +38067.../ +38(067).../ 067.../ (067)...'
+        phone: commonTranslations.form.errors.invalidPhone
       }));
       formValid = false;
     } else {
@@ -123,12 +114,12 @@ const ContactForm = ({ servicesList, selectedService = null }) => {
         const response = await axios.post('/api/v1/send-message', formDataToSend);
     
         if (response.data.ok) {
-          alert('Ваш запит відправлено! Ми зв\'яжемось з вами якомога раніше.');
+          alert(commonTranslations.form.sendingForm.successed);
           setFormData(initialFields);
           setErrors({});
         } 
       } catch (error) {
-        alert(error.response?.data?.error || 'Сервер повернув помилку. Спробуйте пізніше');
+        alert(error.response?.data?.error || commonTranslations.form.sendingForm.failed);
       }
     }
   };
@@ -153,7 +144,7 @@ const ContactForm = ({ servicesList, selectedService = null }) => {
                 fieldName === 'topic' ? (
                   <>
                     <label htmlFor={fieldName} className={`${fonts.labelS} ${s.topicLabel}`}>
-                        Оберіть тему
+                      {commonTranslations.form.labels[fieldName]}
                     </label>
                     <select
                       id={fieldName}
@@ -171,7 +162,7 @@ const ContactForm = ({ servicesList, selectedService = null }) => {
                   fieldName === 'message' ? (
                     <>
                       <label htmlFor={fieldName} className={`${fonts.labelS} ${s.messageLabel}`}>
-                        Коментар
+                        {commonTranslations.form.labels[fieldName]}
                       </label>
                       <textarea
                         type={'text'}
@@ -193,7 +184,7 @@ const ContactForm = ({ servicesList, selectedService = null }) => {
                         className={`${fonts.labelS} ${s.inputField} ${field.filled ? s.filled : ''}`} // Применяем класс filled, если поле заполнено
                       />
                       <label htmlFor={fieldName} className={`${fonts.labelS} ${s.textFieldLable}`}>
-                        {labelMap[fieldName] || (fieldName.charAt(0).toUpperCase() + fieldName.slice(1))}
+                        {commonTranslations.form.labels[fieldName] || (fieldName.charAt(0).toUpperCase() + fieldName.slice(1))}
                       </label>
                     </>
                   )
@@ -206,7 +197,7 @@ const ContactForm = ({ servicesList, selectedService = null }) => {
         ))}
       </div>
       <div className={`${s.formGroupItem} ${s.submitBox}`}>
-        <input className={fonts.labelLSemiBold} type="submit" value="Відправити запит" />
+        <input className={fonts.labelLSemiBold} type="submit" value={commonTranslations.buttons.buttonSubmit} />
       </div>
     </form>
   );

@@ -6,7 +6,7 @@ import PhoneNumbers from '../PhoneNumbers/PhoneNumbers';
 import NavLinks from '../NavLinks/NavLinks'
 import { useState } from 'react';
 
-const Header = ({logo, contactsIcon, contacts}) => {
+const Header = ({langs, currLang, setLanguage, logo, contactsIcon, contacts}) => {
 
   const [navExpanded, setNavExpanded] = useState(false);
   const [contactsExpanded, setContactsExpanded] = useState(false);
@@ -25,9 +25,9 @@ const Header = ({logo, contactsIcon, contacts}) => {
         <div className={`${s.item} ${s.logo}`}>
           <Link to="/">
             <img
-              src={process.env.PUBLIC_URL + logo}
-              alt="Логотип компанії"
-              title="Логотип компанії"
+              src={process.env.PUBLIC_URL + logo.src}
+              alt={logo.alt}
+              title={logo.alt}
             />
           </Link>
         </div>
@@ -39,12 +39,12 @@ const Header = ({logo, contactsIcon, contacts}) => {
             <div className={s.bar}></div>
           </div>
           <div className={`${s.toggleContacts} ${contactsExpanded ? s.active : ''}`} onClick={toggleContacts}>
-            <img src={process.env.PUBLIC_URL + contactsIcon} alt='Іконка контактів' />
+            <img src={process.env.PUBLIC_URL + contactsIcon.src} alt={contactsIcon.alt} />
           </div>
         </div>
 
         <div className={`${s.item} ${s.nav} ${navExpanded ? s.expanded : ''}`}>
-          <NavLinks context={'header'} toggleNav={toggleNav}/>
+          <NavLinks context={'header'} currLang={currLang} toggleNav={toggleNav}/>
         </div>
 
         <div className={`${s.item} ${s.contactsBlock} ${contactsExpanded ? s.expanded : ''}`}>

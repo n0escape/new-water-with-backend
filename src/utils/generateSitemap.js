@@ -25,7 +25,7 @@ const generateSitemapData = (pagesData) => {
 
     pagesData.forEach(page => {
         xml += `<url>
-        <loc>${baseUrl}/service/${page.id}</loc>
+        <loc>${baseUrl}/uk/service/${page.id}</loc>
         <lastmod>${currDate}</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
@@ -34,12 +34,31 @@ const generateSitemapData = (pagesData) => {
     });
     pagesData.forEach(page => {
         xml += `<url>
-        <loc>${baseUrl}/order/${page.id}</loc>
+        <loc>${baseUrl}/uk/order/${page.id}</loc>
         <lastmod>${currDate}</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
-`;
+    `;
+    });
+
+    pagesData.forEach(page => {
+        xml += `<url>
+        <loc>${baseUrl}/ru/service/${page.id}</loc>
+        <lastmod>${currDate}</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+    `;
+    });
+    pagesData.forEach(page => {
+        xml += `<url>
+        <loc>${baseUrl}/ru/order/${page.id}</loc>
+        <lastmod>${currDate}</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    `;
     });
 
     xml += `</urlset>`;

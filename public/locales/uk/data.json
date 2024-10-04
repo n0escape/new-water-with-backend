@@ -1,8 +1,8 @@
 {
   "generalIcons": {
-    "logo": "/assets/general/logo.png",
-    "toTopIcon": "/assets/general/pageUp.png",
-    "callIcon": "/assets/general/call.png"
+    "logo": {"src": "../../assets/general/logo.png", "alt": "Логотип компанії New Water"},
+    "toTopIcon": {"src": "../../assets/general/pageUp.png", "alt": "Кнопка догори"},
+    "callIcon": {"src": "../../assets/general/call.png", "alt": "Кнопка контактів"}
   },
   "aboutUs": {
     "background": {"src":"/assets/components/aboutUs/aboutUs_bg.png", "alt":"Фонове зображення секції Про нас"},
@@ -94,7 +94,7 @@
       "whatYouWillGet": [
         "Якісну роботу",
         "Установку насосного обладнання",
-        "Організоовану система постачання води",
+        "Організовану система постачання води",
         "Вмонтований гідроаккумулятор",
         "Оснащенну та повністю готову для використання скважина"
       ]
@@ -323,39 +323,56 @@
       }
     ],
     "phoneNumbers": [
-      "+380687874009",
-      "+380971193265"
+      {
+        "url": "+380687874009",
+        "title": "Посилання на телефон"
+      },
+      {
+        "url": "+380971193265",
+        "title": "Посилання на телефон"
+      }
     ],
     "mailAddresses": [
-      "info.water.bur@gmail.com"
+      {
+        "url": "info.water.bur@gmail.com",
+        "title": "Посилання на google пошту"
+      }
     ],
     "schedule": "Кожен день 9:00 - 21:00",
     "socialMedias": [
       {
         "id": "telegram",
         "url": "https://t.me/+380687874009",
-        "src": "/assets/components/socialMedias/telegram.png"
+        "src": "/assets/components/socialMedias/telegram.png",
+        "title": "telegram посилання"
       },
       {
         "id": "viber",
         "url": "viber://chat?number=%2B380687874009",
-        "src": "/assets/components/socialMedias/viber.png"
+        "src": "/assets/components/socialMedias/viber.png",
+        "title": "viber посилання"
       },
       {
         "id": "tiktok",
         "url": "https://www.tiktok.com/@skvaginakharkov",
-        "src": "/assets/components/socialMedias/tiktok.png"
+        "src": "/assets/components/socialMedias/tiktok.png",
+        "title": "tiktok посилання"
       },
       {
         "id": "instagram",
         "url": "https://www.instagram.com/burenie_skvagin777",
-        "src": "/assets/components/socialMedias/instagram.png"
+        "src": "/assets/components/socialMedias/instagram.png",
+        "title": "instagram посилання"
       },
       {
         "id": "facebook",
         "url": "https://www.facebook.com/share/6Jdg5osEWqnh6D6n/",
-        "src": "/assets/components/socialMedias/facebook.png"
+        "src": "/assets/components/socialMedias/facebook.png",
+        "title": "facebook посилання"
       }
     ]
+  },
+  "errorPage": {
+    "details": "Нажаль ми не змогли знайти запитувану сторінку. Будь-ласка перевірте правильність посилання. За бажанням ви можете повернутися на головну сторінку сайту"
   }
 }

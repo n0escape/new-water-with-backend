@@ -31,11 +31,17 @@
     gap: 12px;
 }
 
-.serviceDescription>p {
+.serviceDescription > p,
+.serviceDescription > p > span {
     color: #5E5E5E;
 }
 
 .slogan {
+    display: flex;
+    flex-direction: column;
+}
+
+.slogan > * {
     font-style: italic;
 }
 

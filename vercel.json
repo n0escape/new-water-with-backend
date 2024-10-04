@@ -9,6 +9,56 @@
         "source": "/order/drilling-of-the-wells-2",
         "destination": "/404",
         "statusCode": 410
+      },
+      {
+        "source": "/order/drilling-water-wells",
+        "destination": "/404",
+        "statusCode": 410
+      },
+      {
+        "source": "/order/uninstallation-of-pumps",
+        "destination": "/404",
+        "statusCode": 410
+      },
+      {
+        "source": "/order/water-purification",
+        "destination": "/404",
+        "statusCode": 410
+      },
+      {
+        "source": "/order/arrangement-of-water-wells",
+        "destination": "/404",
+        "statusCode": 410
+      },
+      {
+        "source": "/order/repair-of-wells",
+        "destination": "/404",
+        "statusCode": 410
+      },
+      {
+        "source": "/service/drilling-water-wells",
+        "destination": "/404",
+        "statusCode": 410
+      },
+      {
+        "source": "/service/uninstallation-of-pumps",
+        "destination": "/404",
+        "statusCode": 410
+      },
+      {
+        "source": "/service/water-purification",
+        "destination": "/404",
+        "statusCode": 410
+      },
+      {
+        "source": "/service/arrangement-of-water-wells",
+        "destination": "/404",
+        "statusCode": 410
+      },
+      {
+        "source": "/service/repair-of-wells",
+        "destination": "/404",
+        "statusCode": 410
       }
     ]
   }

@@ -1,8 +1,12 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import s from './OurWorksList.module.css';
 import fonts from '../../../generalStyles/Fonts.module.css'
+import { CommonTranslationsContext } from '../../../App';
 
 const OurWorksList = ({ ourWorks }) => {
+
+    const commonTranslations = useContext(CommonTranslationsContext);
+
     const [visibleWorks, setVisibleWorks] = useState(4);
     const [fade, setFade] = useState(true); // true = in, false = out
 
@@ -49,12 +53,12 @@ const OurWorksList = ({ ourWorks }) => {
             <div className={s.btnContainer}>
                 {ourWorks.length > visibleWorks && (
                     <button className={`${fonts.labelS} ${s.moreBtn}`} onClick={showMoreWorks}>
-                        Більше
+                        {commonTranslations.buttons.ourWorksMore}
                     </button>
                 )}
                 {visibleWorks > 4 && (
                     <button className={`${fonts.labelS} ${s.lessBtn}`} onClick={showLessWorks}>
-                        Згорнути
+                        {commonTranslations.buttons.ourWorksLess}
                     </button>
                 )}
             </div>
