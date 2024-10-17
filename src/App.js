@@ -67,7 +67,7 @@ const App = () => {
       // console.log('curr lang:', language);
       // console.log('loaded data:', allTranslations);
       // console.log('loaded common:', commonTranslations);
-      console.log('loaded common:', metaTranslations);
+      // console.log('loaded common:', metaTranslations);
 
       if (allTranslations && commonTranslations && metaTranslations) {
           setData(allTranslations);

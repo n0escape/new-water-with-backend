@@ -14,13 +14,16 @@ const Product = ({serviceData, canonicalUrl}) => {
         "name": `${serviceData.title}`,
         "description": `${serviceData.description.join('').trim()}`,
         "image": `${baseUrl}${serviceData.photos[0].imageSrc}`,
-        "offers": {
-          "@type": "AggregateOffer",
-          "availability": "http://schema.org/InStock",
-          ...(serviceData.minPrice ? { "lowPrice": `${extractPrice(serviceData.minPrice)}` } : {}), 
-          "priceCurrency": "UAH",
-          "url": `${canonicalUrl}`
-        }
+        ...(serviceData.minPrice 
+          ? { "offers": {
+            "@type": "AggregateOffer",
+            "availability": "http://schema.org/InStock",
+            "lowPrice": `${extractPrice(serviceData.minPrice)}`, 
+            "priceCurrency": "UAH",
+            "url": `${canonicalUrl}`
+          }}
+          : null
+        )
     }
 
     return <script type="application/ld+json">{JSON.stringify(product)}</script>;

@@ -62,7 +62,7 @@ const ServicePage = ({metaTrans, lang, services, currLang}) => {
                     </p>
                   ))}
                   <p className={s.slogan}>
-                    {commonTranslations.sevicePage.slogan.map(item => <span className={fonts.textMRegular}>{item}</span>)}
+                    {commonTranslations.sevicePage.slogan.map((item, index) => <span key={index} className={fonts.textMRegular}>{item}</span>)}
                   </p>
                 </div>
                 <div className={s.list}>
