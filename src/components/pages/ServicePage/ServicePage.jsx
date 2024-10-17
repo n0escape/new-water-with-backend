@@ -104,7 +104,10 @@ const ServicePage = ({metaTrans, lang, services, currLang}) => {
               </div>
             </div>
           </div>
-          <Product serviceData={serviceData} canonicalUrl={canonicalUrl}/>
+          { serviceData.minPrice
+            ? <Product serviceData={serviceData} canonicalUrl={canonicalUrl}/>
+            : null
+          }
           <ImageGallery context={'service'} photoList={serviceData.photos}/>
         </>
       )}
